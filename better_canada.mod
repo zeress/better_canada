@@ -1,5 +1,5 @@
 name="Better Canada"
-path="mod/better_canada/"
+path="../../GitHub/better_canada/better_canada"
 tags={
 	"Balance"
 	"Gameplay"
