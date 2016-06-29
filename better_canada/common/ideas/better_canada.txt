@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+		canada_tepid_war_response = {			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		canada_vivid_war_response = {			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+
+		canada_canadian_war_response = {			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.05
+			}
+		}		
+	}
+}

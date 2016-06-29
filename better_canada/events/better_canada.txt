@@ -1,0 +1,251 @@
+﻿add_namespace = better_canada
+
+# Canada Demands Alaska
+country_event = {
+	id = better_canada.1
+	title = better_canada.1.t
+	desc = better_canada.1.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.20.a	# Very Well...
+		ai_chance = { factor = 10 }
+
+		CAN = {
+			transfer_state = 463
+		}
+		hidden_effect = {
+			news_event = { id = better_canada.30 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = better_canada.20.b	#no way 
+		ai_chance = { factor = 90 }
+		add_political_power = -50
+		
+		CAN = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				generator = { 463 }
+			}
+		}
+		hidden_effect = {
+			news_event = { id = better_canada.31 hours = 6 }
+		}
+	}
+}
+
+# Canada Demands Newfoundland and Labrador
+country_event = {
+	id = better_canada.20
+	title = better_canada.20.t
+	desc = better_canada.20.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.20.a	# Very Well...
+		ai_chance = { factor = 10 }
+
+		CAN = {
+			transfer_state = 331
+			transfer_state = 332
+		}
+		hidden_effect = {
+			news_event = { id = better_canada.40 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = better_canada.20.b	#no way 
+		ai_chance = { factor = 90 }
+		add_political_power = -50
+
+		CAN = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 331 332 }
+			}
+		}
+		hidden_effect = {
+			news_event = { id = better_canada.41 hours = 6 }
+		}
+	}
+}
+
+### NEWS EVENTS
+# The US Accepts the Demands (Alaska)
+news_event = {
+	id = better_canada.30
+	title = better_canada.30.t
+	desc = better_canada.30.d
+	picture = GFX_news_event_012
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.30.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = USA
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.30.b
+		trigger = { TAG = CAN }
+	}
+	option = {
+		name = better_canada.30.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = better_canada.30.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = USA
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}	
+
+# The US Refuses the Demands
+news_event = {
+	id = better_canada.31
+	title = better_canada.31.t
+	desc = better_canada.31.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.31.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = USA
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.31.b
+		trigger = { TAG = CAN }
+	}
+	
+	option = {
+		name = better_canada.31.c
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = better_canada.31.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = USA
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}
+
+# The UK Accepts the Demands (Newfoundland & Labrador)
+news_event = {
+	id = better_canada.40
+	title = better_canada.40.t
+	desc = better_canada.40.d
+	picture = GFX_news_event_012
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.40.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.40.b
+		trigger = { TAG = CAN }
+	}
+	option = {
+		name = better_canada.40.c
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = better_canada.40.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}	
+
+# The UK Refuses the Demands
+news_event = {
+	id = better_canada.41
+	title = better_canada.41.t
+	desc = better_canada.41.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.41.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.41.b
+		trigger = { TAG = CAN }
+	}
+	
+	option = {
+		name = better_canada.41.c
+		trigger = { TAG = ENG }
+	}
+	
+	option = {
+		name = better_canada.41.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}
