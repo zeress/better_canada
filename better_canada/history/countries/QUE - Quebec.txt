@@ -1,6 +1,6 @@
-﻿capital = 276
+﻿capital = 468
 
-oob = "CAN_1936"
+oob = "QUE_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
@@ -25,17 +25,6 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-1936.1.1 = {
-	add_ideas = {
-		#laws
-		volunteer_only
-		low_economic_mobilisation
-		
-		canada_tepid_war_response
-		quebecois_no_conscription		
-	}
-}
-
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -54,10 +43,7 @@ set_technology = {
 	add_ideas = {
 		#laws
 		volunteer_only
-		low_economic_mobilisation
-		
-		canada_tepid_war_response
-		quebecois_no_conscription		
+		low_economic_mobilisation		
 	}
 
 	
@@ -129,19 +115,19 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
+	name = "Maurice Duplessis"
+	desc = "POLITICS_MAURICE_DUPLESSIS_DESC"
+	picture = "Portrait_Maurice_Duplessis.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Charles Brandle Crate"
-	desc = "POLITICS_CHARLES_BRANDLE_CRATE_DESC"
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = nazism
@@ -151,9 +137,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Fred Rose"
+	desc = "POLITICS_FRED_ROSE_DESC"
+	picture = "gfx/leaders/QUE/Portrait_Fred_Rose.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -162,9 +148,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Adélard Godbout"
+	desc = "POLITICS_ADELARD_GODBOUT_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Adelard_Godbout.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -189,7 +175,6 @@ set_national_unity = 0.9
 			
 			communism = {
 				popularity = 1
-				#banned = no #default is no
 			}
 		}
 		

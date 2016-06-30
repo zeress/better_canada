@@ -1,0 +1,7 @@
+spriteTypes = {			
+
+	spriteType = {
+		name = "GFX_idea_quebecois_no_conscription"
+		texturefile = "gfx/interface/ideas/quebecois_no_conscription.dds"
+	}
+}

@@ -26,7 +26,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription = 0.03
+				conscription = 0.02
 			}
 		}
 
@@ -41,8 +41,22 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
+				conscription = 0.04
 			}
-		}		
+		}
+
+		quebecois_no_conscription = {
+			allowed = {
+				tag = CAN
+			}
+			
+			removal_cost = -1
+
+			picture = quebecois_no_conscription
+	
+			modifier = {
+				conscription_factor = -0.35
+			}
+		}
 	}
 }

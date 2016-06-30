@@ -1245,9 +1245,6 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 				category = artillery
-			}		
-			CAN = {
-				add_ideas = canada_tepid_war_response
 			}
 		}
 	}

@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_QUE_maurice_duplessis"
+		textureFile = "gfx//leaders//QUE//Portrait_Maurice_Duplessis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_QUE_fred_rose"
+		textureFile = "gfx//leaders//QUE//Portrait_Fred_Rose.dds"
+	}
+
+	spriteType = {
+		name = "GFX_QUE_adelard_godbout"
+		textureFile = "gfx//leaders//QUE//Portrait_Adelard_Godbout.dds"
+	}	
+	
+}
