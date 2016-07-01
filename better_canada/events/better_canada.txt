@@ -512,3 +512,90 @@ news_event = {
 		}
 	}
 }
+
+country_event = {
+	id = better_canada.49
+	title = better_canada.49.t
+	desc = better_canada.49.d
+	picture = GFX_report_event_alberta_oil
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = albertan_oil_discovered }
+		date > 1944.1.1
+		owns_state = 470
+	}
+	
+	mean_time_to_happen = {
+		days = 1095 # 3 years
+		
+	}
+	
+	immediate = {
+		set_global_flag = albertan_oil_discovered
+	}
+	
+	option = {
+		name = better_canada.49.a
+	
+		add_resource = {
+			type = oil
+			amount = 42
+			state = 470
+		}
+		470 = {
+			add_extra_state_shared_building_slots = 1
+			
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = better_canada.50 }
+		}
+	}
+}
+
+news_event = {
+	id = better_canada.50
+	title = better_canada.50.t
+	desc = better_canada.50.d
+	picture = GFX_report_event_alberta_oil_news
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = better_canada.50.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.50.b
+		trigger = { TAG = CAN }
+	}
+	
+	option = {
+		name = better_canada.50.c
+		trigger = {
+			NOT = { TAG = CAN }
+			is_in_faction_with = CAN
+		}
+	}
+}

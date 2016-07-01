@@ -1,0 +1,12 @@
+spriteTypes = {			
+
+	spriteType = {
+		name = "GFX_report_event_alberta_oil"
+		texturefile = "gfx/event_pictures/news_event_better_canada.49.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_alberta_oil_news"
+		texturefile = "gfx/event_pictures/news_event_better_canada.50.dds"
+	}
+}

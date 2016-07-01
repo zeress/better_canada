@@ -156,4 +156,11 @@
  better_canada.48.a:0 "Interesting"
  better_canada.48.b:0 "Only military action will help now"
  better_canada.48.c:0 "An unfortunate turn of events"
- 
+ better_canada.49.t:0 "Leduc No. 1"
+ better_canada.49.d:0 "After many years of failed drilling Imperial Oil has finally discovered a massive oil reserve in Alberta by drilling deeper than they ever had before. This will surely benefit us greatly."
+ better_canada.49.a:0 "Black Gold!"
+ better_canada.50.t:0 "Massive Oil Discovery in [CAN.GetNameDef]"
+ better_canada.50.d:0 "Imperial Oil Ltd had spent years leading up to and during the war drilling unsuccessfully for oil. Their luck changed however earlier today. By drilling deeper than they ever had before they made one final attempt to get lucky and finally succeeded. Already this is proving to be a massive economing boom for the province of Alberta."
+ better_canada.50.a:0 "Interesting"
+ better_canada.50.b:0 "Help it already has"
+ better_canada.50.c:0 "Fantastic News!"
