@@ -249,3 +249,266 @@ news_event = {
 		}
 	}
 }
+
+# Maybe we should push the Quebecois to conscription?
+country_event = {
+	id = better_canada.42
+	title = better_canada.42.t
+	desc = better_canada.42.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 90
+	}	
+	
+	trigger = {
+		NOT = { has_global_flag = quebecois_conscription }
+		tag = CAN
+		has_war = yes
+		OR = {
+			has_idea = limited_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+		has_manpower < 10000
+	}
+	
+	immediate = {
+		set_global_flag = quebecois_conscription
+	}
+	
+	option = {
+		name = better_canada.42.a	# Perhaps they can be convinced
+		ai_chance = { factor = 20 }
+
+		random_list = {
+			60 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.43 } # They were convinced
+				}
+			}
+			40 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.44 } # They were unconvinced
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.42.b	# Perhaps they can be forced
+		ai_chance = { factor = 5 }
+
+		random_list = {
+			70 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.45 } # They were convinced by force
+				}
+			}
+			30 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.46 } # They were angered
+				}
+				hidden_effect = {
+					set_global_flag = quebecois_independence_movement
+					set_global_flag = quebecois_independence_movement_angry
+				}
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = better_canada.43
+	title = better_canada.43.t
+	desc = better_canada.43.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.43.a	# This will help
+		ai_chance = { factor = 10 }
+		
+		remove_ideas = quebecois_no_conscription
+		add_ideas = quebecois_minor_conscription
+	}	
+}
+
+country_event = {
+	id = better_canada.44
+	title = better_canada.44.t
+	desc = better_canada.44.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.44.a	# They leave us with no choice
+		ai_chance = { factor = 5 }
+
+		hidden_effect = {
+			set_global_flag = quebecois_independence_movement
+		}
+		random_list = {
+			70 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.45 } # They were convinced by force
+				}
+			}
+			30 = {
+				CAN = {
+					country_event = { days = 1 id = better_canada.46 } # They were angered
+				}
+				hidden_effect = {
+					set_global_flag = quebecois_independence_movement_angry
+				}
+			}
+		}		
+		
+	}
+
+	option = {
+		name = better_canada.44.b	# Unfortunate
+		ai_chance = { factor = 20 }	
+
+	}	
+}
+
+country_event = {
+	id = better_canada.45
+	title = better_canada.45.t
+	desc = better_canada.45.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {
+		name = better_canada.45.a	# They left us with no choice
+		ai_chance = { factor = 10 }	
+		
+		remove_ideas = quebecois_no_conscription
+		add_ideas = quebecois_minor_conscription
+	}	
+}
+
+country_event = {
+	id = better_canada.46
+	title = better_canada.46.t
+	desc = better_canada.46.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {
+		name = better_canada.46.a	# This could be bad
+		ai_chance = { factor = 10 }	
+		
+		remove_ideas = quebecois_no_conscription
+		add_ideas = quebecois_minor_conscription
+	}	
+}
+
+country_event = {
+	id = better_canada.47
+	title = better_canada.48.t
+	desc = better_canada.47.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = quebecois_independence_movement_fired }
+		has_global_flag = quebecois_independence_movement
+		tag = CAN
+	}
+	
+	mean_time_to_happen = {
+		days = 1825 # 5 years
+		
+		modifier = {
+			factor = 0.20
+			
+			has_global_flag = quebecois_independence_movement_angry
+		}
+	}
+	
+	immediate = {
+		set_global_flag = quebecois_independence_movement_fired
+	}
+	
+	option = {
+		name = better_canada.47.a
+		
+		hidden_effect = {
+			remove_ideas = quebecois_no_conscription
+			remove_ideas = quebecois_minor_conscription
+		}
+
+		QUE = {
+			set_capital = 468
+			transfer_state = 466
+			transfer_state = 468
+		}
+		create_wargoal = {
+			type = take_state_event
+			target = QUE
+			generator = { 466 468 }
+		}
+		
+		hidden_effect = {
+			random_country = {
+				limit = { tag = QUE }
+				load_oob = "QUE_REBEL"
+				add_manpower = 120000
+				set_equipment_fraction = 0.8
+				set_national_unity = 1
+				add_popularity = {
+					ideology = neutrality
+					popularity = 1
+				}
+			}
+			news_event = { hours = 6 id = better_canada.48 }
+		}
+	}
+	
+}
+
+news_event = {
+	id = better_canada.48
+	title = better_canada.48.t
+	desc = better_canada.48.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.48.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.48.b
+		trigger = { TAG = CAN }
+	}
+	
+	option = {
+		name = better_canada.48.c
+		trigger = {
+			NOT = { TAG = CAN }
+			is_in_faction_with = CAN
+		}
+	}
+}

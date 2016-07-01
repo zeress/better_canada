@@ -58,5 +58,19 @@ ideas = {
 				conscription_factor = -0.35
 			}
 		}
+		
+		quebecois_minor_conscription = {
+			allowed = {
+				tag = CAN
+			}
+			
+			removal_cost = -1
+
+			picture = quebecois_no_conscription
+	
+			modifier = {
+				conscription_factor = -0.25
+			}
+		}
 	}
 }
