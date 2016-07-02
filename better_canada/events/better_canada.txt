@@ -940,3 +940,38 @@ news_event = {
 		}
 	}
 }
+
+country_event = { # Red Rose Tungsten discovery
+	id = better_canada.51
+	title = better_canada.51.t
+	desc = better_canada.51.d
+	picture = GFX_report_event_red_rose_tungsten
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = red_rose_tungsten_discovered }
+		owns_state = 471
+		has_war = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 730 # 2 years
+	}
+	
+	immediate = {
+		set_global_flag = red_rose_tungsten_discovered
+	}
+	
+	option = {
+		name = better_canada.51.a
+	
+		add_resource = {
+			type = tungsten
+			amount = 24
+			state = 471
+		}
+	}
+}
