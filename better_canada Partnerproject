@@ -1,3 +1,4 @@
+Focuses
 
 focus = {
 		id = CAN_appeasement
@@ -37,3 +38,29 @@ focus = {
 	
 		}
 	}
+	
+	Ideas
+	
+	
+		canadian_isolationism = {
+			allowed = { always = no	}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier =  
+				drift_defence_factor = 0.5
+			
+		}
+
+Localisation
+	
+canadian_isolation:0 "Canadian Isolationism"
+canadian_isolation_desc:0 "We will isolate our nation from war until called upon."
+CAN_appeasement:0 "Appeasement"
+CAN_appeasement_desc:0 "We support Britains policy of appeasement and hope it isolates us from the conflicts in Europe."
+CAN_volunteers:0 "Mackenzie-Papineau Battalion"
+CAN_volunteers_desc:0 "During the Spanish Civil war some 1,500 Canadians went to fight Fascism. The majority being working class."
