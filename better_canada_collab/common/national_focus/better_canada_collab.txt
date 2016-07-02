@@ -1,0 +1,57 @@
+focus_tree = {
+	id = can_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CAN
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = CAN_appeasement
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = CAN_statute_of_westminster }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 35
+			add_ideas = canadian_isolationism
+			
+		}
+	}
+	
+	
+	focus = {
+		id = CAN_volunteers
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = CAN_statute_of_westminster }
+
+		ai_will_do = {
+			factor = 4
+		}
+		
+		completion_reward = {
+			add_political_power = 35
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+	
+		}
+	}	
+}
