@@ -7,5 +7,4 @@ tags={
 	"Historical"
 }
 picture="thumbnail.jpg"
-remote_file_id="709290113"
-supported_version="1.0.1"
+supported_version="1.1.0"
