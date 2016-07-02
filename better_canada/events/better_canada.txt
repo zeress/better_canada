@@ -399,6 +399,8 @@ news_event = {
 	option = {
 		name = better_canada.24.b
 		trigger = { TAG = CAN }
+		
+		CAN = { custom_effect_tooltip = CAN_east_claims_forts } # Informs player, this is already done in the previous event
 	}
 	
 	option = {
