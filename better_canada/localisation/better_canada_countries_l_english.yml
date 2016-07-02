@@ -1,0 +1,11 @@
+﻿l_english:
+ QUE:0 "Québec"
+ QUE_ADJ:0 "Québecois"
+ QUE_neutrality:0 "Québec"
+ QUE_neutrality_ADJ:0 "Québecois"
+ QUE_democratic:0 "Republic of Québec"
+ QUE_democratic_ADJ:0 "Republican Québecois"
+ QUE_fascism:0 "Empire of Québec"
+ QUE_fascism_ADJ:0 "Imperial Québecois"
+ QUE_communism:0 "People's Republic of Québec"
+ QUE_communism_ADJ:0 "Communist Québecois"

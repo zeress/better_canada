@@ -1,0 +1,4 @@
+﻿l_english:
+ CAN_east_claims_forts:0 "§YCanada§!: Fortifies the provinces and ports near Labrador and Newfoundland's border\n"
+ CAN_west_claims_forts:0 "§YCanada§!: Fortifies the provinces and ports near [USA.GetNameDef]'s border\n"
+ BC_QCI:0 "The Charlottes"
