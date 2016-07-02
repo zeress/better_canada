@@ -975,3 +975,54 @@ country_event = { # Red Rose Tungsten discovery
 		}
 	}
 }
+
+country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
+	id = better_canada.52
+	title = better_canada.52.t
+	desc = better_canada.52.d
+	picture = GFX_report_event_artificial_rubber
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = enemy_has_se_asia }
+		owns_state = 276
+		random_country = {
+			limit = { has_war_with = ROOT }
+			controls_state = 336
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 365 # 1 year
+	}
+	
+	immediate = {
+		set_global_flag = enemy_has_se_asia
+	}
+	
+	option = {
+		name = better_canada.52.a
+		
+		276 = {
+			add_extra_state_shared_building_slots = 1
+
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		if = {
+			limit = { NOT = { has_tech = synth_oil_experiments } }
+			add_tech_bonus = {
+				name = synth_resources
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+	}
+}

@@ -13,5 +13,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_red_rose_tungsten"
 		texturefile = "gfx/event_pictures/news_event_better_canada.51.dds"
-	} 
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_artificial_rubber"
+		texturefile = "gfx/event_pictures/news_event_better_canada.52.dds"
+	}
 }
