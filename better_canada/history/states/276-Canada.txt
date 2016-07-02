@@ -19,11 +19,11 @@ state={
 			air_base = 5
 		}
 		add_core_of = CAN
-		victory_points = {
+		victory_points = { # Ottawa
 			3778 20 
 		}
-		victory_points = {
-			3775 10
+		victory_points = { # Toronto
+			3775 15
 		}
 
 	}
