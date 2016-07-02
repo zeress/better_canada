@@ -1,0 +1,6 @@
+- Added a small amount of Tungsten in BC
+- Added an event for the eventual discovery of more Tungsten in NW Canada under certain conditions
+- Redistributed some of the resources in Canada. The overall number remains about the same
+- Added a few more victory points to Canada
+- Added an event for the promotion of the artificial rubber industry should SE Asia fall to the enemy
+- Renamed Haida Gwaii to "The Charlottes, the short hand of Queen Charlotte Islands, as it is more era appropriate
