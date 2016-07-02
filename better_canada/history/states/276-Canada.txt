@@ -20,10 +20,10 @@ state={
 		}
 		add_core_of = CAN
 		victory_points = { # Ottawa
-			3778 20 
+			3778 25 
 		}
 		victory_points = { # Toronto
-			3775 15
+			3775 20
 		}
 
 	}

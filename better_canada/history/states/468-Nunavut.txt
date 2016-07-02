@@ -25,10 +25,10 @@ state={
 		add_core_of = QUE
 
 		victory_points = {
-			12149 15
+			12149 20
 		}
 		victory_points = {
-			4345 10
+			4345 15
 		}
 	}
 
