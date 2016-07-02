@@ -727,6 +727,7 @@ focus_tree = {
 			if =  {
 				limit = {
 					USA = { owns_state = 463 }
+					NOT = { has_war_with = USA }
 				}
 				USA = { country_event = { id = better_canada.1 } }
 			}
@@ -748,133 +749,22 @@ focus_tree = {
 		}
 		
 		bypass = {
-			331 = { is_owned_by = CAN }
-			332 = { is_owned_by = CAN }
+			OR = {
+				AND = {
+					331 = { is_owned_by = CAN }
+					332 = { is_owned_by = CAN }
+				}
+				has_war_with = ENG
+			}
 		}
 		
 		completion_reward = {
-			CAN = { # New Brunswick
-				custom_effect_tooltip = CAN_east_claims_forts
-				hidden_effect = {
-					465 = { # New Brunswick
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 4285
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = coastal_bunker
-							level = 2
-							province = 4285
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = anti_air_building
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-			}		
-			hidden_effect = {
-				739 = { # Haida Gwaii
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 1869
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 1869
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-				466 = { # Quebec
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3208
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 7683
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 7810
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 10534
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 12600
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-				468 = { # Saint Lawrence
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 12149
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						province = 12149
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-				464 = { # Nova Scotia
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 7361
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 			if =  {
 				limit = {
 					ENG = { owns_state = 331 }
 					ENG = { owns_state = 332 }
 				}
-				ENG = {
-					country_event = { id = better_canada.20 }
-				}
+				country_event = { id = better_canada.21 }
 			}			
 		}
 	}

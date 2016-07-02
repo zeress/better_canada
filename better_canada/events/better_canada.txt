@@ -50,7 +50,7 @@ country_event = {
 	
 	option = {
 		name = better_canada.20.a	# Very Well...
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 20 }
 
 		CAN = {
 			transfer_state = 331
@@ -63,7 +63,7 @@ country_event = {
 	
 	option = {
 		name = better_canada.20.b	#no way 
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 80 }
 		add_political_power = -50
 
 		CAN = {
@@ -75,6 +75,345 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = { id = better_canada.41 hours = 6 }
+		}
+	}
+}
+
+country_event = { # Consider your options
+	id = better_canada.21
+	title = better_canada.21.t
+	desc = better_canada.21.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.21.a	# Do it diplomatically
+		ai_chance = { factor = 70 }
+
+		ENG = { country_event = { id = better_canada.22 } }
+	}
+	
+	option = {
+		name = better_canada.21.b	# Just demand it
+		ai_chance = { factor = 30 }
+
+		
+		CAN = { # New Brunswick
+			custom_effect_tooltip = CAN_east_claims_forts
+			hidden_effect = {
+				465 = { # New Brunswick
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 4285
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 4285
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			466 = { # Quebec
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3208
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7683
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7810
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10534
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12600
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			468 = { # Saint Lawrence
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12149
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12149
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			464 = { # Nova Scotia
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 7361
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}		
+		ENG = { country_event = { id = better_canada.20 } }
+	}
+}
+
+country_event = { # The UK considers
+	id = better_canada.22
+	title = better_canada.22.t
+	desc = better_canada.22.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.22.a	# Accept the Referendum
+		ai_chance = { factor = 70 }
+
+		CAN = {
+			transfer_state = 331
+			transfer_state = 332
+		}
+		hidden_effect = {
+			news_event = { id = better_canada.23 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = better_canada.22.b	# Deny the Referendum
+		ai_chance = { factor = 30 }
+
+		CAN = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 331 332 }
+			}
+		}		
+		
+		CAN = { # New Brunswick
+			custom_effect_tooltip = CAN_east_claims_forts
+			hidden_effect = {
+				465 = { # New Brunswick
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 4285
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 4285
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			466 = { # Quebec
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3208
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7683
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7810
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 10534
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12600
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			468 = { # Saint Lawrence
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12149
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12149
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			464 = { # Nova Scotia
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = 7361
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}		
+		
+		hidden_effect = {
+			news_event = { id = better_canada.24 hours = 6 }
+		}
+	}
+}
+
+# The UK Accepts the Referendum (Newfoundland & Labrador)
+news_event = {
+	id = better_canada.23
+	title = better_canada.23.t
+	desc = better_canada.23.d
+	picture = GFX_news_event_012
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.23.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.23.b
+		trigger = { TAG = CAN }
+	}
+	option = {
+		name = better_canada.23.c
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = better_canada.23.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}	
+
+# The UK Refuses the Referendum
+news_event = {
+	id = better_canada.24
+	title = better_canada.24.t
+	desc = better_canada.24.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.24.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	
+	option = {
+		name = better_canada.24.b
+		trigger = { TAG = CAN }
+	}
+	
+	option = {
+		name = better_canada.24.c
+		trigger = { TAG = ENG }
+	}
+	
+	option = {
+		name = better_canada.24.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+			}
+			is_in_faction_with = CAN
 		}
 	}
 }
