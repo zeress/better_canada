@@ -1,0 +1,84 @@
+
+	focus = {
+		id = CAN_appeasement
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = CAN_statute_of_westminster }
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+			add_political_power = 35
+			add_ideas = canadian_isolationism
+			
+		}
+	}
+	
+	
+	focus = {
+		id = CAN_volunteers
+		icon = GFX_goal_generic_small_arms
+		x = 5
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = CAN_statute_of_westminster }
+
+		ai_will_do = {
+			factor = 4
+		}
+		
+		completion_reward = {
+			add_political_power = 35
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			SPR = {
+				add_manpower = 1500 }
+	
+		}
+	}
+	
+	
+		focus = {
+		id = CAN_none_is_too_much
+		icon = GFX_goal_generic_small_arms
+		x = 3
+		y = 2
+		cost = 5
+
+		prerequisite = { focus = CAN_appeasement }
+
+		ai_will_do = {
+			factor = 7
+		}
+		
+		completion_reward = {
+			add_political_power = 35
+	
+		}
+	}
+	
+	
+		focus = {
+		id = CAN_strength_of_the_commonwealth
+		icon = GFX_goal_support_democracy
+		x = 1
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = CAN_appeasement }
+
+		ai_will_do = {
+			factor = 100
+
+			modifier = {
+				factor = 0.12
+				is_historical_focus_on = no
+			}	
+		}
