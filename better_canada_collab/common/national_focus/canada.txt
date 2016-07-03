@@ -82,3 +82,8 @@
 				is_historical_focus_on = no
 			}	
 		}
+				completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_political_power = 150
+		}
+	}
