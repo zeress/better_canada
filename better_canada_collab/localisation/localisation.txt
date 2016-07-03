@@ -8,3 +8,11 @@ CAN_none_is_too_much:0 "None is too much"
 CAN_none_is_too_much_desc:0 "On the advice of Frederick Blair, the St.Louis has been turned away, the Jewish refugee's sent back to Germany."
 CAN_strength_of_the_commonwealth:0 "Strength of the Commonwealth"
 CAN_strength_of_the_commonwealth_desc:0 "The dogs of war have been unleashed and Britain calls for aid, we must rally to this cause!"
+
+#industry
+CAN_bennetts_new_deal:0 "Bennetts New Deal"
+CAN_bennetts_new_deal_desc:0 "The depression has taken its toll on our nation, but we shall meet it with financed industry!"
+
+#military
+CAN_military_reorganization:0 "Reorganization of the military"
+CAN_military_reorganization_desc:0 "The military has been sitting stagnant and idle since World War 1, it is time to fix that."
