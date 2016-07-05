@@ -1,5 +1,5 @@
 spriteTypes = {
-
+	# Quebec
 	spriteType = {
 		name = "GFX_QUE_maurice_duplessis"
 		textureFile = "gfx//leaders//QUE//Portrait_Maurice_Duplessis.dds"
@@ -13,6 +13,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_QUE_adelard_godbout"
 		textureFile = "gfx//leaders//QUE//Portrait_Adelard_Godbout.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QUE_adrien_arcand"
+		textureFile = "gfx//leaders//QUE//Portrait_Adrien_Arcand.dds"
 	}	
 	
+	# Canada
+	spriteType = {
+		name = "GFX_CAN_tim_buck"
+		textureFile = "gfx//leaders//CAN//Portrait_Tim_Buck.dds"
+	}
+
+	spriteType = {
+		name = "GFX_CAN_js_woodsworth"
+		textureFile = "gfx//leaders//CAN//Portrait_JS_Woodsworth.dds"
+	}	
 }
