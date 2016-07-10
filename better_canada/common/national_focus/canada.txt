@@ -205,12 +205,6 @@ focus_tree = {
 				popularity = 0.1
 			}
 			set_rule = { can_send_volunteers = yes }
-			hidden_effect = { 
-				if = { 
-					limit = { is_ai = yes }
-					SOV = { add_to_faction = CAN } 
-				}
-			}
 		}
 	}	
 	
@@ -345,12 +339,6 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
-			}
-			hidden_effect = { 
-				if = { 
-					limit = { is_ai = yes }
-					GER = { add_to_faction = CAN } 
-				}
 			}
 		}
 	}	
