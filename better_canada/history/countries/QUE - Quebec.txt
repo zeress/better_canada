@@ -139,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fred Rose"
 	desc = "POLITICS_FRED_ROSE_DESC"
-	picture = "gfx/leaders/QUE/Portrait_Fred_Rose.dds"
+	picture = "Portrait_Fred_Rose.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -150,7 +150,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adélard Godbout"
 	desc = "POLITICS_ADELARD_GODBOUT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Adelard_Godbout.dds"
+	picture = "Portrait_Adelard_Godbout.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -161,12 +161,45 @@ create_country_leader = {
 set_convoys = 100
 set_national_unity = 0.9
 
+1936.1.1 = {
+	set_politics = {
+
+		parties = {
+			neutrality = { 
+				popularity = 60
+			}
+
+			democratic = { 
+				popularity = 38
+			}
+			
+			fascism = {
+				popularity = 1
+			}
+			
+			communism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1935.10.14"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+}
+
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
+			neutrality = { 
+				popularity = 60
+			}
+			
 			democratic = { 
-				popularity = 98
+				popularity = 38
 			}
 
 			fascism = {
@@ -178,7 +211,7 @@ set_national_unity = 0.9
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = neutrality
 		last_election = "1935.10.14"
 		election_frequency = 60
 		elections_allowed = yes
