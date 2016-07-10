@@ -1,5 +1,7 @@
 - Added an event for Quebec to decide if they go fully nationalist, and there-by fascist, when they secede. They will prefer to let the people decide over time which political direction they want to choose rather than immediately go for it. There is a ~25% chance for a coup by Adrien Arcand for direct fascism.
+- Added opinion modifiers between Quebec and Canada, as well as between Quebec and Canada's faction leader.
 - Renamed the "National Unity Party" to "Canadian Nationalist Party" as the former did not exist yet in 1936
 - Set historical names for Quebec political parties instead of using dynamically generated ones
 - Fixed new leader portraits not displaying correctly
 - Fixed issue with Quebec's parties if they rebel unless you reload the save
+- Added some missing localisation
