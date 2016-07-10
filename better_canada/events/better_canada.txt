@@ -810,10 +810,11 @@ country_event = {
 				set_equipment_fraction = 0.8
 				set_national_unity = 1
 				add_popularity = {
-					ideology = neutrality
-					popularity = 1
+					ideology = fascism
+					popularity = 0.3
 				}
 			}
+			QUE = { country_event = { id = better_canada.53 } } # Keep the nationalist momentum going?
 			news_event = { hours = 6 id = better_canada.48 }
 		}
 	}
@@ -1025,4 +1026,43 @@ country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
 			}
 		}
 	}
+}
+
+country_event = {
+	id = better_canada.53
+	title = better_canada.53.t
+	desc = better_canada.53.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+
+	option = {
+		name = better_canada.53.a	# Embrace Fascism
+		ai_chance = { factor = 10 }
+		
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = better_canada.53.b	# Let the people decide
+		ai_chance = { factor = 30 }
+		
+		random_list = {
+			60 = {
+				add_ideas = nationalism
+			}
+			35 = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.2
+				}				
+			}
+			5 = {
+				add_ideas = internationalism
+			}
+		}
+	}	
 }
