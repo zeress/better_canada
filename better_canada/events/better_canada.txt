@@ -802,6 +802,32 @@ country_event = {
 			generator = { 466 468 }
 		}
 		
+		add_opinion_modifier = { target = QUE modifier = que_secession }
+		
+		random_country = {
+			limit = {
+				tag = ENG
+				is_in_faction_with = CAN 
+			}
+			add_opinion_modifier = { target = QUE modifier = que_secession_faction_members }
+		}
+		
+		random_country = {
+			limit = {
+				tag = GER
+				is_in_faction_with = CAN 
+			}
+			add_opinion_modifier = { target = QUE modifier = que_secession_faction_members }
+		}
+		
+		random_country = {
+			limit = {
+				tag = SOV
+				is_in_faction_with = CAN 
+			}
+			add_opinion_modifier = { target = QUE modifier = que_secession_faction_members }
+		}
+		
 		hidden_effect = {
 			random_country = {
 				limit = { tag = QUE }
@@ -813,6 +839,7 @@ country_event = {
 					ideology = fascism
 					popularity = 0.3
 				}
+				add_opinion_modifier = { target = CAN modifier = que_secession }
 			}
 			QUE = { country_event = { id = better_canada.53 } } # Keep the nationalist momentum going?
 			news_event = { hours = 6 id = better_canada.48 }
