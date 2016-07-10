@@ -52,14 +52,13 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
-			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 		}
 	}
-	
+
 	focus = {
-		id = CAN_volunteers_abound
-		icon = GFX_goal_generic_military_sphere
+		id = CAN_defence_of_canada
+		icon = GFX_goal_generic_defence
 		x = 1
 		y = 2
 		cost = 10
@@ -72,6 +71,26 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = volunteer_corps_focus
+			set_rule = { can_send_volunteers = yes }
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = CAN_volunteers_abound
+		icon = GFX_goal_generic_military_sphere
+		x = 1
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = CAN_defence_of_canada }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_manpower = 100000
 			add_political_power = 150
 		}
 	}
@@ -80,7 +99,7 @@ focus_tree = {
 		id = CAN_united_we_stand
 		icon = GFX_goal_generic_demand_territory
 		x = 1
-		y = 3
+		y = 4
 		cost = 10
 		
 		prerequisite = { focus = CAN_volunteers_abound }
@@ -90,7 +109,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 100000
 			add_ideas = foreign_expeditions_focus
 			add_ideas = why_we_fight_focus
 		}
@@ -100,7 +118,7 @@ focus_tree = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_radar
 		x = 1
-		y = 4
+		y = 5
 		cost = 15
 		
 		prerequisite = { focus = CAN_united_we_stand }
@@ -148,15 +166,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_ideas = internationalism
 			add_political_power = 150
-			ENG = { remove_from_faction = CAN }
-			hidden_effect = { 
-				if = { 
-					limit = { is_ai = yes }
-					SOV = { add_to_faction = CAN } 
-				}
-			}
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
@@ -165,13 +175,53 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_soviet_teachings
-		icon = GFX_goal_generic_intelligence_exchange
+		id = CAN_communism_abroad
+		icon = GFX_goal_generic_defence
 		x = 3
 		y = 2
 		cost = 10
 		
 		prerequisite = { focus = CAN_soviet_heart }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = internationalism
+			add_political_power = 150
+			ENG = { 
+				remove_from_faction = CAN
+				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
+			}
+			SOV = {
+				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_pro }
+			}
+			PRC = {
+				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_pro }
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			set_rule = { can_send_volunteers = yes }
+			hidden_effect = { 
+				if = { 
+					limit = { is_ai = yes }
+					SOV = { add_to_faction = CAN } 
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = CAN_soviet_teachings
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 3
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = CAN_communism_abroad }
 
 		ai_will_do = {
 			factor = 10
@@ -188,7 +238,7 @@ focus_tree = {
 		id = CAN_honorary_soviets
 		icon = GFX_goal_generic_political_pressure
 		x = 3
-		y = 3
+		y = 4
 		cost = 10
 		
 		prerequisite = { focus = CAN_soviet_teachings }
@@ -215,7 +265,7 @@ focus_tree = {
 		id = CAN_communist_volunteers
 		icon = GFX_goal_generic_soviet_construction
 		x = 3
-		y = 4
+		y = 5
 		cost = 15
 		
 		prerequisite = { focus = CAN_honorary_soviets }
@@ -243,7 +293,7 @@ focus_tree = {
 	}		
 	
 	focus = {
-		id = CAN_fascist_ambitions
+		id = CAN_swastika_clubs
 		icon = GFX_goal_support_fascism
 		x = 5
 		y = 1
@@ -258,15 +308,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_ideas = nationalism
 			add_political_power = 150
-			ENG = { remove_from_faction = CAN }
-			hidden_effect = { 
-				if = { 
-					limit = { is_ai = yes }
-					GER = { add_to_faction = CAN } 
-				}
-			}
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -275,10 +317,50 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_military_zeal
-		icon = GFX_goal_generic_political_pressure
-		x = 6
+		id = CAN_fascist_ambitions
+		icon = GFX_goal_tripartite_pact
+		x = 5
 		y = 2
+		cost = 10
+		
+		prerequisite = { focus = CAN_swastika_clubs }
+		mutually_exclusive = { focus = CAN_commonwealth_unity focus = CAN_soviet_heart}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = nationalism
+			add_political_power = 150
+			ENG = { 
+				remove_from_faction = CAN
+				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
+			}
+			GER = {
+				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_pro }
+			}
+			ITA = {
+				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_pro }
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			hidden_effect = { 
+				if = { 
+					limit = { is_ai = yes }
+					GER = { add_to_faction = CAN } 
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = CAN_military_zeal
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 5
+		y = 3
 		cost = 10
 		
 		prerequisite = { focus = CAN_fascist_ambitions }
@@ -299,7 +381,7 @@ focus_tree = {
 		id = CAN_start_them_early
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 6
-		y = 3
+		y = 4
 		cost = 15
 		
 		prerequisite = { focus = CAN_military_zeal }
@@ -321,8 +403,8 @@ focus_tree = {
 	focus = {
 		id = CAN_further_education_reforms
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 9
-		y = 4
+		x = 10
+		y = 5
 		cost = 15
 		
 		prerequisite = { focus = CAN_start_them_early }
@@ -349,13 +431,16 @@ focus_tree = {
 		id = CAN_lay_west_claims
 		icon = GFX_goal_generic_forceful_treaty
 		x = 5
-		y = 4
+		y = 5
 		cost = 15
 		
 		prerequisite = { focus = CAN_start_them_early }
 		mutually_exclusive = { focus = CAN_lay_east_claims }
 		bypass = {
-			463 = { is_owned_by = CAN }
+			OR = {
+				463 = { is_owned_by = CAN }
+				has_war_with = USA
+			}
 		}
 
 		ai_will_do = {
@@ -738,7 +823,7 @@ focus_tree = {
 		id = CAN_lay_east_claims
 		icon = GFX_goal_generic_forceful_treaty
 		x = 7
-		y = 4
+		y = 5
 		cost = 10
 		
 		prerequisite = { focus = CAN_start_them_early }
@@ -768,12 +853,48 @@ focus_tree = {
 			}			
 		}
 	}
+
+	focus = {
+		id = CAN_lay_more_east_claims
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
+		y = 6
+		cost = 10
+		
+		available = {
+			331 = { is_owned_by = CAN }
+			332 = { is_owned_by = CAN }
+		}
+		
+		prerequisite = { 
+			focus = CAN_lay_east_claims
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+			OR = {
+				730 = { is_owned_by = CAN }
+				has_war_with = FRA
+			}
+		}
+		
+		completion_reward = {
+			730 = { add_core_of = CAN }
+			if =  {
+				limit = { FRA = { owns_state = 730 } }
+				FRA = { country_event = { id = better_canada.25 } }
+			}			
+		}
+	}
 	
 	focus = {
 		id = CAN_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
 		x = 9
-		y = 6
+		y = 7
 		cost = 15
 		
 		prerequisite = { focus = CAN_camp_x focus = CAN_communist_volunteers focus = CAN_lay_west_claims focus = CAN_lay_east_claims }
@@ -1060,7 +1181,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_quebecois_alumina }
 		
 		x = 12
-		y = 6
+		y = 7
 		cost = 15
 
 		ai_will_do = {
@@ -1522,7 +1643,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_support_regiments focus = CAN_british_columbian_dockyard focus = CAN_rcaf_tac_bombers }
 		
 		x = 15
-		y = 6
+		y = 7
 		cost = 15
 
 		ai_will_do = {
@@ -1541,7 +1662,7 @@ focus_tree = {
 		id = CAN_our_home_and_native_land
 		icon = GFX_goal_generic_major_war
 		x = 12
-		y = 7
+		y = 8
 		cost = 20
 		
 		prerequisite = { focus = CAN_human_capital }
