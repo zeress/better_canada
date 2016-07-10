@@ -1,0 +1,12 @@
+﻿l_english:
+ CAN_fascism_party:0 "CNP"
+ CAN_fascism_party_long:0 "Canadian Nationalist Party"
+
+ QUE_fascism_party:0 "PNSC"
+ QUE_fascism_party_long:0 "Parti National Social Chrétien"
+ QUE_communism_party:0 "PCQ"
+ QUE_communism_party_long:0 "Parti communiste du Québec"
+ QUE_democratic_party:0 "Union Nationale"
+ QUE_democratic_party_long:0 "Union Nationale"
+ QUE_neutrality_party:0 "PLQ"
+ QUE_neutrality_party_long:0 "Parti Libéral du Québec"
