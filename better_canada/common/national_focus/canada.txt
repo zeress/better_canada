@@ -39,7 +39,7 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = { focus = CAN_statute_of_westminster }
-		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_fascist_ambitions }
+		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_swastika_clubs }
 
 		ai_will_do = {
 			factor = 100
