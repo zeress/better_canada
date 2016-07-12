@@ -1147,10 +1147,12 @@ country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
 	
 	trigger = {
 		NOT = { has_global_flag = enemy_has_se_asia }
+		has_war = yes
 		owns_state = 276
-		random_country = {
-			limit = { has_war_with = ROOT }
-			controls_state = 336
+		336 = {
+			controller = {
+				has_war_with = PREVPREV
+			}
 		}
 	}
 	
