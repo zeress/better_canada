@@ -469,13 +469,15 @@ country_event = {
 	
 	option = {
 		name = better_canada.20.a	# Very Well...
-		ai_chance = { factor = 1 }
-		
-		modifier = {
-			factor = 180
+		ai_chance = { 
+			factor = 1
 
-			has_war_with = GER
-			NOT = { has_war_with = CAN }
+			modifier = {
+				factor = 180
+
+				has_war_with = GER
+				NOT = { has_war_with = CAN }
+			}
 		}
 
 		CAN = {
