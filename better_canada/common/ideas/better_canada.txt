@@ -72,5 +72,19 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		
+		idea_cd_howe = {
+			allowed = {
+				tag = CAN
+			}
+			
+			removal_cost = -1
+
+			picture = cd_howe
+	
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}		
 	}
 }
