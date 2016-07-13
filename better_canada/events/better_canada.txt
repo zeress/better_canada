@@ -39,6 +39,44 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = better_canada.2
+	title = better_canada.2.t
+	desc = better_canada.2.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.2.a	# We'll consider it
+		ai_chance = { factor = 10 }
+		
+		CAN = { add_opinion_modifier = { target = USA modifier = usa_considering_faction } }
+		USA = { add_opinion_modifier = { target = CAN modifier = usa_considering_faction } }
+	}
+}
+
+news_event = {
+	id = better_canada.3
+	title = better_canada.3.t
+	desc = better_canada.3.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.3.a
+		trigger = { NOT = { tag = CAN } }
+	}
+	
+	option = {
+		name = better_canada.3.b
+		trigger = { TAG = CAN }
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20

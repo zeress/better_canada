@@ -1,6 +1,13 @@
 ﻿l_english:
  better_canada.1.t:0 "[CAN.GetNameDef] Demands Alaska"
  better_canada.1.d:0 "[CAN.GetNameDef] has demanded that we immediately cede Alaska to them. They cite that it is an affront to have a foreign military so deep within their lands, being a direct insult to their sovereignty."
+ better_canada.2.t:0 "[CAN.GetNameDef] considers us an ally and a friend"
+ better_canada.2.d:0 "[CAN.GetNameDef] will be founding their own faction it seems and is already in talks of inviting us potentially. While not formally inviting us yet, they are giving us a courtesy notice to consider the possibility of a future together." 
+ better_canada.2.a:0 "We'll consider it"
+ better_canada.3.t:0 "[CAN.GetNameDef] founds the 'North American League'"
+ better_canada.3.d:0 "[CAN.GetNameDef], having grown tired of the politics of Europe, has founded the 'North American League'. Their goals are officially stated as maintaining the status quo on their continent, but not everyone fully trusts this statement. There are even rumours that [USA.GetNameDef] may even be considering joining this faction."
+ better_canada.3.a:0 "Greatness Awaits"
+ better_canada.3.b:0 "Interesting"
  better_canada.20:0 "[CAN.GetNameDef] Demands Newfoundland and Labrador"
  better_canada.20.d:0 "[CAN.GetNameDef] has demanded that we immediately cede Newfoundland and Labrador to them. They cite that it is an affront to have a foreign military so deep within their lands, being a direct insult to their sovereignty."
  better_canada.20.t:0 "[CAN.GetNameDef] Demands Newfoundland and Labrador"

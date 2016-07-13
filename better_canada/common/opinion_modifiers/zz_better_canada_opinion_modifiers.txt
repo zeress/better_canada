@@ -14,14 +14,17 @@ opinion_modifiers = {
 		value = 40
 		years = 2
 	}
+	
 	can_communist_tendencies_con = {
 		value = -40
 		years = 2
 	}
+	
 	can_fascist_tendencies_pro = {
 		value = 40
 		years = 2
 	}
+	
 	can_fascist_tendencies_con = {
 		value = -40
 		years = 2
@@ -35,6 +38,12 @@ opinion_modifiers = {
 	
 	que_secession_faction_members = {
 		value = -40
+		years = 2
+	}
+	
+	# USA
+	usa_considering_faction = {
+		value = 100
 		years = 2
 	}
 }	

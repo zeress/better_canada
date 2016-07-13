@@ -5,3 +5,5 @@
  can_fascist_tendencies_con:0 "Fascist Tendencies"
  can_communist_tendencies_pro:0 "Communist Tendencies"
  can_communist_tendencies_con:0 "Communist Tendencies"
+ can_faction_unity:0 "Faction Unity"
+ usa_considering_faction:0 "Considering Faction Offer"
