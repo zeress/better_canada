@@ -893,7 +893,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_canada_strengthen_bonds
-		icon = GFX_molotov_ribbentrop_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
 		x = 3
 		y = 6
 		cost = 15
