@@ -876,7 +876,7 @@ focus_tree = {
 		id = CAN_industrial_build_up
 		icon = GFX_goal_generic_production
 		
-		x = 12
+		x = 11
 		y = 0
 		cost = 10
 
@@ -904,6 +904,177 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = CAN_natural_resources
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = CAN_industrial_build_up }
+
+		completion_reward = {
+
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 276
+			}
+			add_resource = {
+				type = steel
+				amount = 13
+				state = 466
+			}
+			add_resource = {
+				type = aluminium
+				amount = 11
+				state = 466
+			}
+			
+			set_country_flag = crown_companies_started	
+		}
+	}
+
+	focus = {
+		id = CAN_quebecois_alumina # Aluminum Company of Canada Ltd.
+		icon = GFX_goal_generic_positive_trade_relations
+		
+		prerequisite = { focus = CAN_ontario_steel focus = CAN_artificial_rubber }
+		
+		x = 9
+		y = 3
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			466 = {
+				add_extra_state_shared_building_slots = 2
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 466
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_ontario_steel # Sydney Steel Corp.
+		icon = GFX_goal_generic_construction
+		
+		prerequisite = { focus = CAN_natural_resources }
+		
+		x = 9
+		y = 2
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			464 = {
+				add_extra_state_shared_building_slots = 2
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 42
+				state = 464
+			}			
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 276
+			}			
+		}
+	}
+	
+	focus = {
+		id = CAN_artificial_rubber # Polymer Corp
+		icon = GFX_goal_generic_construction
+		
+		prerequisite = { focus = CAN_natural_resources } 
+		
+		x = 7
+		y = 2
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+
+			add_resource = {
+				type = rubber
+				amount = 4
+				state = 276
+			}
+			add_tech_bonus = {
+				name = synth_resources
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}		
+		
+			set_global_flag = sarnian_rubber_start
+		}
+	}
+	
+	focus = {
+		id = CAN_natural_oil # Imperial Oil Ltd.
+		icon = GFX_goal_generic_construction
+		
+		prerequisite = { focus = CAN_ontario_steel focus = CAN_artificial_rubber }
+		
+		bypass = {
+			has_global_flag = albertan_oil_discovered
+		}		
+		
+		x = 7
+		y = 3
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 6
+				state = 470
+			}
+			set_global_flag = albertan_oil		
+		}
+	}	
+	
+	focus = {
 		id = CAN_industrial_bits_and_pieces
 		icon = GFX_goal_generic_construct_mil_factory
 		
@@ -919,12 +1090,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			473 = {
-				add_extra_state_shared_building_slots = 3
+			464 = {
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}			
@@ -932,7 +1103,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_waste_not_want_not
+		id = CAN_waste_not_want_not # Canadian Cycle and Motor Co. Ltd.
 		icon = GFX_goal_generic_neutrality_focus
 		
 		prerequisite = { focus = CAN_industrial_bits_and_pieces }
@@ -948,16 +1119,46 @@ focus_tree = {
 		
 		completion_reward = {
 			276 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}		
 		}
 	}
+	
+	focus = {
+		id = CAN_military_repurposing # Liquid Carbonic Canadian Corporation
+		icon = GFX_goal_generic_neutrality_focus
+		
+		prerequisite = { focus = CAN_waste_not_want_not }
+
+		x = 13
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 2
+				
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
+		}
+	}	
+	
+
 	
 	focus = {
 		id = CAN_wartime_housing
@@ -975,11 +1176,11 @@ focus_tree = {
 		
 		completion_reward = {
 			276 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 
@@ -1004,11 +1205,11 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1063,13 +1264,41 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = CAN_further_conversions
+		icon = GFX_goal_generic_neutrality_focus
+		
+		prerequisite = { focus = CAN_canadian_pacific_railway }
+
+		x = 11
+		y = 3
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			473 = {
+				add_extra_state_shared_building_slots = 2
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}		
+		}
+	}
+	
+	focus = {
 		id = CAN_angus_shops
 		icon = GFX_goal_generic_army_tanks
 		
-		prerequisite = { focus = CAN_canadian_pacific_railway focus = CAN_waste_not_want_not }
+		prerequisite = { focus = CAN_further_conversions focus = CAN_military_repurposing focus = CAN_quebecois_alumina focus = CAN_natural_oil }
 		
 		x = 12
-		y = 3
+		y = 4
 		cost = 10
 
 		ai_will_do = {
@@ -1096,52 +1325,15 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = CAN_quebecois_alumina
-		icon = GFX_goal_generic_positive_trade_relations
-		
-		prerequisite = { focus = CAN_angus_shops }
-		
-		x = 12
-		y = 4
-		cost = 15
-
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			466 = {
-				add_extra_state_shared_building_slots = 2
-				
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			add_resource = {
-				type = aluminium
-				amount = 40
-				state = 466
-			}
-		}
-	}
 	
 	focus = { # Industrial Finisher
 		id = CAN_human_capital
 		icon = GFX_goal_generic_scientific_exchange
 		
-		prerequisite = { focus = CAN_quebecois_alumina }
+		prerequisite = { focus = CAN_angus_shops }
 		
 		x = 12
-		y = 7
+		y = 6
 		cost = 15
 
 		ai_will_do = {
@@ -1158,41 +1350,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	## INDUSTRIAL/MILITARY MIX
-	
-	focus = {
-		id = CAN_ontario_steel
-		icon = GFX_goal_generic_construction
-		
-		prerequisite = { focus = CAN_angus_shops }
-		prerequisite = { focus = CAN_general_motors_company }
-		
-		x = 14
-		y = 4
-		cost = 15
-
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			276 = {
-				add_extra_state_shared_building_slots = 2
-				
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_resource = {
-				type = steel
-				amount = 40
-				state = 276
-			}			
-		}
-	}	
 	
 	## MILITARY
 	
@@ -1314,9 +1471,12 @@ focus_tree = {
 		
 		prerequisite = { focus = CAN_army_focus }
 		prerequisite = { focus = CAN_naval_focus }
+		
 		bypass = {
-			has_tech = marines
-			has_tech = marines2
+			AND = {
+				has_tech = marines
+				has_tech = marines2
+			}
 		}
 		
 		x = 18

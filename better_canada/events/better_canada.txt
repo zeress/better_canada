@@ -1025,13 +1025,27 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = albertan_oil_discovered }
-		date > 1944.1.1
+		OR = {
+			AND = {
+				has_global_flag = albertan_oil
+				date > 1938.1.1
+			}
+			AND = {
+				NOT = { has_global_flag = albertan_oil }
+				date > 1941.1.1
+			}
+		}
 		owns_state = 470
 	}
 	
 	mean_time_to_happen = {
 		days = 1095 # 3 years
 		
+		modifier = {
+			factor = 0.33
+			
+			has_global_flag = albertan_oil
+		}
 	}
 	
 	immediate = {
@@ -1135,7 +1149,7 @@ country_event = { # Red Rose Tungsten discovery
 	}
 }
 
-country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
+country_event = { # Synth Rubber
 	id = better_canada.52
 	title = better_canada.52.t
 	desc = better_canada.52.d
@@ -1146,14 +1160,10 @@ country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_global_flag = enemy_has_se_asia }
+		NOT = { has_global_flag = sarnian_rubber_end }
+		has_global_flag = sarnian_rubber_start
 		has_war = yes
 		owns_state = 276
-		336 = {
-			controller = {
-				has_war_with = PREVPREV
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -1161,7 +1171,7 @@ country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
 	}
 	
 	immediate = {
-		set_global_flag = enemy_has_se_asia
+		set_global_flag = sarnian_rubber_end
 	}
 	
 	option = {
@@ -1175,6 +1185,11 @@ country_event = { # Japan controls SE Asian Rubber -> Synth Rubber
 				level = 1
 				instant_build = yes
 			}
+		}
+		add_resource = {
+			type = rubber
+			amount = 6
+			state = 276
 		}
 		if = {
 			limit = { NOT = { has_tech = synth_oil_experiments } }

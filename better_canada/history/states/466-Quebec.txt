@@ -2,8 +2,8 @@ state={
 	id=466
 	name="STATE_466"
 	resources={
-		steel=110
-		aluminium=52
+		steel=60
+		aluminium=26
 	}
 	
 	state_category = rural
