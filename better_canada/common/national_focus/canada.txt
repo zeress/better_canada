@@ -386,33 +386,6 @@ focus_tree = {
 			add_ideas = paramilitarism_focus
 		}
 	}
-
-	focus = {
-		id = CAN_further_education_reforms
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 10
-		y = 5
-		cost = 15
-		
-		prerequisite = { focus = CAN_start_them_early }
-		prerequisite = { focus = CAN_wartime_housing }
-
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			464 = {
-				add_extra_state_shared_building_slots = 2
-				
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}			
-		}
-	}
 	
 	focus = {
 		id = CAN_lay_west_claims
