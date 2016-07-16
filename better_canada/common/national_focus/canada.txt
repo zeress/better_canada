@@ -1955,7 +1955,7 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = quebecois_minor_conscription
-
+			custom_effect_tooltip = quebec_extremely_angry
 			hidden_effect = {
 				set_global_flag = quebecois_independence_movement_angry
 			}
