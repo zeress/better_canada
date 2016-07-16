@@ -1921,6 +1921,7 @@ focus_tree = {
 			remove_ideas = quebecois_no_conscription
 			add_ideas = quebecois_minor_conscription
 			
+			custom_effect_tooltip = quebec_angry
 			random_list = {
 				70 = {
 					CAN = {
