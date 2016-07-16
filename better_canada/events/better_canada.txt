@@ -837,7 +837,10 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = quebecois_independence_movement_fired }
-		has_global_flag = quebecois_independence_movement
+		OR = {
+			has_global_flag = quebecois_independence_movement
+			has_global_flag = quebecois_independence_movement_angry
+		}
 		tag = CAN
 	}
 	
