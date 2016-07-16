@@ -66,6 +66,22 @@ units = {
 
 	}
 	division= {	
+		name = "2e division d'infanterie"
+		location = 4345 # Montreal
+		division_template = "Division d'infanterie" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3e division d'infanterie"
+		location = 4345 # Montreal
+		division_template = "Division d'infanterie" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
 		name = "2e milice du district"
 		location = 12149 # Quebec City
 		division_template = "District Milice"
