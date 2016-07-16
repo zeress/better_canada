@@ -762,88 +762,6 @@ news_event = {
 	}
 }
 
-# Maybe we should push the Quebecois to conscription?
-country_event = {
-	id = better_canada.42
-	title = better_canada.42.t
-	desc = better_canada.42.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-	
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 90
-	}	
-	
-	trigger = {
-		NOT = { has_global_flag = quebecois_conscription }
-		tag = CAN
-		OR = {
-			has_war = yes
-			AND = {
-				has_war = no
-				OR = {
-					ENG = { has_added_tension_amount  > 20 }
-					SOV = { has_added_tension_amount  > 20 }
-					GER = { has_added_tension_amount  > 20 }
-					JAP = { has_added_tension_amount  > 20 }
-				}
-			}
-		}
-		OR = {
-			has_idea = limited_conscription
-			has_idea = service_by_requirement
-			has_idea = all_adults_serve
-			has_idea = scraping_the_barrel
-		}
-		has_manpower < 50000
-	}
-	
-	immediate = {
-		set_global_flag = quebecois_conscription
-	}
-	
-	option = {
-		name = better_canada.42.a	# Perhaps they can be convinced
-		ai_chance = { factor = 20 }
-
-		random_list = {
-			60 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.43 } # They were convinced
-				}
-			}
-			40 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.44 } # They were unconvinced
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = better_canada.42.b	# Perhaps they can be forced
-		ai_chance = { factor = 5 }
-
-		random_list = {
-			70 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.45 } # They were convinced by force
-				}
-			}
-			30 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.46 } # They were angered
-				}
-				hidden_effect = {
-					set_global_flag = quebecois_independence_movement
-					set_global_flag = quebecois_independence_movement_angry
-				}
-			}
-		}
-	}	
-}
-
 country_event = {
 	id = better_canada.43
 	title = better_canada.43.t
@@ -859,7 +777,7 @@ country_event = {
 	option = {
 		name = better_canada.43.a	# This will help
 		ai_chance = { factor = 10 }
-		
+
 		remove_ideas = quebecois_no_conscription
 		add_ideas = quebecois_minor_conscription
 	}	
@@ -872,37 +790,10 @@ country_event = {
 	picture = GFX_report_event_molotov_ribentrop_handshake
 	
 	is_triggered_only = yes
-	
-	option = {
-		name = better_canada.44.a	# They leave us with no choice
-		ai_chance = { factor = 5 }
-
-		hidden_effect = {
-			set_global_flag = quebecois_independence_movement
-		}
-		random_list = {
-			70 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.45 } # They were convinced by force
-				}
-			}
-			30 = {
-				CAN = {
-					country_event = { days = 1 id = better_canada.46 } # They were angered
-				}
-				hidden_effect = {
-					set_global_flag = quebecois_independence_movement_angry
-				}
-			}
-		}		
-		
-	}
 
 	option = {
 		name = better_canada.44.b	# Unfortunate
-		ai_chance = { factor = 20 }	
-
-		set_global_flag = quebecois_did_not_force
+		ai_chance = { factor = 20 }
 	}	
 }
 
@@ -916,11 +807,8 @@ country_event = {
 
 	option = {
 		name = better_canada.45.a	# They left us with no choice
-		ai_chance = { factor = 10 }	
-		
-		remove_ideas = quebecois_no_conscription
-		add_ideas = quebecois_minor_conscription
-	}	
+		ai_chance = { factor = 10 }
+	}
 }
 
 country_event = {
@@ -933,10 +821,7 @@ country_event = {
 
 	option = {
 		name = better_canada.46.a	# This could be bad
-		ai_chance = { factor = 10 }	
-		
-		remove_ideas = quebecois_no_conscription
-		add_ideas = quebecois_minor_conscription
+		ai_chance = { factor = 10 }
 	}	
 }
 
@@ -1069,7 +954,7 @@ news_event = {
 	}
 }
 
-country_event = {
+country_event = { # Imperial Oil discovery
 	id = better_canada.49
 	title = better_canada.49.t
 	desc = better_canada.49.d
@@ -1313,8 +1198,8 @@ country_event = {
 	
 	trigger = {
 		OR = {
+			has_global_flag = quebecois_propaganda
 			has_global_flag = quebcois_minor_conscription_reasoned
-			has_global_flag = quebecois_did_not_force
 		}
 		tag = CAN
 		has_completed_focus = CAN_our_home_and_native_land

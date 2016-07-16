@@ -918,7 +918,7 @@ focus_tree = {
 	focus = {
 		id = CAN_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		x = 9
+		x = 4
 		y = 7
 		cost = 15
 
@@ -1394,7 +1394,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_angus_shops }
 		
 		x = 12
-		y = 6
+		y = 7
 		cost = 15
 
 		ai_will_do = {
@@ -1598,7 +1598,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { # Halifax Royal Naval Dockary
 		id = CAN_destroyers_and_cruisers
 		icon = GFX_goal_generic_navy_cruiser
 		
@@ -1635,9 +1635,9 @@ focus_tree = {
 			}
 			navy_experience = 100
 		}
-	}	
+	}
 
-	focus = {
+	focus = { # Esquimalt Royal Naval Dockary
 		id = CAN_british_columbian_dockyard
 		icon = GFX_goal_generic_navy_cruiser
 		
@@ -1815,15 +1815,159 @@ focus_tree = {
 				category = naval_bomber
 			}
 		}
-	}	
+	}
+	
+	focus = { 
+		id = CAN_question_of_quebec # The Question of Quebec
+		icon = GFX_goal_generic_national_unity
+		
+		prerequisite = { focus = CAN_support_regiments }
+		prerequisite = { focus = CAN_british_columbian_dockyard }
+		prerequisite = { focus = CAN_rcaf_tac_bombers }
+		
+		x = 20
+		y = 4
+		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = { 
+		id = CAN_reason_with_quebec # Reason with Quebec
+		icon = GFX_goal_generic_neutrality_focus
+		
+		prerequisite = { focus = CAN_question_of_quebec }
+		mutually_exclusive = { focus = CAN_force_quebec }
+		
+		x = 21
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			set_global_flag = quebecois_conscription
+			random_list = {
+				60 = {
+					CAN = {
+						country_event = { days = 1 id = better_canada.43 } # They were convinced
+						effect_tooltip = {
+							remove_ideas = quebecois_no_conscription
+							add_ideas = quebecois_minor_conscription
+						}
+					}
+				}
+				40 = {
+					CAN = {
+						country_event = { days = 1 id = better_canada.44 } # They were unconvinced
+					}
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = CAN_quebec_propaganda #Allons-y.. Canadiens!
+		icon = GFX_goal_generic_propaganda
+		
+		prerequisite = { focus = CAN_reason_with_quebec }
+		
+		x = 21
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			set_global_flag = quebecois_propaganda
+			custom_effect_tooltip = quebecois_propaganda_tooltip
+		}
+	}
+	
+	focus = { 
+		id = CAN_force_quebec
+		icon = GFX_goal_generic_dangerous_deal
+		
+		prerequisite = { focus = CAN_question_of_quebec }
+		mutually_exclusive = { focus = CAN_reason_with_quebec }
+		
+		x = 19
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 10
+				
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+		}
+		
+		completion_reward = {
+			remove_ideas = quebecois_no_conscription
+			add_ideas = quebecois_minor_conscription
+			
+			random_list = {
+				70 = {
+					CAN = {
+						country_event = { id = better_canada.45 } # They were convinced by force
+					}
+				}
+				30 = {
+					CAN = {
+						country_event = { id = better_canada.46 } # They were angered
+					}
+					hidden_effect = {
+						set_global_flag = quebecois_independence_movement
+					}
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = CAN_force_quebec_part_2
+		icon = GFX_goal_generic_attack_allies
+		
+		prerequisite = { focus = CAN_force_quebec }
+		
+		x = 19
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		
+		completion_reward = {
+			remove_ideas = quebecois_minor_conscription
+
+			hidden_effect = {
+				set_global_flag = quebecois_independence_movement_angry
+			}
+		}
+	}
+	
 	focus = {
 		id = CAN_rouse_their_hearts
 		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = CAN_quebec_propaganda focus = CAN_force_quebec }
 		
-		prerequisite = { focus = CAN_support_regiments focus = CAN_british_columbian_dockyard focus = CAN_rcaf_tac_bombers }
-		
-		x = 15
+		x = 20
 		y = 7
 		cost = 15
 
@@ -1855,6 +1999,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = home_and_native_land_other_effect
 			CAN = {
 				remove_ideas = canada_minor_war_response
 				add_ideas = canada_vivid_war_response
