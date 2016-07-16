@@ -15,7 +15,7 @@ ideas = {
 			}
 		}
 		
-		canada_vivid_war_response = {			
+		canada_minor_war_response = {			
 			
 			allowed = {
 				always = no
@@ -29,7 +29,22 @@ ideas = {
 				conscription = 0.02
 			}
 		}
+		
+		canada_vivid_war_response = {			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
 		canada_canadian_war_response = {			
 			
 			allowed = {
@@ -41,7 +56,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.04
+				conscription = 0.05
 			}
 		}
 

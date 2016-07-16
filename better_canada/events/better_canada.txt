@@ -902,6 +902,7 @@ country_event = {
 		name = better_canada.44.b	# Unfortunate
 		ai_chance = { factor = 20 }	
 
+		set_global_flag = quebecois_did_not_force
 	}	
 }
 
@@ -1258,7 +1259,7 @@ country_event = { # Synth Rubber
 	}
 }
 
-country_event = {
+country_event = { # Quebec decides its fate
 	id = better_canada.53
 	title = better_canada.53.t
 	desc = better_canada.53.d
@@ -1294,5 +1295,67 @@ country_event = {
 				add_ideas = internationalism
 			}
 		}
+	}	
+}
+
+# The Quebecois volunteer to help the war effort
+country_event = {
+	id = better_canada.54
+	title = better_canada.54.t
+	desc = better_canada.54.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 180
+	}	
+	
+	trigger = {
+		OR = {
+			has_global_flag = quebcois_minor_conscription_reasoned
+			has_global_flag = quebecois_did_not_force
+		}
+		tag = CAN
+		has_completed_focus = CAN_our_home_and_native_land
+		OR = {
+			has_war = yes
+			AND = {
+				has_war = no
+				OR = {
+					ENG = { has_added_tension_amount  > 30 }
+					SOV = { has_added_tension_amount  > 30 }
+					GER = { has_added_tension_amount  > 30 }
+					JAP = { has_added_tension_amount  > 30 }
+				}
+			}
+		}
+		OR = {
+			has_idea = limited_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+		has_manpower < 50000
+	}
+	
+	immediate = {
+		set_global_flag = quebec_volunters
+	}
+	
+	option = {
+		name = better_canada.54.a	# Fantastic!
+		ai_chance = { factor = 10 }
+		
+		if = {
+			limit = { has_idea = quebecois_no_conscription }
+			remove_ideas = quebecois_no_conscription
+		}
+		if = {
+			limit = { has_idea = quebecois_minor_conscription }
+			remove_ideas = quebecois_minor_conscription
+		}
+		remove_ideas = canada_vivid_war_response
+		add_ideas = canada_canadian_war_response
 	}	
 }

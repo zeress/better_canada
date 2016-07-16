@@ -1834,7 +1834,7 @@ focus_tree = {
 		completion_reward = {
 			CAN = {
 				remove_ideas = canada_tepid_war_response
-				add_ideas = canada_vivid_war_response
+				add_ideas = canada_minor_war_response
 			}
 		}
 	}
@@ -1856,8 +1856,8 @@ focus_tree = {
 		
 		completion_reward = {
 			CAN = {
-				remove_ideas = canada_vivid_war_response
-				add_ideas = canada_canadian_war_response
+				remove_ideas = canada_minor_war_response
+				add_ideas = canada_vivid_war_response
 			}			
 		}
 	}	

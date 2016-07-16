@@ -1,10 +1,12 @@
 ﻿l_english:
  canada_tepid_war_response:0 "Tepid Military Enthusiasm"
  canada_tepid_war_response_desc:0 "The Canadian people are for the most part unwilling to volunteer for war. They will need convincing in one way or another."
+ canada_minor_war_response:0 "Minor Military Enthusiasm"
+ canada_minor_war_response_desc:0 "The Canadian people are slowly heeding the call to arms. Their hesitation is still palpable however." 
  canada_vivid_war_response:0 "Vivid Military Enthusiasm"
  canada_vivid_war_response_desc:0 "The Canadian people have awoken to the call of war eagerly volunteering to help the cause."
  canada_canadian_war_response:0 "Full Canadian Support"
- canada_canadian_war_response_desc:0 "The Canadian people throw their full weight into the war now. Whether it be at the homefront in factories, or on the war front serving their country they will give their all and even their life if need be."
+ canada_canadian_war_response_desc:0 "The Canadian people throw their full weight into the war now, boasting possibly the highest volunteer rates ever seen. Whether it be at the homefront in factories, or on the war front serving their country they will give their all and even their life if need be."
  quebecois_no_conscription:0 "Conscription Refusal"
  quebecois_no_conscription_desc:0 "Canadians are reluctant to answer conscription but the Québecois are especially so. It would be better to rely solely on volunteers from Quebec lest we anger them to more radical causes."
  quebecois_minor_conscription:0 "Minor Conscription Refusal"
