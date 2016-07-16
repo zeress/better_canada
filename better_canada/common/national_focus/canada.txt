@@ -1816,9 +1816,7 @@ focus_tree = {
 		id = CAN_question_of_quebec # The Question of Quebec
 		icon = GFX_goal_generic_national_unity
 		
-		prerequisite = { focus = CAN_support_regiments }
-		prerequisite = { focus = CAN_british_columbian_dockyard }
-		prerequisite = { focus = CAN_rcaf_tac_bombers }
+		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_tac_bombers focus = CAN_british_columbian_dockyard }
 		
 		x = 20
 		y = 4
@@ -1940,6 +1938,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		
 		prerequisite = { focus = CAN_force_quebec }
+		bypass = {
+			466 = { NOT = { is_owned_by = CAN } }
+		}
 		
 		x = 19
 		y = 6
