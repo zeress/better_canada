@@ -1308,7 +1308,7 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 180
+		days = 365
 	}	
 	
 	trigger = {
@@ -1318,18 +1318,7 @@ country_event = {
 		}
 		tag = CAN
 		has_completed_focus = CAN_our_home_and_native_land
-		OR = {
-			has_war = yes
-			AND = {
-				has_war = no
-				OR = {
-					ENG = { has_added_tension_amount  > 30 }
-					SOV = { has_added_tension_amount  > 30 }
-					GER = { has_added_tension_amount  > 30 }
-					JAP = { has_added_tension_amount  > 30 }
-				}
-			}
-		}
+		has_war = yes
 		OR = {
 			has_idea = limited_conscription
 			has_idea = service_by_requirement
