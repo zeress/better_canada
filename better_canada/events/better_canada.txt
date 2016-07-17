@@ -907,8 +907,8 @@ country_event = {
 			random_country = {
 				limit = { tag = QUE }
 				load_oob = "QUE_REBEL"
-				add_manpower = 120000
-				set_equipment_fraction = 1.8
+				add_manpower = 60000
+				set_equipment_fraction = 1.3
 				set_national_unity = 1
 				add_popularity = {
 					ideology = fascism
