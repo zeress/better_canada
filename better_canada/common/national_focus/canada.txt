@@ -1815,7 +1815,7 @@ focus_tree = {
 	
 	focus = { 
 		id = CAN_question_of_quebec # The Question of Quebec
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_question_of_quebec
 		
 		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_tac_bombers focus = CAN_british_columbian_dockyard }
 		
