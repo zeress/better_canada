@@ -1841,7 +1841,7 @@ focus_tree = {
 		
 		x = 21
 		y = 5
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 10
@@ -1876,7 +1876,7 @@ focus_tree = {
 		
 		x = 21
 		y = 6
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 10
@@ -1903,7 +1903,7 @@ focus_tree = {
 			factor = 4
 			
 			modifier = {
-				factor = 10
+				factor = 15
 				
 				OR = {
 					has_government = fascism
@@ -1946,7 +1946,7 @@ focus_tree = {
 		
 		x = 19
 		y = 6
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 4
