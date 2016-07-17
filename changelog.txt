@@ -1,5 +1,8 @@
+- Fixed the 'state' borders for Manitoba, Saskatchewan, Alberta and Vancouver to be closer to the real life 'states'
 - Added naval bases and a naval dockyard in Esquimalt
 - Added an additional naval base in Prince Rupert, BC
+- Added a naval base to Churchhill, MN
+- Increaesed the infrastructre in NE Canada
 - Removed the naval dockyard in Vancouver City
 - Reduced the naval base size in Vancouver City
 - Adjust various VP values in Canada
