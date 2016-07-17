@@ -2,4 +2,5 @@
 - Slightly buffed the Quebec revolt, should it happen
 - Tweaked the Canadian military enthusiasm values slightly
 - Added another tier to Canadian military enthusiasm
+- Added some custom tooltips for better clarity
 - Fixed a history file issue
