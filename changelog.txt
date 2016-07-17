@@ -1,3 +1,4 @@
 - Added Naval bases and a naval dockyard in Esquimalt
 - Removed the naval dockyard in Vancouver City
 - Reduced the naval base size in Vancouver City
+- Adjust various VP values in Canada

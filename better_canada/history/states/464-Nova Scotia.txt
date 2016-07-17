@@ -13,7 +13,7 @@ state={
 	history={
 		owner = CAN
 		victory_points = {
-			7361 3
+			7361 5
 		}
 		buildings = {
 			infrastructure = 5
