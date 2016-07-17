@@ -917,6 +917,10 @@ country_event = {
 				add_opinion_modifier = { target = CAN modifier = que_secession }
 			}
 			QUE = { country_event = { id = better_canada.53 } } # Keep the nationalist momentum going?
+			declare_war_on = {
+				target = QUE
+				type = annex_everything
+			}
 			news_event = { hours = 6 id = better_canada.48 }
 		}
 	}
