@@ -1,6 +1,3 @@
-- Added a section to the military portion of the NF tree dealing with Quebec in regards to conscription
-- Slightly buffed the Quebec revolt, should it happen
-- Tweaked the Canadian military enthusiasm values slightly
-- Added another tier to Canadian military enthusiasm
-- Added some custom tooltips for better clarity
-- Fixed a history file issue
+- Added Naval bases and a naval dockyard in Esquimalt
+- Removed the naval dockyard in Vancouver City
+- Reduced the naval base size in Vancouver City
