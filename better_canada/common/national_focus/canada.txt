@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = CAN_statute_of_westminster
 		icon = GFX_goal_generic_propaganda
-		x = 3
+		x = 2
 		y = 0
 		cost = 10
 
@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = CAN_commonwealth_unity
 		icon = GFX_goal_support_democracy
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		
@@ -54,7 +54,7 @@ focus_tree = {
 	focus = {
 		id = CAN_defence_of_canada
 		icon = GFX_goal_generic_defence
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = CAN_volunteers_abound
 		icon = GFX_goal_generic_military_sphere
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		
@@ -85,15 +85,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 100000
 			add_political_power = 150
 		}
 	}
 	
 	focus = {
-		id = CAN_united_we_stand
+		id = CAN_united_we_stand # United We Stand
 		icon = GFX_goal_generic_demand_territory
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		
@@ -112,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_radar
-		x = 1
+		x = 0
 		y = 5
 		cost = 15
 		
@@ -146,9 +145,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_soviet_heart
+		id = CAN_soviet_heart # Committee for Industrial Organization
 		icon = GFX_goal_support_communism
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		
@@ -170,9 +169,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_communism_abroad
+		id = CAN_communism_abroad # Mackenzie-Papineau Battalion
 		icon = GFX_goal_generic_defence
-		x = 3
+		x = 2
 		y = 2
 		cost = 10
 		
@@ -204,9 +203,9 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = CAN_soviet_teachings
+		id = CAN_soviet_teachings # The Regina-Manifesto
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 3
+		x = 2
 		y = 3
 		cost = 10
 		
@@ -224,9 +223,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_honorary_soviets
+		id = CAN_honorary_soviets # Soviet Support
 		icon = GFX_goal_generic_political_pressure
-		x = 3
+		x = 2
 		y = 4
 		cost = 10
 		
@@ -251,9 +250,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_communist_volunteers
+		id = CAN_communist_volunteers # The People's Home
 		icon = GFX_goal_generic_soviet_construction
-		x = 3
+		x = 2
 		y = 5
 		cost = 15
 		
@@ -264,7 +263,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 100000
 			740 = {
 				add_building_construction = {
 					type = arms_factory
@@ -282,9 +280,9 @@ focus_tree = {
 	}		
 	
 	focus = {
-		id = CAN_swastika_clubs
+		id = CAN_swastika_clubs # Swastika Clubs
 		icon = GFX_goal_support_fascism
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		
@@ -306,9 +304,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_fascist_ambitions
+		id = CAN_fascist_ambitions # Fascist Ambitions
 		icon = GFX_goal_tripartite_pact
-		x = 5
+		x = 4
 		y = 2
 		cost = 10
 		
@@ -339,9 +337,9 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = CAN_military_zeal
+		id = CAN_military_zeal # Support Nationalism
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 5
+		x = 4
 		y = 3
 		cost = 10
 		
@@ -364,9 +362,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_start_them_early
+		id = CAN_start_them_early # Start Them Early
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 6
+		x = 4
 		y = 4
 		cost = 15
 		
@@ -387,9 +385,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_lay_west_claims
+		id = CAN_lay_west_claims # Claim Alaska
 		icon = GFX_goal_generic_forceful_treaty
-		x = 5
+		x = 4
 		y = 5
 		cost = 15
 		
@@ -779,9 +777,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_lay_east_claims
+		id = CAN_lay_east_claims # Claim Newfoundland and Labrador
 		icon = GFX_goal_generic_forceful_treaty
-		x = 7
+		x = 6
 		y = 5
 		cost = 10
 		
@@ -814,9 +812,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_lay_more_east_claims
+		id = CAN_lay_more_east_claims # Claime St. Pierre and Miquelon
 		icon = GFX_goal_generic_forceful_treaty
-		x = 7
+		x = 6
 		y = 6
 		cost = 10
 		
@@ -850,9 +848,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_canada_first
+		id = CAN_canada_first # Canada First
 		icon = GFX_goal_generic_propaganda
-		x = 5
+		x = 2
 		y = 6
 		cost = 15
 
@@ -887,9 +885,9 @@ focus_tree = {
 	
 
 	focus = {
-		id = CAN_canada_strengthen_bonds
+		id = CAN_canada_strengthen_bonds # Faction Unity
 		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 3
+		x = 4
 		y = 6
 		cost = 15
 
@@ -906,14 +904,14 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 120
-			add_manpower = 20000
+			add_manpower = 30000
 		}
 	}	
 	
 	focus = {
 		id = CAN_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		x = 4
+		x = 3
 		y = 7
 		cost = 15
 
@@ -937,8 +935,8 @@ focus_tree = {
 	##
 	
 	focus = {
-		id = CAN_industrial_build_up # Crown Companies
-		icon = GFX_goal_generic_production
+		id = CAN_industrial_build_up # Bennet's New Deal
+		icon = GFX_goal_generic_consumer_goods
 		
 		x = 11
 		y = 0
@@ -954,8 +952,30 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+		}
+	}
+	
+	focus = {
+		id = CAN_crown_companies # Crown Companies
+		icon = GFX_goal_generic_production
+		
+		x = 9
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = idea_cd_howe
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				276 = 1
 				
 				add_building_construction = {
 					type = industrial_complex
@@ -965,13 +985,13 @@ focus_tree = {
 			}
 			add_ideas = idea_cd_howe
 		}
-	}
+	}	
 	
 	focus = {
 		id = CAN_natural_resources
 		icon = GFX_goal_generic_defence
 		x = 9
-		y = 1
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -1009,7 +1029,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_ontario_steel focus = CAN_artificial_rubber }
 		
 		x = 9
-		y = 3
+		y = 4
 		cost = 15
 
 		ai_will_do = {
@@ -1017,13 +1037,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			466 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
 			add_resource = {
 				type = aluminium
 				amount = 30
@@ -1039,7 +1052,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_natural_resources }
 		
 		x = 9
-		y = 2
+		y = 3
 		cost = 15
 
 		ai_will_do = {
@@ -1047,15 +1060,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			464 = {
-				add_extra_state_shared_building_slots = 2
-				
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 			add_resource = {
 				type = steel
 				amount = 32
@@ -1078,7 +1082,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_natural_resources } 
 		
 		x = 7
-		y = 2
+		y = 3
 		cost = 10
 
 		ai_will_do = {
@@ -1113,7 +1117,7 @@ focus_tree = {
 		}		
 		
 		x = 7
-		y = 3
+		y = 4
 		cost = 15
 
 		ai_will_do = {
@@ -1148,11 +1152,11 @@ focus_tree = {
 		
 		completion_reward = {
 			464 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}			
@@ -1190,11 +1194,13 @@ focus_tree = {
 	focus = {
 		id = CAN_military_repurposing # Liquid Carbonic Canadian Corporation
 		icon = GFX_goal_generic_army_tanks
-		
-		prerequisite = { focus = CAN_waste_not_want_not }
+
+
+		prerequisite = { focus = CAN_military_repurposing }
+		prerequisite = { focus = CAN_army_focus }
 
 		x = 13
-		y = 3
+		y = 4
 
 		cost = 10
 
@@ -1213,18 +1219,119 @@ focus_tree = {
 				}
 			}		
 		}
-	}	
-	
-
+	}
 	
 	focus = {
-		id = CAN_wartime_housing
-		icon = GFX_goal_generic_construct_civ_factory
+		id = CAN_dominion_rifle_company # Long Branch Arsenal
+		icon = GFX_goal_generic_small_arms
+		
+		prerequisite = { focus = CAN_waste_not_want_not }
+
+		x = 13
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+				}
+			}		
+		}
+	}
+	
+
+	focus = {
+		id = CAN_rowell_sirois_commission # Rowell-Sirois Commission
+		icon = GFX_goal_generic_production2
 		
 		prerequisite = { focus = CAN_industrial_build_up }
-		
+
 		x = 11
 		y = 1
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			473 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = CAN_central_investment # Central Investment
+		icon = GFX_goal_generic_construct_civilian
+		
+		prerequisite = { focus = CAN_rowell_sirois_commission }
+
+		x = 11
+		y = 2
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			682 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}				
+			}
+			276 = {
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = CAN_wartime_housing # Wartime Housing Ltd.
+		icon = GFX_goal_generic_construct_civ_factory
+		
+		prerequisite = { focus = CAN_central_investment }
+		
+		x = 11
+		y = 3
 		cost = 10
 
 		ai_will_do = {
@@ -1244,90 +1351,15 @@ focus_tree = {
 			}			
 		}
 	}
-	
-	focus = {
-		id = CAN_canadian_pacific_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		
-		prerequisite = { focus = CAN_wartime_housing }
-		
-		x = 11
-		y = 2
-		
-		cost = 10
 
-		ai_will_do = {
-			factor = 10 
-		}
-		
-		completion_reward = {
-			468 = {
-				add_extra_state_shared_building_slots = 2
-				
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			276 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			682 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			467 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = yes
-				}
-			}
-			469 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = yes
-				}
-			}
-			470 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			473 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
 	focus = {
 		id = CAN_further_conversions # Industrial Engineering Ltd.
 		icon = GFX_goal_generic_production2
 		
-		prerequisite = { focus = CAN_canadian_pacific_railway }
+		prerequisite = { focus = CAN_wartime_housing }
 
 		x = 11
-		y = 3
+		y = 4
 		
 		cost = 10
 
@@ -1349,13 +1381,127 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = CAN_canadian_pacific_railway # Canadian Pacific Railway
+		icon = GFX_goal_generic_construct_infrastructure
+		
+		prerequisite = { focus = CAN_dominion_rifle_company }
+		prerequisite = { focus = CAN_further_conversions }
+		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
+		mutually_exclusive = { focus = CAN_canadian_maritime_railway }
+		
+		x = 11
+		y = 5
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10 
+		}
+		
+		completion_reward = {
+			276 = { # Southern Ontario
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			682 = { # Northern Ontario
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			467 = { # Manitoba
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			469 = { # Saskatchewan
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			470 = { # Alberta
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			473 = { # British Columbia
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_canadian_maritime_railway # Canadian Maritime Railway
+		icon = GFX_goal_generic_construct_infrastructure
+		
+		prerequisite = { focus = CAN_dominion_rifle_company }
+		prerequisite = { focus = CAN_further_conversions }
+		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
+		mutually_exclusive = { focus = CAN_canadian_pacific_railway }
+		
+		x = 13
+		y = 5
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10 
+		}
+		
+		completion_reward = {
+			465 = { # New Brunswick
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			468 = { # St. Lawrence
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			464 = { # Nova Scotia
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			466 = { # Quebec
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = CAN_angus_shops
 		icon = GFX_goal_generic_build_tank
 		
-		prerequisite = { focus = CAN_further_conversions focus = CAN_military_repurposing focus = CAN_quebecois_alumina focus = CAN_natural_oil }
+		prerequisite = { focus = CAN_canadian_pacific_railway focus = CAN_canadian_maritime_railway }
 		
 		x = 12
-		y = 4
+		y = 6
 		cost = 10
 
 		ai_will_do = {
@@ -1372,11 +1518,11 @@ focus_tree = {
 			}
 			
 			468 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1434,7 +1580,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_army_focus
+		id = CAN_army_focus # A Militia No More
 		icon = GFX_goal_generic_army_doctrines
 		
 		prerequisite = { focus = CAN_military_focus }
