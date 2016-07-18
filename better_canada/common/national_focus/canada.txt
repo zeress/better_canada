@@ -959,6 +959,8 @@ focus_tree = {
 		id = CAN_crown_companies # Crown Companies
 		icon = GFX_goal_generic_production
 		
+		prerequisite = { focus = CAN_industrial_build_up }
+		
 		x = 9
 		y = 1
 		cost = 10
@@ -997,7 +999,7 @@ focus_tree = {
 			factor = 10
 		}
 		
-		prerequisite = { focus = CAN_industrial_build_up }
+		prerequisite = { focus = CAN_crown_companies }
 
 		completion_reward = {
 
