@@ -77,6 +77,20 @@ news_event = {
 	}
 }
 
+country_event = {
+	id = better_canada.4
+	title = better_canada.4.t
+	desc = better_canada.4.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.4.a	# What a bother...
+		ai_chance = { factor = 10 }
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20

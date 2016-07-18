@@ -1636,7 +1636,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_support_regiments
+		id = CAN_support_regiments # Royal Canadian Ordnance
 		icon = GFX_goal_generic_construction2
 		
 		prerequisite = { focus = CAN_general_motors_company }
@@ -1666,7 +1666,6 @@ focus_tree = {
 			army_experience = 30
 		}
 	}
-	
 	
 	focus = {
 		id = CAN_canadian_marines
@@ -1700,6 +1699,25 @@ focus_tree = {
 				uses = 1
 				technology = marines2
 			}
+		}
+	}
+	
+	focus = {
+		id = CAN_d_day # D-Day
+		icon = GFX_goal_generic_occupy_states_coastal
+		
+		prerequisite = { focus = CAN_canadian_marines }
+		
+		x = 18
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = idea_d_day
 		}
 	}
 	
@@ -1819,10 +1837,10 @@ focus_tree = {
 			}			
 			navy_experience = 50
 		}
-	}	
+	}
 	
 	focus = {
-		id = CAN_aviation_focus
+		id = CAN_aviation_focus # Royal Canadian Air Force
 		icon = GFX_goal_generic_air_doctrine
 		
 		prerequisite = { focus = CAN_military_focus }
@@ -1854,7 +1872,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_rcaf_fighters
+		id = CAN_rcaf_fighters # Fighter Training Program
 		icon = GFX_goal_generic_air_fighter
 		
 		prerequisite = { focus = CAN_aviation_focus }
@@ -1889,6 +1907,61 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 			air_experience = 50
+		}
+	}
+	
+	focus = {
+		id = CAN_canadian_parachute_battalion # Canadian Parachute Battallion
+		icon = GFX_goal_generic_build_airforce
+		
+		prerequisite = { focus = CAN_army_focus }
+		prerequisite = { focus = CAN_aviation_focus }
+		
+		bypass = {
+			has_tech = paratroopers2
+		}
+		
+		x = 26
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+			}
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers2
+			}
+			army_experience = 30
+		}
+	}
+	
+	focus = {
+		id = CAN_canadian_special_expertise # The Black Devils
+		icon = GFX_goal_generic_special_forces
+		
+		prerequisite = { focus = CAN_canadian_parachute_battalion }
+		
+		x = 26
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = idea_can_paratroopers
 		}
 	}
 
@@ -1932,7 +2005,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_canadian_naval_bombers
+		id = CAN_canadian_naval_bombers # Canadian Vickers Ltd.
 		icon = GFX_goal_generic_air_naval_bomber
 		
 		prerequisite = { focus = CAN_aviation_focus }
@@ -1956,8 +2029,27 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = CAN_battle_of_the_atlantic # Battle of the Atlantic
+		icon = GFX_goal_generic_navy_anti_submarine
+		
+		prerequisite = { focus = CAN_canadian_naval_bombers }
+		
+		x = 22
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = idea_can_vickers
+		}
+	}
+	
 	focus = { 
-		id = CAN_question_of_quebec # The Question of Quebec
+		id = CAN_question_of_quebec # Plebiscite on Conscription
 		icon = GFX_goal_generic_national_unity
 		
 		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_tac_bombers focus = CAN_british_columbian_dockyard }
@@ -1972,11 +2064,12 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 120
+			country_event = { id = better_canda.4 }
 		}
 	}
 
 	focus = { 
-		id = CAN_reason_with_quebec # Reason with Quebec
+		id = CAN_reason_with_quebec # The Quebec Referendum
 		icon = GFX_goal_generic_neutrality_focus
 		
 		prerequisite = { focus = CAN_question_of_quebec }
@@ -2032,7 +2125,7 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = CAN_force_quebec
+		id = CAN_force_quebec # Apply Curfews to Quebec
 		icon = GFX_goal_generic_dangerous_deal
 		
 		prerequisite = { focus = CAN_question_of_quebec }
@@ -2079,7 +2172,7 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = CAN_force_quebec_part_2
+		id = CAN_force_quebec_part_2 # Amend the War Measures Act
 		icon = GFX_goal_generic_attack_allies
 		
 		prerequisite = { focus = CAN_force_quebec }
@@ -2105,7 +2198,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_rouse_their_hearts
+		id = CAN_rouse_their_hearts # The North Thaws
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CAN_quebec_propaganda focus = CAN_force_quebec }
 		
@@ -2126,7 +2219,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_our_home_and_native_land
+		id = CAN_our_home_and_native_land # Our Home and Native Land
 		icon = GFX_goal_generic_major_war
 		x = 12
 		y = 8
