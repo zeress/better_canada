@@ -983,7 +983,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = idea_cd_howe
 		}
 	}	
 	
@@ -1179,6 +1178,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = idea_can_repurpose
 			276 = {
 				add_extra_state_shared_building_slots = 2
 				
@@ -1384,7 +1384,7 @@ focus_tree = {
 		id = CAN_canadian_pacific_railway # Canadian Pacific Railway
 		icon = GFX_goal_generic_construct_infrastructure
 		
-		prerequisite = { focus = CAN_dominion_rifle_company }
+		prerequisite = { focus = CAN_further_conversions }
 		prerequisite = { focus = CAN_military_repurposing }
 		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
 		mutually_exclusive = { focus = CAN_canadian_maritime_railway }
@@ -1448,7 +1448,7 @@ focus_tree = {
 		id = CAN_canadian_maritime_railway # Canadian Maritime Railway
 		icon = GFX_goal_generic_construct_infrastructure
 		
-		prerequisite = { focus = CAN_dominion_rifle_company }
+		prerequisite = { focus = CAN_further_conversions }
 		prerequisite = { focus = CAN_military_repurposing }
 		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
 		mutually_exclusive = { focus = CAN_canadian_pacific_railway }

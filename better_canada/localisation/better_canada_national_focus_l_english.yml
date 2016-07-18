@@ -1,6 +1,6 @@
 ﻿l_english:
- CAN_industrial_bits_and_pieces:0 "Bits and Pieces"
- CAN_industrial_bits_and_pieces_desc:0 "To this point Canada never really had a military industrial complex, as such we must improvise. By adapting formerly unrelated factories to military usage we can drastically increase the production of war goods."
+ CAN_industrial_bits_and_pieces:0 "War Purchasing Board"
+ CAN_industrial_bits_and_pieces_desc:0 "To this point Canada never really had a military industrial complex. We shall establish a board for the purchasing and centralisation of whatever production we do have to repurpose them to military uses."
  CAN_wartime_housing:0 "Wartime Housing Ltd"
  CAN_wartime_housing_desc:0 "Our people must be relocated to the new industrial centers. By providing quality housing as a reward we can attract worker to expand our industrial production greatly. We may even be able to retool existing industrial sectors to more useful production."
  CAN_canadian_pacific_railway:0 "Canadian Pacific Railway"
@@ -28,7 +28,7 @@
  CAN_quebecois_alumina:0 "Aluminium Company of Canada Ltd"
  CAN_quebecois_alumina_desc:0 "Canada was the birthplace of the aluminum industry, right here in Quebec. By further promoting the mining and processing of alumina we can become a great asset in the war effort."
  CAN_waste_not_want_not:0 "Canadian Cycle and Motor Co. Ltd."
- CAN_waste_not_want_not_desc:0 "The Brits had rated many of our factories as 'little better than garages'. Let us prove them wrong by making use of every factory to its full extent, no matter how poorly fit it may seem. We will adapt and repurpose factories for production."
+ CAN_waste_not_want_not_desc:0 "The Brits had rated many of our factories as 'little better than garages'. Let us prove them wrong by making use of every factory to its full extent, no matter how poorly fit it may seem. We will adapt and repurpose civilian factories for production, making use of every 'bit and piece' we can find."
  CAN_further_conversions:0 "Industrial Engineering Ltd."
  CAN_further_conversions_desc:0 "Not every factory needs to be strictly making guns, ammo and the like. By improving tools-of-trade themselves we can more effeciently produce armaments as well."
  CAN_natural_resources:0 "The Canadian Shield"
