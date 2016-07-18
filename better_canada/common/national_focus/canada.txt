@@ -1768,7 +1768,7 @@ focus_tree = {
 	
 	
 	focus = {
-		id = CAN_naval_focus
+		id = CAN_naval_focus # Royal Canadian Navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		
 		prerequisite = { focus = CAN_military_focus }
@@ -1800,7 +1800,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { # Halifax Royal Naval Dockary
+	focus = { # Halifax Royal Naval Dockyard
 		id = CAN_destroyers_and_cruisers
 		icon = GFX_goal_generic_navy_cruiser
 		
@@ -1839,8 +1839,8 @@ focus_tree = {
 		}
 	}
 
-	focus = { # Esquimalt Royal Naval Dockary
-		id = CAN_british_columbian_dockyard
+	focus = {
+		id = CAN_british_columbian_dockyard # Esquimalt Royal Naval Dockyard
 		icon = GFX_goal_generic_navy_cruiser
 		
 		prerequisite = { focus = CAN_destroyers_and_cruisers }
@@ -1908,7 +1908,7 @@ focus_tree = {
 			471 = {
 				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1917,7 +1917,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_rcaf_fighters # Fighter Training Program
+		id = CAN_rcaf_tac_bombers # The Plan
 		icon = GFX_goal_generic_air_fighter
 		
 		prerequisite = { focus = CAN_aviation_focus }
@@ -1932,10 +1932,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				name = light_fighter_focus
+				name = tactical_bomber_focus
 				bonus = 0.5
-				uses = 1
-				category = light_fighter
+				uses = 2
+				category = tactical_bomber
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -1943,15 +1943,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-			464 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-			air_experience = 50
+			air_experience = 100
 		}
 	}
 	
@@ -2011,10 +2003,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_rcaf_tac_bombers
+		id = CAN_rcaf_fighters # Handley Page Ltd.
 		icon = GFX_goal_generic_air_bomber
 		
-		prerequisite = { focus = CAN_rcaf_fighters }
+		prerequisite = { focus = CAN_rcaf_tac_bombers }
 		
 		x = 25
 		y = 3
@@ -2034,18 +2026,17 @@ focus_tree = {
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 			464 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
 			}
-			air_experience = 50
+			air_experience = 100
 		}
 	}
 	
@@ -2097,7 +2088,7 @@ focus_tree = {
 		id = CAN_question_of_quebec # Plebiscite on Conscription
 		icon = GFX_goal_generic_national_unity
 		
-		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_tac_bombers focus = CAN_british_columbian_dockyard }
+		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_fighters focus = CAN_british_columbian_dockyard }
 		
 		x = 21
 		y = 4
