@@ -1258,7 +1258,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_rowell_sirois_commission # Rowell-Sirois Commission
-		icon = GFX_goal_generic_production2
+		icon = GFX_goal_generic_improve_relations
 		
 		prerequisite = { focus = CAN_industrial_build_up }
 
@@ -1385,7 +1385,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		
 		prerequisite = { focus = CAN_dominion_rifle_company }
-		prerequisite = { focus = CAN_further_conversions }
+		prerequisite = { focus = CAN_military_repurposing }
 		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
 		mutually_exclusive = { focus = CAN_canadian_maritime_railway }
 		
@@ -1449,7 +1449,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		
 		prerequisite = { focus = CAN_dominion_rifle_company }
-		prerequisite = { focus = CAN_further_conversions }
+		prerequisite = { focus = CAN_military_repurposing }
 		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
 		mutually_exclusive = { focus = CAN_canadian_pacific_railway }
 		
