@@ -21,3 +21,5 @@
  idea_d_day_desc:0 "By having extensive plans and preperations ready for potential naval invasions we are ready to strike faster when it comes to amphibious assaults."
  idea_can_vickers:0 "Battle for the Atlantic"
  idea_can_vickers_desc:0 "We must be ready to protect our convoys by striking at the enemy's navy."
+ can_winter_bonus:0 "The Cold North"
+ can_winter_bonus_desc:0 "We are no strangers to severe winters. Our troops can endure the elements better both with equipment optimized for such conditions and the experiences of it first hand."
