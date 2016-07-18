@@ -91,6 +91,114 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = better_canada.5
+	title = better_canada.5.t
+	desc = better_canada.5.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	trigger = {
+		has_global_flag = newfoundland_referendum_rejected
+		NOT = { has_global_flag = newfoundland_rebellion }
+		CAN = {
+			NAND = { 
+				owns_state = 331
+				owns_state = 332
+			}
+		}
+		ENG = {
+			AND = {
+				owns_state = 331
+				owns_state = 332
+				NOT = { has_war_with = CAN }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 365 # 1 year
+	}
+	
+	immediate = { set_global_flag = newfoundland_rebellion }
+	
+	option = {
+		name = better_canada.5.a	# Just as planned
+		ai_chance = { factor = 10 }
+		
+		CAN = {
+			transfer_state = 331
+			transfer_state = 332
+		}
+		
+		ENG = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				generator = { 331 332 }
+			}
+		}
+		
+		hidden_effect = {
+			news_event = { hours = 6 id = better_canada.6 }
+		}
+	}
+}
+
+news_event = { # Newfoundland and Labrador Join Canada
+	id = better_canada.6
+	title = better_canada.5.t
+	desc = better_canada.6.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.23.a
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.23.b
+		trigger = { TAG = CAN }
+	}
+	option = {
+		name = better_canada.23.c
+		trigger = { TAG = ENG }
+		
+		effect_tooltip = { # Already done in the previous step, just for tooltip purposes
+			CAN = { 
+				transfer_state = 331
+				transfer_state = 332
+			}
+			
+			ENG = {
+				create_wargoal = {
+					type = take_state_focus
+					target = CAN
+					generator = { 331 332 }
+				}
+			}
+		}
+	}
+	option = {
+		name = better_canada.23.f
+		trigger = {
+			NOT = {
+				TAG = CAN
+				TAG = ENG
+			}
+			is_in_faction_with = CAN
+		}
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20
@@ -380,6 +488,7 @@ country_event = { # The UK considers
 		}		
 		
 		hidden_effect = {
+			set_global_flag = newfoundland_referendum_rejected
 			news_event = { id = better_canada.24 hours = 6 }
 		}
 	}
@@ -397,7 +506,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = better_canada.23.a
+		name = better_canada.23.a # Interesting
 		trigger = {
 			NOT = {
 				TAG = CAN
@@ -407,15 +516,15 @@ news_event = {
 		}
 	}
 	option = {
-		name = better_canada.23.b
+		name = better_canada.23.b # Excellent
 		trigger = { TAG = CAN }
 	}
 	option = {
-		name = better_canada.23.c
+		name = better_canada.24.b # If it's war they want...
 		trigger = { TAG = ENG }
 	}
 	option = {
-		name = better_canada.23.f
+		name = better_canada.23.f # Great News!
 		trigger = {
 			NOT = {
 				TAG = CAN
@@ -424,7 +533,7 @@ news_event = {
 			is_in_faction_with = CAN
 		}
 	}
-}	
+}
 
 # The UK Refuses the Referendum
 news_event = {
@@ -886,7 +995,7 @@ country_event = {
 			transfer_state = 468
 		}
 		create_wargoal = {
-			type = take_state_event
+			type = take_state_focus
 			target = QUE
 			generator = { 466 468 }
 		}
