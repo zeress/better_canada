@@ -1201,11 +1201,11 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_tech_bonus = {
@@ -1504,8 +1504,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
-				uses = 1
-				category = cat_heavy_armor
+				uses = 2
+				category = armor
 			}
 			
 			468 = {
