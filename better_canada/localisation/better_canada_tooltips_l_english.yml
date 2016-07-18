@@ -1,7 +1,7 @@
 ﻿l_english:
  CAN_east_claims_forts:0 "§YCanada§!: Fortifies the provinces and ports near Labrador and Newfoundland's border\n"
  CAN_west_claims_forts:0 "§YCanada§!: Fortifies the provinces and ports near [USA.GetNameDef]'s border\n"
- quebecois_propaganda_tooltip:0 "The people of Québec will eventually come to agree with us and start fully adhering to conscription calls.\n§GPatience will be rewarded.§!"
+ quebecois_propaganda_tooltip:0 "The people of Québec will eventually come to agree with us to start fully adhering to conscription calls.\n§GPatience will be rewarded.§!"
  home_and_native_land_other_effect:0 "This may convince more volunteers to sign up down the road.\n"
  quebec_angry:0 "Ignoring the wishes of Quebec will §Ranger§! them\n"
  quebec_extremely_angry:0 "Ignoring the wishes of Quebec will §Rgreatly anger§! them"
