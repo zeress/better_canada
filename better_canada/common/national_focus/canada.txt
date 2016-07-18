@@ -976,15 +976,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			random_owned_controlled_state = {
-				276 = 1
-				
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}	
 	
