@@ -1677,10 +1677,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_naval_focus }
 		
 		bypass = {
-			AND = {
-				has_tech = marines
-				has_tech = marines2
-			}
+			has_tech = marines2
 		}
 		
 		x = 18
