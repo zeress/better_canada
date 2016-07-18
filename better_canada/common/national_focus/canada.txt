@@ -1199,7 +1199,6 @@ focus_tree = {
 
 
 		prerequisite = { focus = CAN_military_repurposing }
-		prerequisite = { focus = CAN_army_focus }
 
 		x = 13
 		y = 4
