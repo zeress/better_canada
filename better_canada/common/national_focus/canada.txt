@@ -2113,7 +2113,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 120
-			country_event = { id = better_canda.4 }
+			country_event = { id = better_canada.4 }
 		}
 	}
 
