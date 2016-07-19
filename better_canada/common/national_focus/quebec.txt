@@ -54,7 +54,7 @@ focus_tree = {
 	focus = { # Fascism
 		id = QUE_adriens_plan
 		icon = GFX_goal_generic_propaganda
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = QUE_quebec_is_best # Vive le Quebec libre
 		icon = GFX_goal_tripartite_pact
-		x = 1
+		x = 2
 		y = 2
 		cost = 10
 		
@@ -93,7 +93,7 @@ focus_tree = {
 	focus = {
 		id = QUE_military_zeal # Support Nationalism
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 1
+		x = 2
 		y = 3
 		cost = 10
 		
@@ -118,7 +118,7 @@ focus_tree = {
 	focus = {
 		id = QUE_start_them_early # Nationalized Schools
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 1
+		x = 2
 		y = 4
 		cost = 15
 		
