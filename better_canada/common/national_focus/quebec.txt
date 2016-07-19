@@ -1,0 +1,146 @@
+focus_tree = {
+	id = que_focus
+	
+	country = {
+		factor = 0
+		
+		#modifier = { # disabled for now
+		#	add = 10
+		#	tag = QUE
+		#}
+	}
+	
+	default = no
+	
+	## POLITICAL
+	##
+	
+	focus = {
+		id = QUE_codify_our_constitution
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = { # Democracy
+		id = QUE_national_assembly
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = { focus = QUE_codify_our_constitution }
+		mutually_exclusive = { focus = QUE_adriens_plan }
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+			add_political_power = 150
+		}
+	}
+	
+	focus = { # Fascism
+		id = QUE_adriens_plan
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = QUE_codify_our_constitution }
+		mutually_exclusive = { focus = QUE_national_assembly }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = collectivist_ethos_focus
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = QUE_quebec_is_best # Vive le Quebec libre
+		icon = GFX_goal_tripartite_pact
+		x = 1
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = QUE_adriens_plan }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = nationalism
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = QUE_military_zeal # Support Nationalism
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 1
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = QUE_quebec_is_best }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = militarism_focus
+			set_rule = { can_send_volunteers = yes }
+			army_experience = 40
+			add_political_power = 200
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_start_them_early # Nationalized Schools
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 4
+		cost = 15
+		
+		prerequisite = { focus = QUE_military_zeal }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = military_youth_focus
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_ideas = paramilitarism_focus
+		}
+	}
+	
+	## INDUSTRIAL
+	##
+	
+	## MILITARY
+	##
+}
