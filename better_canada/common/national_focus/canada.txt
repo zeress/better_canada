@@ -1939,10 +1939,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				name = fighter_focus
+				name = fighter_command_focus
 				bonus = 0.5
 				uses = 1
-				category = fighter
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = tactical_bomber_focus
