@@ -27,7 +27,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 60
 		}
 	}
 	
@@ -47,7 +47,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
-			add_political_power = 150
+			add_political_power = 60
 		}
 	}
 
@@ -67,7 +67,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = volunteer_corps_focus
 			set_rule = { can_send_volunteers = yes }
-			add_political_power = 150
 		}
 	}
 	
@@ -85,7 +84,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 120
 		}
 	}
 	
@@ -167,7 +166,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_political_power = 150
+			add_political_power = 60
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
@@ -190,7 +189,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = internationalism
-			add_political_power = 150
 			ENG = { 
 				remove_from_faction = CAN
 				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
@@ -225,7 +223,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = idea_political_correctness
 			add_ideas = indoctrination_focus
-			add_political_power = 200
+			add_political_power = 120
 		}
 	}
 	
@@ -252,7 +250,6 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.3
 			}
-			add_political_power = 200
 		}
 	}
 	
@@ -302,7 +299,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_political_power = 150
+			add_political_power = 60
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -325,7 +322,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = nationalism
-			add_political_power = 150
 			ENG = { 
 				remove_from_faction = CAN
 				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
@@ -360,7 +356,6 @@ focus_tree = {
 			add_ideas = militarism_focus
 			set_rule = { can_send_volunteers = yes }
 			army_experience = 40
-			add_political_power = 200
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -873,7 +868,6 @@ focus_tree = {
 
 		
 		completion_reward = {
-			add_political_power = 120
 			set_rule = { can_create_factions = yes }
 			create_faction = "north_american_faction"
 			
@@ -910,7 +904,6 @@ focus_tree = {
 
 		
 		completion_reward = {
-			add_political_power = 120
 			add_manpower = 30000
 		}
 	}	
@@ -2112,7 +2105,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 60
 			country_event = { id = better_canada.4 }
 		}
 	}
