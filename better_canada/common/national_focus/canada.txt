@@ -223,7 +223,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = idea_political_correctness
 			add_ideas = indoctrination_focus
-			add_political_power = 120
 		}
 	}
 	
@@ -308,7 +307,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_fascist_ambitions # Fascist Ambitions
+		id = CAN_fascist_ambitions # Unchecked Nationalism
 		icon = GFX_goal_tripartite_pact
 		x = 4
 		y = 2
@@ -2193,7 +2192,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = quebecois_no_conscription
 			add_ideas = quebecois_minor_conscription
-			
+			add_national_unity = -0.1
 			random_list = {
 				70 = {
 					CAN = {
@@ -2232,6 +2231,7 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = quebecois_minor_conscription
+			add_national_unity = -0.1
 			custom_effect_tooltip = quebec_extremely_angry
 			hidden_effect = {
 				set_global_flag = quebecois_independence_movement_angry
