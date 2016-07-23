@@ -16,9 +16,9 @@ focus_tree = {
 	##
 	
 	focus = {
-		id = QUE_codify_our_constitution
+		id = QUE_maitre_chez_nous # Maitre chez nous
 		icon = GFX_goal_generic_propaganda
-		x = 1
+		x = 2
 		y = 0
 		cost = 10
 
@@ -32,14 +32,14 @@ focus_tree = {
 	}
 	
 	focus = { # Democracy
-		id = QUE_national_assembly
+		id = QUE_the_continental_alliance # The Continental Alliance
 		icon = GFX_goal_support_democracy
 		x = 0
 		y = 1
 		cost = 10
 		
-		prerequisite = { focus = QUE_codify_our_constitution }
-		mutually_exclusive = { focus = QUE_adriens_plan }
+		prerequisite = { focus = QUE_maitre_chez_nous }
+		mutually_exclusive = { focus = QUE_mouvement_nationaliste focus = QUE_mouvement_socialiste }
 
 		ai_will_do = {
 			factor = 15
@@ -48,18 +48,285 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
 			add_political_power = 150
+			USA = { 
+				add_opinion_modifier = { target = QUE modifier = usa_continental_alliance }
+			}
 		}
 	}
 	
-	focus = { # Fascism
-		id = QUE_adriens_plan
+	focus = {
+		id = QUE_formalize_the_constitution # Formalize the Contstitution
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 2
+		cost = 10
+		
+		prerequisite = { focus = QUE_the_continental_alliance }
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+	}
+
+	focus = {
+		id = QUE_united_we_stand # United We Stand
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 3
+		cost = 10
+		
+		prerequisite = { focus = QUE_formalize_the_constitution }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = foreign_expeditions_focus
+			add_ideas = why_we_fight_focus
+		}
+	}
+	
+	focus = {
+		id = QUE_establish_the_continental_alliance # Establish the Continental Alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 4
+		cost = 10
+		
+		prerequisite = { focus = QUE_united_we_stand }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "continental_alliance"
+			
+			if = {
+				limit = {
+					USA = { is_in_faction = no }
+					has_war = no
+				}
+				USA = { country_event = { id = better_canada.2 } }
+			}
+			hidden_effect = {
+				news_event = { days = 1 id = better_canada.3 }
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_invite_france # Invite France
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 5
+		cost = 10
+
+		available = {
+			FRA = { is_in_faction = no }
+		}
+		
+		prerequisite = { focus = QUE_establish_the_continental_alliance }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = { # Placeholder, shouldn't be guaranteed
+			QUE = { add_to_faction = FRA }
+			FRA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ITA"
+					value = 200
+				}
+			}
+		}
+	}
+	
+	focus = { # Communism
+		id = QUE_mouvement_socialiste # Mouvement Socialiste
 		icon = GFX_goal_generic_propaganda
 		x = 2
 		y = 1
 		cost = 10
 
-		prerequisite = { focus = QUE_codify_our_constitution }
-		mutually_exclusive = { focus = QUE_national_assembly }
+		prerequisite = { focus = QUE_maitre_chez_nous }
+		mutually_exclusive = { focus = QUE_the_continental_alliance focus = QUE_mouvement_nationaliste }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = collectivist_ethos_focus
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = QUE_l_experience_du_saguenay # L'Experience du Saguenay
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = QUE_mouvement_socialiste }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = idea_political_correctness
+			add_ideas = indoctrination_focus
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			466 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_soviet_support # Soviet Support
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = QUE_l_experience_du_saguenay }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_pays_pour_tous # Pays Pour Tour
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = QUE_soviet_support }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = que_socialist_science
+			
+			468 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			468 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_french_paradise # Bring Paradise to Canada
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = QUE_pays_pour_tous }
+		
+		bypass = {
+			OR = {
+				CAN = { exists = no }
+				CAN = { is_puppet_of = QUE }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CAN
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_continental_revolution # Continental Revolution
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 6
+		cost = 10
+
+		available = {
+			OR = {
+				CAN = { exists = no }
+				CAN = { is_puppet_of = QUE }
+			}
+		}
+		
+		prerequisite = { focus = QUE_french_paradise }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+	}
+	
+	focus = { # Fascism
+		id = QUE_mouvement_nationaliste # Mouvement Nationaliste
+		icon = GFX_goal_generic_propaganda
+		x = 4
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = QUE_maitre_chez_nous }
+		mutually_exclusive = { focus = QUE_the_continental_alliance focus = QUE_mouvement_socialiste }
 		
 		ai_will_do = {
 			factor = 10
@@ -74,11 +341,11 @@ focus_tree = {
 	focus = {
 		id = QUE_quebec_is_best # Vive le Quebec libre
 		icon = GFX_goal_tripartite_pact
-		x = 2
+		x = 4
 		y = 2
 		cost = 10
 		
-		prerequisite = { focus = QUE_adriens_plan }
+		prerequisite = { focus = QUE_mouvement_nationaliste }
 
 		ai_will_do = {
 			factor = 10
@@ -86,14 +353,13 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = nationalism
-			add_political_power = 150
 		}
 	}
 	
 	focus = {
-		id = QUE_military_zeal # Support Nationalism
+		id = QUE_mass_propaganda # Mass Propaganda
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 2
+		x = 4
 		y = 3
 		cost = 10
 		
@@ -118,11 +384,11 @@ focus_tree = {
 	focus = {
 		id = QUE_start_them_early # Nationalized Schools
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 2
+		x = 4
 		y = 4
 		cost = 15
 		
-		prerequisite = { focus = QUE_military_zeal }
+		prerequisite = { focus = QUE_mass_propaganda }
 
 		ai_will_do = {
 			factor = 10
@@ -135,6 +401,48 @@ focus_tree = {
 				popularity = 0.1
 			}
 			add_ideas = paramilitarism_focus
+		}
+	}
+	
+	focus = {
+		id = QUE_reform_nouvelle_france # Louisiane Francaise
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 5
+		cost = 15
+		
+		prerequisite = { focus = QUE_start_them_early }
+		mutually_exclusive = { focus = QUE_french_louisiana }
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			# Claims on Nova Scotia, New Brunswick and Newfoundland
+		}
+	}
+	
+	focus = {
+		id = QUE_french_louisiana # Louisiane Francaise
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 6
+		cost = 15
+		
+		prerequisite = { focus = QUE_reform_nouvelle_france }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			# Claims on French Lousiana	http://www.frenchcreoles.com/louisiana.jpg
 		}
 	}
 	

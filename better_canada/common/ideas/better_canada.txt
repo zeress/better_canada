@@ -174,5 +174,19 @@ ideas = {
 				winter_attrition_factor = -0.10
 			}
 		}
+		
+		que_socialist_science = {
+			allowed = {
+				tag = QUE
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+		
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
 	}
 }
