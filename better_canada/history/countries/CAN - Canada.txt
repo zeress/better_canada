@@ -7,6 +7,15 @@ set_country_flag = monroe_doctrine
 
 # Starting tech
 set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -17,6 +26,7 @@ set_technology = {
 	basic_light_tank = 1
 	early_fighter = 1
 	fighter1 = 1
+	naval_bomber1 = 1
 	early_bomber = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
