@@ -1127,7 +1127,7 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = CAN_industrial_bits_and_pieces # Bits and Pieces
+		id = CAN_industrial_bits_and_pieces # War Purchasing Board
 		icon = GFX_goal_generic_construct_mil_factory
 		
 		prerequisite = { focus = CAN_industrial_build_up }

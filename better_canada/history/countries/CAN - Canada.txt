@@ -44,9 +44,9 @@ set_technology = {
 	add_political_power = 1198
 
 	complete_national_focus = CAN_industrial_build_up
-	complete_national_focus = CAN_wartime_housing
+	complete_national_focus = CAN_rowell_sirois_commission
 	complete_national_focus = CAN_industrial_bits_and_pieces
-	complete_national_focus = CAN_canadian_pacific_railway
+	complete_national_focus = CAN_crown_companies
 	complete_national_focus = CAN_military_focus
 	complete_national_focus = CAN_naval_focus
 	complete_national_focus = CAN_destroyers_and_cruisers
@@ -65,24 +65,25 @@ set_technology = {
 	
 	oob = "CAN_1939"
 	set_technology = {
-		fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
+		nav_bomber1 = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
 
 		#doctrines
 		#Air
-		force_rotation = 1
-		fighter_baiting = 1
+		formation_flying = 1
+		dive_bombing = 1
 
+		#Army
 		grand_battle_plan = 1
 		trench_warfare = 1
+		
+		#Navy
 		fleet_in_being = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
 		convoy_sailing = 1
+		convoy_escorts = 1
+		escort_carriers = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -101,9 +102,9 @@ set_technology = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
 	}
 }
 
