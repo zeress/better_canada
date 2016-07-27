@@ -161,7 +161,7 @@ air_wings = {
 	### Royal Canadian Air Force (RCAF)-- New South Wales
 	276 = {
 		# RCAF Station Trenton (ONT) -- Westland Wapitis
-		early_bomber_equipment =  {
+		tac_bomber_equipment_0 =  {
 			owner = "CAN" 
 			amount = 24
 		}
@@ -177,7 +177,7 @@ instant_effect = {
 		}
 		requested_factories = 3
 		progress = 0.73
-		efficiency = 42
+		efficiency = 21
 	}
 	add_equipment_production = {
 		equipment = {
