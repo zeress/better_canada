@@ -307,7 +307,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_fascist_ambitions # Unchecked Nationalism
+		id = CAN_fascist_ambitions # Loyalty to One
 		icon = GFX_goal_tripartite_pact
 		x = 4
 		y = 2
@@ -339,7 +339,7 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = CAN_military_zeal # Support Nationalism
+		id = CAN_military_zeal # Unchecked Nationalism
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 4
 		y = 3
@@ -358,6 +358,11 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
+			}
+			if = {
+				limit = { NOT = { has_global_flag = can_fascists_united } }
+				set_global_flag = can_fascists_united
+				country_event = { days = 1 id = better_canada.8 }
 			}
 		}
 	}

@@ -95,11 +95,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 98
+			popularity = 95
 		}
 
 		fascism = {
-			popularity = 1
+			popularity = 4
 		}
 		
 		communism = {
@@ -120,17 +120,6 @@ create_country_leader = {
 	picture = "Portrait_Maurice_Duplessis.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "Portrait_Adrien_Arcand.dds"
-	expire = "1965.1.1"
-	ideology = nazism
 	traits = {
 		#
 	}

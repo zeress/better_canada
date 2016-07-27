@@ -143,10 +143,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Charles Brandle Crate"
-	desc = "POLITICS_CHARLES_BRANDLE_CRATE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "Portrait_Adrien_Arcand.dds"
+	expire = "1967.8.1"
 	ideology = nazism
 	traits = {
 		#
