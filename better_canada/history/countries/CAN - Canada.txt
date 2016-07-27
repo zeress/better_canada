@@ -183,15 +183,17 @@ set_convoys = 100
 set_national_unity = 0.7
 
 1939.1.1 = {
+	set_global_flag = can_fascists_united
+	set_party_name = { ideology = fascism long_name = CAN_national_unity_party_long name = CAN_national_unity_party }
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 95
+				popularity = 94
 			}
 
 			fascism = {
-				popularity = 4
+				popularity = 6
 			}
 			
 			communism = {
