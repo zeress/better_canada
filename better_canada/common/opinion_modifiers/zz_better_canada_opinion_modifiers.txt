@@ -47,7 +47,7 @@ opinion_modifiers = {
 		years = 2
 	}
 	
-	usa_continental_alliance
+	usa_continental_alliance = {
 		value = 60
 		years = 2
 	}
