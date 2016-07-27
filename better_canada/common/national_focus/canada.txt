@@ -27,7 +27,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 60
+			add_political_power = 120
 		}
 	}
 	
@@ -47,7 +47,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
-			add_political_power = 60
+			add_political_power = 120
 		}
 	}
 
@@ -166,7 +166,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_political_power = 60
+			add_political_power = 120
 			add_popularity = {
 				ideology = communism
 				popularity = 0.1
@@ -274,10 +274,10 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}		
@@ -298,7 +298,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
-			add_political_power = 60
+			add_political_power = 120
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -2171,7 +2171,7 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = CAN_force_quebec # Apply Curfews to Quebec
+		id = CAN_force_quebec # Place Quebec under Curfew
 		icon = GFX_goal_generic_dangerous_deal
 		
 		prerequisite = { focus = CAN_question_of_quebec }
@@ -2197,7 +2197,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = quebecois_no_conscription
 			add_ideas = quebecois_minor_conscription
-			add_national_unity = -0.1
+			add_national_unity = -0.05
 			random_list = {
 				70 = {
 					CAN = {
@@ -2282,6 +2282,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = home_and_native_land_other_effect
+			add_national_unity = 0.10
 			CAN = {
 				remove_ideas = canada_minor_war_response
 				add_ideas = canada_vivid_war_response
