@@ -1,8 +1,11 @@
-- Fixed the 'state' borders for Manitoba, Saskatchewan, Alberta and Vancouver to be closer to the real life 'states'
-- Added naval bases and a naval dockyard in Esquimalt
-- Added an additional naval base in Prince Rupert, BC
-- Added a naval base to Churchhill, MN
-- Increaesed the infrastructre in NE Canada
-- Removed the naval dockyard in Vancouver City
-- Reduced the naval base size in Vancouver City
-- Adjust various VP values in Canada
+- Fascist Canada has a new flag based off of the NUP's flag, but without the swastika
+- Replaced several placeholder event pictures with either entirely new ones, or at least more appropriate ones
+- Added a small event to model the rise of the NUP
+- Improved the Canadian names list for generic generals, pilots etc. and added many historical callsigns to Canadian pilots
+- Made 'Militia Division' more historically accurate for Canada in '36
+- Adrien Arcand added back to Canada's fascist party from Quebec as after more research I realized he was anti-seperatist and would most likely not follow a seperatist Quebec
+- Balanced a few of the NFs
+- Improved some localsation here and there
+- Started Canada at a lower national unity due to Quebec
+- Made the 'Leduc No. 1' event fire more slowly in early game
+- The Red Rose Tungsten discovery event now properly requires the completion of the crown company focus
