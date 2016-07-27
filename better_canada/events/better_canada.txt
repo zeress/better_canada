@@ -78,10 +78,12 @@ news_event = {
 }
 
 country_event = {
-	id = better_canada.4
+	id = better_canada.4 # Plebiscite Results
 	title = better_canada.4.t
 	desc = better_canada.4.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_news_event_plebscite_results
+	
+	major = yes
 	
 	is_triggered_only = yes
 	
@@ -941,7 +943,7 @@ country_event = {
 	id = better_canada.43
 	title = better_canada.43.t
 	desc = better_canada.43.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_quebec_convinced
 	
 	is_triggered_only = yes
 	
@@ -959,16 +961,18 @@ country_event = {
 }
 
 country_event = {
-	id = better_canada.44
+	id = better_canada.44 # They Remain Unconvinced
 	title = better_canada.44.t
 	desc = better_canada.44.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_quebec_unconvinced
 	
 	is_triggered_only = yes
 
 	option = {
 		name = better_canada.44.b	# Unfortunate
 		ai_chance = { factor = 20 }
+		
+		add_national_unity = -0.05
 	}	
 }
 
@@ -976,7 +980,7 @@ country_event = {
 	id = better_canada.45
 	title = better_canada.45.t
 	desc = better_canada.45.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_quebec_convinced
 	
 	is_triggered_only = yes
 
@@ -990,7 +994,7 @@ country_event = {
 	id = better_canada.46
 	title = better_canada.46.t
 	desc = better_canada.46.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_quebec_unconvinced
 	
 	is_triggered_only = yes
 
@@ -1136,7 +1140,7 @@ news_event = {
 	}
 }
 
-country_event = { # Imperial Oil discovery
+country_event = { # Imperial Oil discovery Leduc No. 1
 	id = better_canada.49
 	title = better_canada.49.t
 	desc = better_canada.49.d
@@ -1162,12 +1166,18 @@ country_event = { # Imperial Oil discovery
 	}
 	
 	mean_time_to_happen = {
-		days = 1095 # 3 years
+		days = 1825 # 5 years
 		
 		modifier = {
-			factor = 0.33
+			factor = 0.4
 			
 			has_global_flag = albertan_oil
+		}
+		
+		modifier = {
+			factor = 0.8
+			
+			date > 1943.1.1
 		}
 	}
 	
@@ -1204,7 +1214,7 @@ country_event = { # Imperial Oil discovery
 }
 
 news_event = {
-	id = better_canada.50
+	id = better_canada.50 # Leduc No. 1
 	title = better_canada.50.t
 	desc = better_canada.50.d
 	picture = GFX_report_event_alberta_oil_news
@@ -1251,6 +1261,7 @@ country_event = { # Red Rose Tungsten discovery
 		NOT = { has_global_flag = red_rose_tungsten_discovered }
 		owns_state = 471
 		has_war = yes
+		has_completed_focus = CAN_crown_companies
 	}
 	
 	mean_time_to_happen = {
@@ -1330,7 +1341,7 @@ country_event = { # Quebec decides its fate
 	id = better_canada.53
 	title = better_canada.53.t
 	desc = better_canada.53.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_journalists_speech
 	
 	is_triggered_only = yes
 
@@ -1370,7 +1381,7 @@ country_event = {
 	id = better_canada.54
 	title = better_canada.54.t
 	desc = better_canada.54.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
+	picture = GFX_report_event_quebec_volunteers
 	
 	fire_only_once = yes
 
