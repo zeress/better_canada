@@ -1,4 +1,7 @@
 ﻿l_english:
+ CAN_fascism:0 "Empire of Canada"
+ CAN_fascism_ADJ:0 "Imperial Canadian"
+ CAN_fascism_DEF:0 "Fascist Canada"
  QUE:0 "Québec"
  QUE_ADJ:0 "Québecois"
  QUE_DEF:0 "Québec"
