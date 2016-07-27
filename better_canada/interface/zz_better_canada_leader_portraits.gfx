@@ -29,5 +29,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_CAN_js_woodsworth"
 		textureFile = "gfx//leaders//CAN//Portrait_JS_Woodsworth.dds"
-	}	
+	}
+	
+	spriteType = {
+		name = "GFX_CAN_h_t_baillie_grohman"
+		textureFile = "gfx//leaders//CAN//Portrait_H_T_Baillie_Grohman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CAN_leonard_w_murray"
+		textureFile = "gfx//leaders//CAN//Portrait_Leonard_W_Murray.dds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CAN_john_montague"
+		textureFile = "gfx//leaders//CAN//Portrait_John_Montague.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CAN_charles_foulkes"
+		textureFile = "gfx//leaders//CAN//Portrait_Charles_Foulkes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CAN_thomas_victor_anderson"
+		textureFile = "gfx//leaders//CAN//Portrait_Thomas_Victor_Anderson.dds"
+	}
 }
