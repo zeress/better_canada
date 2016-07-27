@@ -7,6 +7,9 @@ set_country_flag = monroe_doctrine
 
 # Starting tech
 set_technology = {
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -39,8 +42,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
-	#generic focuses
+
 	complete_national_focus = CAN_industrial_build_up
 	complete_national_focus = CAN_wartime_housing
 	complete_national_focus = CAN_industrial_bits_and_pieces
