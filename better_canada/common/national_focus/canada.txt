@@ -984,7 +984,7 @@ focus_tree = {
 	}	
 	
 	focus = {
-		id = CAN_natural_resources
+		id = CAN_natural_resources # The Canadian Shield
 		icon = GFX_goal_generic_defence
 		x = 9
 		y = 2
