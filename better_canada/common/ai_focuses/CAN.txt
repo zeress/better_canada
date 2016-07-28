@@ -2,25 +2,31 @@
 ai_historical_focus_list_CAN = {
 	ai_national_focuses = {
 		CAN_industrial_build_up
-		CAN_wartime_housing
+		CAN_rowell_sirois_commission
 		CAN_industrial_bits_and_pieces
-		CAN_canadian_pacific_railway
+		CAN_crown_companies
 		CAN_military_focus
 		CAN_naval_focus
 		CAN_destroyers_and_cruisers
 		CAN_statute_of_westminster
 		CAN_commonwealth_unity
 		CAN_aviation_focus
-		CAN_rcaf_fighters
 		CAN_rcaf_tac_bombers
+		CAN_rcaf_fighters
 		CAN_waste_not_want_not
+		CAN_dominion_rifle_company
+		CAN_military_repurposing
+		CAN_canadian_pacific_railway
+		CAN_natural_resources
 		CAN_angus_shops
-		CAN_quebecois_alumina
 		CAN_human_capital
 		CAN_british_columbian_dockyard
 		CAN_army_focus
 		CAN_general_motors_company
+		CAN_question_of_quebec
+		CAN_reason_with_quebec
 		CAN_ontario_steel
+		CAN_artificial_rubber
 	}
 }
 
