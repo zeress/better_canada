@@ -1,0 +1,84 @@
+spriteTypes = {			
+
+	spriteType = {
+		name = "GFX_idea_vickers_armstrong_can"
+		texturefile = "gfx/interface/ideas/idea_vickers_armstrong_can.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_avro_can"
+		texturefile = "gfx/interface/ideas/idea_avro_can.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CNR"
+		texturefile = "gfx/interface/ideas/idea_CNR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fleet_aircraft"
+		texturefile = "gfx/interface/ideas/idea_fleet_aircraft.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_montreal_locomotive_works"
+		texturefile = "gfx/interface/ideas/idea_montreal_locomotive_works.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_angus_shops"
+		texturefile = "gfx/interface/ideas/idea_angus_shops.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_national_research_council"
+		texturefile = "gfx/interface/ideas/idea_national_research_council.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vickers_canada"
+		texturefile = "gfx/interface/ideas/idea_vickers_canada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_general_motors"
+		texturefile = "gfx/interface/ideas/idea_general_motors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_john_inglis_co"
+		texturefile = "gfx/interface/ideas/idea_john_inglis_co.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_davie_shipbuilding"
+		texturefile = "gfx/interface/ideas/idea_davie_shipbuilding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_longbranch"
+		texturefile = "gfx/interface/ideas/idea_longbranch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kingston_shipbuilding"
+		texturefile = "gfx/interface/ideas/idea_kingston_shipbuilding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_havilland_canada"
+		texturefile = "gfx/interface/ideas/idea_havilland_canada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_halifax_shipyard_limited"
+		texturefile = "gfx/interface/ideas/idea_halifax_shipyard_limited.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_canadian_car_foundry"
+		texturefile = "gfx/interface/ideas/idea_canadian_car_foundry.dds"
+	}
+	
+}
+
