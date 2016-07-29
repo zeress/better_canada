@@ -83,8 +83,6 @@ country_event = {
 	desc = better_canada.4.d
 	picture = GFX_news_event_plebscite_results
 	
-	major = yes
-	
 	is_triggered_only = yes
 	
 	option = {
