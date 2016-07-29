@@ -41,7 +41,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_general_motors"
+		name = "GFX_idea_general_motors"
 		texturefile = "gfx/interface/ideas/idea_general_motors.dds"
 	}
 	
