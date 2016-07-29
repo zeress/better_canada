@@ -71,6 +71,7 @@ ideas = {
 	
 			modifier = {
 				conscription_factor = -0.35
+				unity_factor = -0.10
 			}
 		}
 		
@@ -85,6 +86,7 @@ ideas = {
 	
 			modifier = {
 				conscription_factor = -0.20
+				unity_factor = -0.06
 			}
 		}
 		
