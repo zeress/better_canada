@@ -4,9 +4,84 @@ spriteTypes = {
 		name = "GFX_idea_quebecois_no_conscription"
 		texturefile = "gfx/interface/ideas/quebecois_no_conscription.dds"
 	}
-	
+	# People
 	spriteType = {
 		name = "GFX_idea_cd_howe"
 		texturefile = "gfx/interface/ideas/idea_cd_howe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kenneth_stuart"
+		texturefile = "gfx/interface/ideas/idea_kenneth_stuart.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_r_b_bennett"
+		texturefile = "gfx/interface/ideas/idea_r_b_bennett.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ian_a_mackenzie"
+		texturefile = "gfx/interface/ideas/idea_ian_a_mackenzie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_robert_manion"
+		texturefile = "gfx/interface/ideas/idea_robert_manion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_william_kashtan"
+		texturefile = "gfx/interface/ideas/idea_william_kashtan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_newton_wesley_rowell"
+		texturefile = "gfx/interface/ideas/idea_newton_wesley_rowell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_harry_crerar"
+		texturefile = "gfx/interface/ideas/idea_harry_crerar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_andrew_mcnaughton"
+		texturefile = "gfx/interface/ideas/idea_andrew_mcnaughton.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_george_pearkes"
+		texturefile = "gfx/interface/ideas/idea_george_pearkes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_percy_nelles"
+		texturefile = "gfx/interface/ideas/idea_percy_nelles.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_george_croil"
+		texturefile = "gfx/interface/ideas/idea_george_croil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_lloyd_samuel_breadner"
+		texturefile = "gfx/interface/ideas/idea_lloyd_samuel_breadner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_guy_simonds"
+		texturefile = "gfx/interface/ideas/idea_guy_simonds.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_john_murchie"
+		texturefile = "gfx/interface/ideas/idea_john_murchie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_frederick_m_w_harvey"
+		texturefile = "gfx/interface/ideas/idea_frederick_m_w_harvey.dds"
 	}
 }
