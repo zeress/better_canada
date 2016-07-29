@@ -1,2 +1,2 @@
 - Replaced generic companies with Canadian appropriate ones
-- Replaced generic idea portraits with portraits of their real life person. A few remain generic as I could not find a portrait for them
+- Replaced generic idea portraits with actual portraits, in some cases replacing a few 'idea people' with new ones that are less obscure.

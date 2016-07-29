@@ -34,6 +34,17 @@ ideas = {
 			
 			traits = { ideological_crusader }
 		}
+
+		CAN_luigi_petrucci = {
+
+			picture = luigi_petrucci
+				
+			allowed = {
+				original_tag = CAN
+			}
+			
+			traits = { fascist_demagogue }
+		}
 		
 		CAN_generic_democratic_reformer = {
 
@@ -75,9 +86,9 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		CAN_tasker_cook = {
+		CAN_sydney_radley_walters = {
 					
-			picture = generic_air_europe_1
+			picture = sydney_radley_walters
 					
 			allowed = {
 				original_tag = CAN
@@ -195,8 +206,8 @@ ideas = {
 			}
 		}
 
-		CAN_alasdair_murray = {
-			picture = generic_navy_europe_1
+		CAN_harry_g_dewolf = {
+			picture = harry_g_dewolf
 			
 			allowed = {
 				original_tag = CAN
@@ -228,9 +239,9 @@ ideas = {
 			}
 		}
 
-		CAN_gino_verchiella = {
+		CAN_wilfred_curtis = {
 			
-			picture = generic_air_europe_2
+			picture = wilfred_curtis
 			
 			allowed = {
 				original_tag = CAN
