@@ -190,5 +190,47 @@ ideas = {
 				research_time_factor = -0.05
 			}
 		}
+		
+		que_french_knowledge_idea = {
+			allowed = {
+				tag = QUE
+			}
+			
+			removal_cost = -1
+
+			picture = cd_howe
+	
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		que_sorel_tracy_ideas = {
+			allowed = {
+				tag = QUE
+			}
+			
+			removal_cost = -1
+
+			picture = cd_howe
+	
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		que_industrial_revolution_idea = {
+			allowed = {
+				tag = QUE
+			}
+			
+			removal_cost = -1
+
+			picture = cd_howe
+	
+			modifier = {
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		
 	}
 }

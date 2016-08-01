@@ -4,7 +4,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		#modifier = { # disabled for now
+		modifier = { # disabled for now
 			add = 10
 			tag = QUE
 		}
@@ -386,7 +386,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 4
 		y = 4
-		cost = 15
+		cost = 10
 		
 		prerequisite = { focus = QUE_mass_propaganda }
 
@@ -407,9 +407,9 @@ focus_tree = {
 	focus = {
 		id = QUE_reform_nouvelle_france # Louisiane Francaise
 		icon = GFX_goal_generic_forceful_treaty
-		x = 6
+		x = 4
 		y = 5
-		cost = 15
+		cost = 10
 		
 		prerequisite = { focus = QUE_start_them_early }
 		mutually_exclusive = { focus = QUE_french_louisiana }
@@ -428,9 +428,9 @@ focus_tree = {
 	focus = {
 		id = QUE_french_louisiana # Louisiane Francaise
 		icon = GFX_goal_generic_forceful_treaty
-		x = 6
+		x = 4
 		y = 6
-		cost = 15
+		cost = 10
 		
 		prerequisite = { focus = QUE_reform_nouvelle_france }
 
@@ -448,6 +448,463 @@ focus_tree = {
 	
 	## INDUSTRIAL
 	##
+	
+	focus = {
+		id = QUE_rochette_plan # Rochette's Plan
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
+		y = 0
+		cost = 10
+		
+		mutually_exclusive = { focus = QUE_drouin_plan }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_drouin_plan # Drouins's Plan
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 0
+		cost = 10
+	
+		mutually_exclusive = { focus = QUE_rochette_plan }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_plan_nord # Plan Nord
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 1
+		cost = 10
+	
+		prerequisite = { focus = QUE_rochette_plan focus = QUE_drouin_plan }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 466
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_foundation_of_alque # Foundation of Alque
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 2
+		cost = 10
+	
+		prerequisite = { focus = QUE_plan_nord }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 16
+				state = 466
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_anticosti_island # Anticosti Island
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 3
+		cost = 10
+	
+		prerequisite = { focus = QUE_foundation_of_alque }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 466
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_artificial_rubber # Artificial Rubber
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 4
+		cost = 10
+	
+		prerequisite = { focus = QUE_anticosti_island }
+
+		bypass = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 6
+				state = 468
+			}
+			add_tech_bonus = {
+				name = synth_resources
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_french_knowledge # French Knowledge
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 1
+		cost = 10
+	
+		prerequisite = { focus = QUE_rochette_plan focus = QUE_drouin_plan }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = que_french_knowledge_idea
+			468 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_metropolitan_quebec # Metropolitan Quebec
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 2
+		cost = 10
+	
+		prerequisite = { focus = QUE_french_knowledge }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_industrialize_the_north # Industrialize the North
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 3
+		cost = 10
+	
+		prerequisite = { focus = QUE_metropolitan_quebec }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			466 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_quebec_railway # Roberval and Saguenay Railway
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 4
+		cost = 10
+	
+		prerequisite = { focus = QUE_industrialize_the_north }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			466 = {
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}	
+			468 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_caisse_de_depot # Creation of the Caisse de depot
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 5
+		cost = 10
+	
+		prerequisite = { focus = QUE_quebec_railway }
+		prerequisite = { focus = QUE_anticosti_island }
+		prerequisite = { focus = QUE_sorel_development }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_industrial_revolution # Industrial Revolution
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 6
+		cost = 10
+	
+		prerequisite = { focus = QUE_caisse_de_depot }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			remove_ideas = que_french_knowledge_idea
+			add_ideas = que_industrial_revolution_idea
+			468 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			466 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_expand_valcartier # Expand Valcartier
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 1
+		cost = 10
+	
+		prerequisite = { focus = QUE_rochette_plan focus = QUE_drouin_plan }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			466 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_citadelle_of_quebec # Citadelle of Quebec
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 2
+		cost = 10
+	
+		prerequisite = { focus = QUE_expand_valcartier }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			# Add Forts to Quebec City Province
+		}
+	}
+	
+	focus = {
+		id = QUE_sorel_development # Sorel Development
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 3
+		cost = 10
+	
+		prerequisite = { focus = QUE_citadelle_of_quebec }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = que_sorel_tracy_idea
+			468 = {
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			# Add Forts to Quebec City Province
+		}
+	}
+	
+	focus = {
+		id = QUE_military_college # Military College of Trois-Rivieres
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 4
+		cost = 10
+	
+		prerequisite = { focus = QUE_sorel_development }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+			468 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 	
 	## MILITARY
 	##
