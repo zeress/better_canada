@@ -13,6 +13,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_QUE_adelard_godbout"
 		textureFile = "gfx//leaders//QUE//Portrait_Adelard_Godbout.dds"
+	}
+
+	spriteType = {
+		name = "GFX_QUE_lionel_groulx"
+		textureFile = "gfx//leaders//QUE//Portrait_Lionel_Groulx.dds"
 	}	
 	
 	# Canada

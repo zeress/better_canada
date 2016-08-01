@@ -26,6 +26,51 @@ set_technology = {
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
+	
+	naval_bomber1 = 1
+	infantry_weapons2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	motorised_infantry = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+
+	#doctrines
+	#Air
+	formation_flying = 1
+	dive_bombing = 1
+
+	#Army
+	grand_battle_plan = 1
+	trench_warfare = 1
+	
+	#Navy
+	fleet_in_being = 1
+	convoy_sailing = 1
+	convoy_escorts = 1
+	escort_carriers = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	mechanical_computing = 1
+	computing_machine = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_plant = 1
+	improved_oil_plant = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
 }
 
 1939.1.1 = {
@@ -150,6 +195,17 @@ create_country_leader = {
 	picture = "Portrait_Adelard_Godbout.dds"
 	expire = "1965.1.1"
 	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lionel Groulx"
+	desc = "POLITICS_LIONEL_GROULX_DESC"
+	picture = "Portrait_Lionel_Groulx.dds"
+	expire = "1965.1.1"
+	ideology = nazism
 	traits = {
 		#
 	}
