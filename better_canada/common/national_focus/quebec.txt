@@ -908,4 +908,125 @@ focus_tree = {
 	
 	## MILITARY
 	##
+
+	focus = {
+		id = QUE_quebec_national_forces # Quebec National Forces
+		icon = GFX_goal_generic_forceful_treaty
+		x = 14
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_inuit_and_first_nations # The Inuit and First Nations Pact
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 1
+		cost = 10
+		
+		prerequisite = {  focus = QUE_quebec_national_forces }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			466 = {
+				add_manpower = 200000
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_fulfill_promises # Fulfill the Promises
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 2
+		cost = 10
+		
+		prerequisite = {  focus = QUE_inuit_and_first_nations }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.05
+		}
+	}
+
+	focus = {
+		id = QUE_political_asylum # Political Asylum
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 3
+		cost = 10
+		
+		prerequisite = {  focus = QUE_fulfill_promises }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_manpower = 230000
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_welcome_refugees # A New Home
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 4
+		cost = 10
+		
+		prerequisite = {  focus = QUE_political_asylum }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_manpower = 550000
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_support_france # Support France
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 5
+		cost = 10
+		
+		prerequisite = {  focus = QUE_welcome_refugees }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			468 = {
+				add_manpower = 300000
+			}
+			# Idea or Advisor?
+		}
+	}
 }
