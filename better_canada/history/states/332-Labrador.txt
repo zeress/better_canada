@@ -3,6 +3,7 @@ state={
 	name="STATE_332"
 	
 	state_category = wasteland
+	manpower=4576
 
 	history={
 		owner = ENG
@@ -17,6 +18,5 @@ state={
 	provinces={
 		1426 1785 4720 4787 12503 13165 13180 
 	}
-	manpower=22179
 	buildings_max_level_factor=1.000
 }
