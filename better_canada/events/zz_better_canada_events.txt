@@ -1033,6 +1033,8 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = quebecois_independence_movement_fired
+		466 = { add_core_of = QUE }
+		468 = { add_core_of = QUE }
 	}
 	
 	option = {
