@@ -251,6 +251,32 @@ country_event = {
 	}
 }
 
+country_event = { # AI only
+	id = better_canada.9
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		has_global_flag = quebecois_independence_movement_fired
+		NOT = { QUE = { has_war_with = CAN } }
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {	
+		days = 1
+	}
+	
+	immediate = {
+		clr_global_flag = quebecois_independence_movement_fired
+		set_global_flag = canadian_civil_war_ended
+	}
+	
+	option = {
+		name = better_canada.1.a
+		ai_chance = { factor = 10 }
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20
@@ -1295,6 +1321,10 @@ country_event = { # Quebec decides its fate
 	picture = GFX_report_event_journalists_speech
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = canadian_civil_war_ongoing
+	}
 
 	option = {
 		name = better_canada.53.a	# Embrace Fascism
