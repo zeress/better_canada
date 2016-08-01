@@ -5,9 +5,9 @@ focus_tree = {
 		factor = 0
 		
 		#modifier = { # disabled for now
-		#	add = 10
-		#	tag = QUE
-		#}
+			add = 10
+			tag = QUE
+		}
 	}
 	
 	default = no
