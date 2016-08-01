@@ -2,7 +2,7 @@
 state={
 	id=276
 	name="STATE_276" # Southern Ontario
-	manpower = 3460429
+	manpower = 3300024
 
 	resources={
 		steel=62
