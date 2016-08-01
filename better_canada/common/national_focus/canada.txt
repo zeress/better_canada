@@ -1024,6 +1024,10 @@ focus_tree = {
 		
 		prerequisite = { focus = CAN_ontario_steel focus = CAN_artificial_rubber }
 		
+		bypass = {
+			466 = { NOT = { is_owned_by = CAN } }
+		}		
+		
 		x = 9
 		y = 4
 		cost = 15
