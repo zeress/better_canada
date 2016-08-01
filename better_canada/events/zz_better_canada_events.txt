@@ -277,6 +277,42 @@ country_event = { # AI only, clean up global flags
 	}
 }
 
+country_event = { # AI only, clean up faulty ideas
+	id = better_canada.10
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		NOT = { has_global_flag = quebecois_conscription_error_fixed }
+		466 = { NOT = { is_owned_by = CAN } }
+		468 = { NOT = { is_owned_by = CAN } }
+		CAN = {
+			OR = {
+				has_idea = quebecois_no_conscription
+				has_idea = quebecois_minor_conscription
+			}
+		}
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {	
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = quebecois_conscription_error_fixed
+		CAN = {
+			remove_ideas = quebecois_no_conscription
+			remove_ideas = quebecois_minor_conscription
+		}
+	}
+	
+	option = {
+		name = better_canada.1.a
+		ai_chance = { factor = 10 }
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20
@@ -1064,13 +1100,13 @@ country_event = {
 	}
 	
 	option = {
-		name = better_canada.47.a
+		name = better_canada.47.a # This is bad...
 		
 		CAN = { quebec_rebel_effect = yes }
 	}
 	
 	option = {
-		name = better_canada.47.b
+		name = better_canada.47.b # Switch to Quebec
 		trigger = { ai = no }
 
 		effect_tooltip = { QUE = { change_tag_from = CAN } }

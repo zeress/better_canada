@@ -22,6 +22,8 @@ quebec_rebel_effect = {
 		remove_ideas = quebecois_minor_conscription
 	}
 
+	add_national_unity = -0.10
+	
 	QUE = {
 		set_capital = 468
 		transfer_state = 466
