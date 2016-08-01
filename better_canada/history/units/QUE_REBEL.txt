@@ -11,9 +11,16 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+	    
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
+       engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -23,9 +30,15 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+        artillery_brigade = { x = 1 y = 0 }
+		anti_tank_brigade = { x = 1 y = 1 }
+	    
+	}
+	support = {
+       engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -111,19 +124,28 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "CAN"
+			creator = "QUE"
 		}
-		requested_factories = 1
-		progress = 0.39
-		efficiency = 100
+		requested_factories = 3
+		progress = 0.73
+		efficiency = 21
 	}
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment_1
-			creator = "CAN"
+			type = anti_tank_equipment_1
+			creator = "QUE"
 		}
 		requested_factories = 1
-		progress = 0.45
-		efficiency = 100
+		progress = 0.85
+		efficiency = 23
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "QUE"
+		}
+		requested_factories = 1
+		progress = 0.71
+		efficiency = 34
 	}
 }

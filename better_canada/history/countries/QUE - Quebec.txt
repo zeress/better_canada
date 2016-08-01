@@ -73,6 +73,14 @@ set_technology = {
 	concentrated_industry3 = 1
 }
 
+1936.1.1 = {
+	add_ideas = {
+		#laws
+		volunteer_only
+		partial_economic_mobilisation	
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

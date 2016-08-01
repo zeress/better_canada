@@ -1,4 +1,5 @@
 - Boosted Canada's base national unity back to 80% however instead the Conscription Refusal modifiers applies the scaling malus instead
 - Boosted Canada's population in 1936 to 10.95M up from 10.21M to match census records from 1936
 - Adjusted the population spreads to be more accurate, including Newfoundland
+- Added an option to become Quebec if it rebels
 - Removed starting cores for Quebec

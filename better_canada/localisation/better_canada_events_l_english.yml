@@ -89,6 +89,7 @@
  better_canada.46.a:0 "This could be bad..."  
  better_canada.47.d:0 "It would seem your demands on the Québecois eventually turned into a seperatist notion. They have cut all access to the province and are declaring themselves an independent nation."
  better_canada.47.a:0 "This is bad..."
+ better_canada.47.b:0 "Vive le Québec libre!"
  better_canada.48.t:0 "[QUE.GetName] secedes from [CAN.GetNameDef]"
  better_canada.48.d:0 "In an attempt to enforce conscription upon the local French populace in [CAN.GetNameDef] [CAN.GetLeader] seems to have only enraged the population in Québec instead. They have seceded from [CAN.GetNameDef] effective immediately. [CAN.GetLeader] has already called for action against this illegal move by [QUE.GetLeader]."
  better_canada.48.a:0 "Interesting"
