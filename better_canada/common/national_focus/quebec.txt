@@ -946,7 +946,7 @@ focus_tree = {
 		
 		completion_reward = {
 			466 = {
-				add_manpower = 200000
+				add_manpower = 80000
 			}
 		}
 	}
@@ -965,6 +965,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_manpower = 20000
 			add_national_unity = 0.05
 		}
 	}
