@@ -3,11 +3,7 @@ state={
 	name="ENW_TERRITORIES"
 	
 	state_category = wasteland
-	
-	resources={
-		aluminium=22
-		steel=12
-	}
+	manpower = 5336
 
 	history={
 		owner = CAN
@@ -18,6 +14,5 @@ state={
 	provinces={
 		1712 2947 3691 7813 8962 10721 13188 13190 13191
 	}
-	manpower=46135
 	buildings_max_level_factor=1.000
 }

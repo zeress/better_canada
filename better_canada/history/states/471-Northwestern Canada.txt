@@ -2,7 +2,7 @@
 state={
 	id=471
 	name="YUKON_TERRITORY" # Northwestern Canada
-	manpower = 27681
+	manpower = 4572
 
 	state_category = wasteland
 
