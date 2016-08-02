@@ -1,0 +1,398 @@
+spriteTypes = {
+	# QUE Aircraft
+	
+	SpriteType = {
+		name = "GFX_QUE_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_CAS1_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_CAS2_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_CAS3_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_fighter.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_fighter_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_fighter1_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_fighter2_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_fighter3_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_QUE_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_QUE_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_strategic_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/CAN_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_QUE_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/CAN_tactical_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber1_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber2_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/CAN_naval_bomber3_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter1_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter2_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/CAN_fighter3_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS1_cv.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS2_cv.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/CAN_CAS3_cv.dds"
+	}	
+
+	# QUE vehicles
+
+	SpriteType = {
+		name = "GFX_QUE_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/CAN_motorized_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/CAN_motorized_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/CAN_mechanized_equipment_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/CAN_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/CAN_mechanized_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_QUE_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_QUE_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_superheavy_tank.dds"
+	}
+	
+	# QUE variations
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_light_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_light_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_light_tank_spaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_light_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_light_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_light_tank_spaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_light_tank_td.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_light_tank_art.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_light_tank_spaa.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_main_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_main_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_main_tank_spaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_main_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_main_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_main_tank_spaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_main_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_main_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_main_tank_spaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_heavy_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_heavy_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_heavy_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_imp_heavy_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_adv_heavy_tank_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_modern_td_medium"
+		texturefile = "gfx/interface/technologies/CAN_main_battle_tank_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_QUE_modern_art_medium"
+		texturefile = "gfx/interface/technologies/CAN_main_battle_tank_art.dds"
+	}
+	
+}
