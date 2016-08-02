@@ -3,3 +3,4 @@
 - Adjusted the population spreads to be more accurate, including Newfoundland
 - Added an option to become Quebec if it rebels
 - Removed starting cores for Quebec
+- Added technology defines for Quebec instead of generic tank, plane etc. picture courtesy of 'SirDerp'
