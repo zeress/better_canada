@@ -405,15 +405,20 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = QUE_reform_nouvelle_france # Louisiane Francaise
+		id = QUE_reform_nouvelle_france # Nouvelle France
 		icon = GFX_goal_generic_forceful_treaty
 		x = 4
 		y = 5
 		cost = 10
 		
 		prerequisite = { focus = QUE_start_them_early }
-		mutually_exclusive = { focus = QUE_french_louisiana }
 		bypass = {
+			AND = {
+				QUE = { owns_state = 331 } # Newfoundland
+				QUE = { owns_state = 332 } # Labrador
+				QUE = { owns_state = 464 } # Nova Scotia
+				QUE = { owns_state = 465 } # New Brunswick
+			}
 		}
 
 		ai_will_do = {
@@ -421,7 +426,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			# Claims on Nova Scotia, New Brunswick and Newfoundland
+			331 = { add_core_of = QUE }
+			332 = { add_core_of = QUE }
+			464 = { add_core_of = QUE }
+			465 = { add_core_of = QUE }
 		}
 	}
 	
