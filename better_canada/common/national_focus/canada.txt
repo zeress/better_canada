@@ -151,6 +151,60 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = CAN_quebec_agreement # The Quebec Agreement
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 8
+		cost = 15
+		
+		prerequisite = { focus = CAN_camp_x }
+		mutually_exclusive = { focus = CAN_nuclear_arms }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_nuclear_arms # The White Star of the North
+		icon = GFX_focus_rocketry
+		x = 2
+		y = 8
+		cost = 15
+		
+		prerequisite = { focus = CAN_technology_sharing }
+		mutually_exclusive = { focus = CAN_quebec_agreement }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = rocketry_bonus
+				bonus = 0.5
+				uses = 1
+				category = rocketry
+			}			
+		}
+	}
+	
+	focus = {
 		id = CAN_soviet_heart # Committee for Industrial Organization
 		icon = GFX_goal_support_communism
 		x = 2

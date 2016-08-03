@@ -43,12 +43,17 @@ opinion_modifiers = {
 
 	# USA 
 	usa_considering_faction = {
-		value = 100
+		value = 50
 		years = 2
 	}
 	
 	usa_continental_alliance = {
-		value = 60
+		value = 30
+		years = 2
+	}
+	
+	usa_joined_faction = {
+		value = 100
 		years = 2
 	}
 }	
