@@ -1,0 +1,91 @@
+﻿division_template = {
+	name = "District Militia"	# For largest Military District Forces (3 brigade forces)
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		light_armor = { x = 3 y = 0 }
+	}
+}
+division_template = {
+	name = "Infantry Division"			# For 1st, 2nd Canadian Infantry Divisions
+										# Frontline divisions, most experienced, best-equipped
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Cavalry Militia"  
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1er milice du district"
+		location = 4345 # Montreal
+		division_template = "District Milice"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "1er cavalerie de district"
+		location = 4345 # Montreal
+		division_template = "Cavalerie Milice" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2e milice du district"
+		location = 4345 # Montreal
+		division_template = "District Milice" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3e milice du district"
+		location = 4345 # Montreal
+		division_template = "District Milice" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4e milice du district"
+		location = 4345 # Montreal
+		division_template = "District Milice" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5e milice du district"
+		location = 4345 # Montreal
+		division_template = "District Milice" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+}
