@@ -279,6 +279,7 @@ set_national_unity = 0.8
 	}
 }
 
+# Army Leaders
 create_corps_commander = {
 	name = "Kenneth G. Blackadder"
 	picture = "Portrait_Blackader_Kenneth_Gault.dds"
@@ -286,11 +287,33 @@ create_corps_commander = {
 	skill = 4
 }
 
+create_corps_commander = {
+	name = "Jean V. Allard"
+	picture = "Portrait_Jean_Victor_Allard.dds"
+	traits = { trickster }
+	skill = 4
+}
+
 create_field_marshal = {
-	name = "James A. de Lalanne"
+	name = "Jacque A. Dextraze"
+	picture = "Portrait_Jacque_Alfred_Dextraze.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "James de Lalanne"
 	picture = "Portrait_James_Arthur_de_Lalanne.dds"
 	traits = { old_guard }
 	skill = 3
+}
+
+# Naval Leaders
+create_navy_leader = {
+	name = "Victor G. Brodeur"
+	picture = "Portrait_Victor_G_Brodeur.dds"
+	traits = { superior_tactician }
+	skill = 4
 }
 
 ### Ship Variants ###

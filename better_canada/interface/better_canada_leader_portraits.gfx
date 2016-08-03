@@ -22,12 +22,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_QUE_kenneth_gault_blackadder"
-		textureFile = "gfx//leaders//CAN//Portrait_Blackader_Kenneth_Gault.dds"
+		textureFile = "gfx//leaders//QUE//Portrait_Blackader_Kenneth_Gault.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_QUE_james_arthuer_de_lalanne"
-		textureFile = "gfx//leaders//CAN//Portrait_James_Arthur_de_Lalanne.dds"
+		name = "GFX_QUE_james_arthur_de_lalanne"
+		textureFile = "gfx//leaders//QUE//Portrait_James_Arthur_de_Lalanne.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QUE_jean_v_allard"
+		textureFile = "gfx//leaders//QUE//Portrait_Jean_Victor_Allard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QUE_jacque_a_dexstraze"
+		textureFile = "gfx//leaders//QUE//Portrait_Jacque_Alfred_Dextraze.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QUE_victor_g_brodeur"
+		textureFile = "gfx//leaders//QUE//Portrait_Victor_G_Brodeur.dds"
 	}
 	
 	# Canada
