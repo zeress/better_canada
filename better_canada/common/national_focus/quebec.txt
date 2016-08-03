@@ -925,7 +925,7 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			466 = {
+			468 = {
 				add_extra_state_shared_building_slots = 1
 
 				add_building_construction = {
