@@ -198,7 +198,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = cd_howe
+			picture = generic_research_bonus
 	
 			modifier = {
 				production_speed_buildings_factor = 0.10
@@ -212,7 +212,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = cd_howe
+			picture = generic_goods_red_bonus
 	
 			modifier = {
 				conversion_cost_civ_to_mil_factor = -0.2
@@ -225,10 +225,10 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = cd_howe
+			picture = generic_production_bonus
 	
 			modifier = {
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.30
 			}
 		}
 		
