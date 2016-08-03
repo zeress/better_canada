@@ -233,6 +233,20 @@ set_national_unity = 0.8
 	}
 }
 
+create_corps_commander = {
+	name = "Kenneth G. Blackadder"
+	picture = "Portrait_Blackader_Kenneth_Gault.dds"
+	traits = { naval_invader }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "James A. de Lalanne"
+	picture = "Portrait_James_Arthur_de_Lalanne.dds"
+	traits = { old_guard }
+	skill = 3
+}
+
 ### Ship Variants ###
 
 create_equipment_variant = {

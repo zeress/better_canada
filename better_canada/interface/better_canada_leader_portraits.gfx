@@ -18,7 +18,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_QUE_lionel_groulx"
 		textureFile = "gfx//leaders//QUE//Portrait_Lionel_Groulx.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_QUE_kenneth_gault_blackadder"
+		textureFile = "gfx//leaders//CAN//Portrait_Blackader_Kenneth_Gault.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QUE_james_arthuer_de_lalanne"
+		textureFile = "gfx//leaders//CAN//Portrait_James_Arthur_de_Lalanne.dds"
+	}
 	
 	# Canada
 	spriteType = {
