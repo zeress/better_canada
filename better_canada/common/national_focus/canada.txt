@@ -2183,6 +2183,11 @@ focus_tree = {
 		
 		completion_reward = {
 			set_global_flag = quebecois_propaganda
+			if = {
+				limit = { has_idea = quebecois_no_conscription }
+				remove_ideas = quebecois_no_conscription
+				add_ideas = quebecois_minor_conscription
+			}
 			custom_effect_tooltip = quebecois_propaganda_tooltip
 		}
 	}

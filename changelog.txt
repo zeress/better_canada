@@ -2,6 +2,7 @@
 - Boosted Canada's population in 1936 to 10.95M up from 10.21M to match census records from 1936
 - Added traits to commanders
 - Added commanders for Quebec
+- Guaranteed at least minor conscription support on the diplomatic side of the Quebec plebiscite
 - Adjusted the population spreads to be more accurate, including Newfoundland
 - Added an option to become Quebec if it rebels
 - Removed starting cores for Quebec
