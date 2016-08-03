@@ -253,7 +253,7 @@ focus_tree = {
 		mutually_exclusive = { focus = QUE_the_continental_alliance focus = QUE_mouvement_nationaliste }
 		
 		ai_will_do = {
-			factor = 10
+			factor = 11
 		}
 		
 		completion_reward = {
@@ -421,7 +421,7 @@ focus_tree = {
 		mutually_exclusive = { focus = QUE_the_continental_alliance focus = QUE_mouvement_socialiste }
 		
 		ai_will_do = {
-			factor = 10
+			factor = 12
 		}
 		
 		completion_reward = {
