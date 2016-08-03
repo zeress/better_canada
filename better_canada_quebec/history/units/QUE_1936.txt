@@ -1,36 +1,16 @@
 ﻿division_template = {
-	name = "District Militia"	# For largest Military District Forces (3 brigade forces)
+	name = "District Milice"	# For largest Military District Forces (3 brigade forces)
 	# Note: all forces at reserve levels in 1936
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		light_armor = { x = 3 y = 0 }
+        artillery_brigade = { x = 1 y = 0 }
+		anti_tank_brigade = { x = 1 y = 1 }
 	}
 }
 division_template = {
-	name = "Infantry Division"			# For 1st, 2nd Canadian Infantry Divisions
-										# Frontline divisions, most experienced, best-equipped
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-division_template = {
-	name = "Cavalry Militia"  
+	name = "Cavalerie Milice"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -38,6 +18,8 @@ division_template = {
 		cavalry = { x = 0 y = 2 }
 	}
 }
+
+
 
 units = {
 	division= {	
