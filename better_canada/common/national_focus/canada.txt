@@ -789,6 +789,10 @@ focus_tree = {
 		y = 5
 		cost = 10
 		
+		available = {
+			466 = { is_owned_by = CAN }
+			468 = { is_owned_by = CAN }
+		}		
 		prerequisite = { focus = CAN_start_them_early }
 		mutually_exclusive = { focus = CAN_lay_west_claims }
 
@@ -2103,11 +2107,14 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		
 		prerequisite = { focus = CAN_support_regiments focus = CAN_rcaf_fighters focus = CAN_british_columbian_dockyard }
+		bypass = {
+			has_global_flag = que_independence_start
+		}
 		
 		x = 21
 		y = 4
 		cost = 10
-
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -2124,6 +2131,9 @@ focus_tree = {
 		
 		prerequisite = { focus = CAN_question_of_quebec }
 		mutually_exclusive = { focus = CAN_force_quebec }
+		bypass = {
+			has_global_flag = que_independence_start
+		}
 		
 		x = 22
 		y = 5
@@ -2159,7 +2169,10 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		
 		prerequisite = { focus = CAN_reason_with_quebec }
-		
+		bypass = {
+			has_global_flag = que_independence_start
+		}
+
 		x = 22
 		y = 6
 		cost = 15
