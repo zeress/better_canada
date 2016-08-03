@@ -1063,9 +1063,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			466 = {
-				add_manpower = 80000
-			}
+			add_political_power = 120
 		}
 	}
 	
@@ -1083,8 +1081,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			466 = {
+				add_manpower = 10000
+			}
 			add_manpower = 20000
-			add_national_unity = 0.05
+			add_national_unity = 0.1
 		}
 	}
 
