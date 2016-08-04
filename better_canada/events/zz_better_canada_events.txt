@@ -387,6 +387,142 @@ country_event = {
 	}
 }
 
+news_event = { # Quebec's Ambitions for the east coast
+	id = better_canada.13
+	title = better_canada.13.t
+	desc = better_canada.13.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.23.a # Interesting
+		trigger = {
+			NOT = {
+				TAG = QUE
+				TAG = CAN
+				is_in_faction_with = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.24.b # If it's war they want
+		trigger = { TAG = QUE }
+	}
+	option = {
+		name = better_canada.24.c # The land is too valuable
+		trigger = { 
+			OR = {
+				tag = ENG
+				tag = CAN
+			}
+		}
+	}
+	option = {
+		name = better_canada.23.f # We must prepare for the worst
+		trigger = {
+			NOT = {
+				TAG = QUE
+			}
+			is_in_faction_with = QUE
+		}
+	}
+}
+
+news_event = { # Quebec's Ambitions for French Louisiana
+	id = better_canada.14
+	title = better_canada.14.t
+	desc = better_canada.14.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.23.a # Interesting
+		trigger = {
+			NOT = {
+				TAG = QUE
+				TAG = USA
+				is_in_faction_with = USA
+			}
+		}
+	}
+	option = {
+		name = better_canada.24.b # If it's war they want
+		trigger = { TAG = QUE }
+	}
+	option = {
+		name = better_canada.20.b # Absolutely not!
+		trigger = { 
+			tag = USA
+		}
+	}
+	option = {
+		name = better_canada.23.f # We must prepare for the worst
+		trigger = {
+			NOT = {
+				TAG = QUE
+			}
+			is_in_faction_with = QUE
+		}
+	}
+}
+
+news_event = { # Revival of the Continental Alliance
+	id = better_canada.15
+	title = better_canada.15.t
+	desc = better_canada.15.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = better_canada.23.a # Interesting
+		trigger = {
+			NOT = { TAG = QUE }
+		}
+	}
+
+	option = {
+		name = better_canada.23.b # Excellent
+		trigger = { TAG = QUE }
+	}
+}
+
+country_event = {
+	id = better_canada.16
+	title = better_canada.16.t
+	desc = better_canada.16.d
+	picture = GFX_report_event_german_parade_paris
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	trigger = {
+		NOT = {
+			has_global_flag = quebec_takes_paris
+		}
+		16 = { controller = { tag = QUE } } # Paris
+	}
+	
+	immediate = {
+		set_global_flag = quebec_takes_paris
+	}
+	
+	option = {
+		name = better_canada.54.a	# Fantastic!
+	}
+}
+
 # Canada Demands Newfoundland and Labrador
 country_event = {
 	id = better_canada.20

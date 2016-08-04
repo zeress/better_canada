@@ -4,7 +4,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = { # disabled for now
+		modifier = {
 			add = 10
 			tag = QUE
 		}
@@ -202,9 +202,7 @@ focus_tree = {
 				}
 				USA = { country_event = { id = better_canada.12 } }
 			}
-			hidden_effect = {
-				#news_event = { days = 1 id = better_canada.X }
-			}
+			news_event = { hours = 6 id = better_canada.15 }
 		}
 	}
 	
@@ -507,6 +505,7 @@ focus_tree = {
 				target = CAN
 				generator = { 464 465 }
 			}
+			news_event = { hours = 6 id = better_canada.13 }
 		}
 	}
 	
@@ -541,6 +540,7 @@ focus_tree = {
 				target = USA
 				generator = { 389 391 394 393 392 395 396 261 358 360 373 369 372 368 370 371 }
 			}
+			news_event = { hours = 6 id = better_canada.14 }
 			hidden_effect = {
 				467 = { add_core_of = QUE } # Manitoba
 				682 = { add_core_of = QUE } # Northern Ontario
