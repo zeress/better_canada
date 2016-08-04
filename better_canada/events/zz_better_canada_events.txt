@@ -1311,13 +1311,14 @@ country_event = {
 	
 	option = {
 		name = better_canada.47.a # This is bad...
+		ai_chance = { factor = 10 }
 		
 		CAN = { quebec_rebel_effect = yes }
 	}
 	
 	option = {
 		name = better_canada.47.b # Switch to Quebec
-		trigger = { ai = no }
+		ai_chance = { factor = 0 }
 
 		effect_tooltip = { QUE = { change_tag_from = CAN } }
 		hidden_effect = { 
