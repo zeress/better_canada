@@ -688,16 +688,16 @@ focus_tree = {
 				state = 468
 			}
 			add_tech_bonus = {
-				name = synth_resources
+				name = synth_resources_bonus
 				bonus = 0.50
 				uses = 2
-				category = industry
+				category = synth_resources
 			}
 		}
 	}
 	
 	focus = {
-		id = QUE_french_knowledge # French Knowledge
+		id = QUE_french_knowledge # French Investments
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 8
 		y = 1
@@ -712,13 +712,16 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = que_french_knowledge_idea
 			468 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+			}
+			466 = {
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -750,7 +753,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = QUE_industrialize_the_north # Industrialize the North
+		id = QUE_industrialize_the_north # Bringing in the Northern Resources
 		icon = GFX_goal_generic_construction
 		x = 8
 		y = 3
@@ -764,7 +767,7 @@ focus_tree = {
 		
 		completion_reward = {
 			466 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 
 				add_building_construction = {
 					type = industrial_complex
@@ -774,7 +777,7 @@ focus_tree = {
 				
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -795,19 +798,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			466 = {
-				add_extra_state_shared_building_slots = 1
-				
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}	
 			468 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -831,7 +825,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 
 				add_building_construction = {
 					type = industrial_complex
@@ -863,6 +857,15 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = que_french_knowledge_idea
 			add_ideas = que_industrial_revolution_idea
+			466 = {
+				add_extra_state_shared_building_slots = 4
+				hidden_effect = { add_manpower = 300000 }
+			}
+			468 = {
+				add_extra_state_shared_building_slots = 2
+				hidden_effect = { add_manpower = -300000 }
+			}
+			custom_effect_tooltip = que_population_migrates_north
 		}
 	}
 	
@@ -931,7 +934,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 
 				add_building_construction = {
 					type = arms_factory
@@ -939,7 +942,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			# Add Forts to Quebec City Province
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = 12149
+				instant_build = yes
+			}
 		}
 	}
 	
@@ -967,7 +975,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			# Add Forts to Quebec City Province
 		}
 	}
 	
@@ -988,15 +995,15 @@ focus_tree = {
 			add_tech_bonus = {
 				name = support_tech_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = support_tech
 			}
-			466 = {
-				add_extra_state_shared_building_slots = 3
+			468 = {
+				add_extra_state_shared_building_slots = 1
 
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1063,7 +1070,7 @@ focus_tree = {
 			466 = {
 				add_manpower = 10000
 			}
-			add_manpower = 20000
+			add_manpower = 10000
 			add_national_unity = 0.1
 		}
 	}
@@ -1083,7 +1090,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 230000
+				add_manpower = 130000
 			}
 		}
 	}
@@ -1103,7 +1110,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 550000
+				add_manpower = 450000
 			}
 		}
 	}
@@ -1117,7 +1124,10 @@ focus_tree = {
 		
 		available = {
 			NOT = { FRA = { has_war_with = QUE } }
-			16 = { controller = { NOT = { tag = FRA } } } # Paris
+			AND = {
+				16 = { controller = { NOT = { tag = FRA } } } # Paris
+				16 = { controller = { NOT = { original_tag = FRA } } } # Paris
+			}
 		}
 		
 		prerequisite = {  focus = QUE_welcome_refugees }
@@ -1128,7 +1138,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 300000
+				add_manpower = 200000
 			}
 			# Idea or Advisor?
 		}
