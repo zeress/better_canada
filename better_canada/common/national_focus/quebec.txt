@@ -877,16 +877,16 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1066,9 +1066,9 @@ focus_tree = {
 	##
 
 	focus = {
-		id = QUE_quebec_national_forces # Quebec National Forces
+		id = QUE_quebec_national_forces # Quebecois Militia
 		icon = GFX_goal_generic_military_sphere
-		x = 14
+		x = 15
 		y = 0
 		cost = 10
 
@@ -1195,4 +1195,361 @@ focus_tree = {
 			# Idea or Advisor?
 		}
 	}
+	
+	focus = {
+		id = QUE_huot_automatic_rifle # Huot Automatic Rifle
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 1
+		cost = 10
+		
+		prerequisite = {  focus = QUE_quebec_national_forces }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = joseph_hout
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_french_officers # French Officer Training
+		icon = GFX_goal_generic_cavalry
+		x = 14
+		y = 2
+		cost = 10
+		
+		prerequisite = {  focus = QUE_huot_automatic_rifle }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = QUE_engineer_spirit # Engineer spirit
+		icon = GFX_goal_generic_construction2
+		x = 14
+		y = 3
+		cost = 10
+		
+		prerequisite = {  focus = QUE_french_officers }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			}
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = QUE_army_theory # Trois-Rivieres Theories
+		icon = GFX_goal_generic_army_doctrines
+		x = 14
+		y = 4
+		cost = 10
+		
+		prerequisite = {  focus = QUE_engineer_spirit }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 30
+		}
+	}
+	
+	focus = {
+		id = QUE_commandos # Commandos
+		icon = GFX_goal_generic_special_forces
+		x = 14
+		y = 5
+		cost = 10
+		
+		prerequisite = {  focus = QUE_army_theory }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+			army_experience = 40
+		}
+	}
+	
+	focus = {
+		id = QUE_bombardier_limited # L'Auto-Neige Bombardier Limitee
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 1
+		cost = 10
+		
+		prerequisite = {  focus = QUE_quebec_national_forces }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				uses = 1
+				technology = motorised_infantry
+			}
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_bombardier_b12 # Adaptable Snowmobiles
+		icon = GFX_goal_generic_army_motorized
+		x = 16
+		y = 2
+		cost = 10
+		
+		prerequisite = {  focus = QUE_bombardier_limited }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = can_winter_bonus
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = QUE_montreal_locomotive_works # Montreal Locomotive Works
+		icon = GFX_goal_generic_army_artillery
+		x = 16
+		y = 3
+		cost = 10
+		
+		prerequisite = {  focus = QUE_bombardier_b12 }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_light_tanks # Light Army, Light Tanks
+		icon = GFX_goal_generic_build_tank
+		x = 16
+		y = 4
+		cost = 10
+		
+		prerequisite = {  focus = QUE_montreal_locomotive_works }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_light_armor
+			}	
+		}
+	}
+	
+	focus = {
+		id = QUE_grand_strategy # Grand Strategy
+		icon = GFX_goal_generic_build_tank
+		x = 17
+		y = 5
+		cost = 10
+		
+		prerequisite = {  focus = QUE_light_tanks }
+		prerequisite = {  focus = QUE_rule_the_skies }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_naval_bombing # Bomb Their Ships
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 18
+		y = 2
+		cost = 10
+		
+		prerequisite = {  focus = QUE_bombardier_limited }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_tac_bomber # Cut Them Off
+		icon = GFX_goal_generic_occupy_start_war
+		x = 18
+		y = 3
+		cost = 10
+		
+		prerequisite = {  focus = QUE_naval_bombing }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tac_bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = tac_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_rule_the_skies # Rule the Skies
+		icon = GFX_goal_generic_air_fighter
+		x = 18
+		y = 4
+		cost = 10
+		
+		prerequisite = {  focus = QUE_tac_bomber }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 0.5
+				uses = 2
+				category = light_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = QUE_quebec_national_army # Quebec National Army
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 7
+		cost = 10
+
+		prerequisite = {  focus = QUE_grand_strategy }
+		prerequisite = {  focus = QUE_commandos }
+		prerequisite = {  focus = QUE_welcome_refugees }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			army_experience = 100
+			add_ideas = que_spirit_of_quebec_idea
+		}
+	}
 }
+
