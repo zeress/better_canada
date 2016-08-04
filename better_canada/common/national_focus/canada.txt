@@ -1441,6 +1441,11 @@ focus_tree = {
 		id = CAN_canadian_pacific_railway # Canadian Pacific Railway
 		icon = GFX_goal_generic_construct_infrastructure
 		
+		available = {
+			CAN = { owns_state = 464 } # Nova Scotia
+			CAN = { owns_state = 465 } # New Brunswick
+		}
+		
 		prerequisite = { focus = CAN_further_conversions }
 		prerequisite = { focus = CAN_military_repurposing }
 		prerequisite = { focus = CAN_natural_oil focus = CAN_quebecois_alumina }
