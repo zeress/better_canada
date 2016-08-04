@@ -76,7 +76,10 @@ ideas = {
 			picture = kenneth_stuart
 
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 			research_bonus = {
@@ -108,7 +111,10 @@ ideas = {
 			picture = harry_crerar
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -124,7 +130,10 @@ ideas = {
 			picture = andrew_mcnaughton
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -140,7 +149,10 @@ ideas = {
 			picture = george_pearkes
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -159,7 +171,10 @@ ideas = {
 			picture = percy_nelles
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -175,7 +190,10 @@ ideas = {
 			picture = george_croil
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -194,7 +212,10 @@ ideas = {
 			picture = lloyd_samuel_breadner
 			
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 
@@ -229,7 +250,10 @@ ideas = {
 			picture = guy_simonds
 
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 			traits = { army_artillery_2 }
@@ -259,7 +283,10 @@ ideas = {
 			picture = john_murchie
 
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 			traits = { army_armored_2 }
@@ -274,7 +301,10 @@ ideas = {
 			picture = frederick_m_w_harvey
 
 			allowed = {
-				original_tag = CAN
+				OR = {
+					original_tag = CAN
+					original_tag = QUE
+				}
 			}
 			
 			traits = { army_commando_2 }
