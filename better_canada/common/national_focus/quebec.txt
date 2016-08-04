@@ -142,6 +142,8 @@ focus_tree = {
 		
 		prerequisite = { focus = QUE_continental_revolution focus = QUE_french_paradise focus = QUE_reform_nouvelle_france focus = QUE_french_louisiana focus = QUE_foreign_embassies }
 
+		mutually_exclusive = { focus = QUE_establish_the_continental_alliance }
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -182,6 +184,8 @@ focus_tree = {
 		
 		prerequisite = { focus = QUE_continental_revolution focus = QUE_french_paradise focus = QUE_reform_nouvelle_france focus = QUE_french_louisiana focus = QUE_foreign_embassies }
 
+		mutually_exclusive = { focus = QUE_support_the_faction }
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -412,6 +416,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
 			add_political_power = 150
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -430,6 +438,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = nationalism
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 	}
 	
