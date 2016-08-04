@@ -1,0 +1,63 @@
+﻿QUE = {
+	submarine = {
+		prefix = ""
+		generic = { "Sous-marin" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi"
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Contre-torpilleur" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Croiseur léger" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Croiseur lourd" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi" 
+		}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Cuirassé" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi"
+		}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Bataille navale" }
+		unique = {
+			"Québec" "Montréal" "Ile de Québec" "Trois-Rivieres" "Saguenay" "Alma" "Bromont" "Roussillon" "Avignon" "Portneuf" "Gatineau" "Joliette" "Estérel"
+			"Gatineau" "Léry" "Lorraine" "Mirabel" "Saint-Lazare" "Sainte-Thérèse" "Sainte-Catherine" "Saint-Lambert" "Saint-Pascal" "Val-d'Or" "Paspébiac"
+			"Desbiens" "Clermont" "Estrie" "D'Autray" "Bécancour" "Abitibi"
+		}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Porte-avions" }
+		unique = {
+			"Mont-Tremblant" "Québec" "Rouville" "Rosemère" "La Prairie" "Grande-Rivière"
+		}
+	}
+}
