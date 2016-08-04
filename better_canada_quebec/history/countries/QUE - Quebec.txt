@@ -109,17 +109,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
+		neutrality = { 
+			popularity = 53
+		}
+		
 		democratic = { 
-			popularity = 95
+			popularity = 38
 		}
 
 		fascism = {
-			popularity = 4
+			popularity = 8
 		}
 		
 		communism = {
 			popularity = 1
-			#banned = no #default is no
 		}
 	}
 	
@@ -181,20 +184,19 @@ set_national_unity = 0.8
 
 		parties = {
 			neutrality = { 
-				popularity = 60
+				popularity = 53
 			}
-
+			
 			democratic = { 
 				popularity = 38
 			}
-			
+
 			fascism = {
-				popularity = 1
+				popularity = 8
 			}
 			
 			communism = {
 				popularity = 1
-				#banned = no #default is no
 			}
 		}
 		
@@ -210,7 +212,7 @@ set_national_unity = 0.8
 
 		parties = {
 			neutrality = { 
-				popularity = 60
+				popularity = 53
 			}
 			
 			democratic = { 
@@ -218,7 +220,7 @@ set_national_unity = 0.8
 			}
 
 			fascism = {
-				popularity = 1
+				popularity = 8
 			}
 			
 			communism = {
