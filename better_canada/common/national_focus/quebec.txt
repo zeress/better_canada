@@ -553,12 +553,18 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = que_claim_french_louisiana
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				generator = { 389 391 394 393 392 395 396 261 358 360 373 369 372 368 370 371 }
+			}
 			hidden_effect = {
 				467 = { add_core_of = QUE } # Manitoba
-				389 = { add_core_of = QUE } # North Dakota
-				464 = { add_core_of = QUE } # Minnesota
 				682 = { add_core_of = QUE } # Northern Ontario
 				276 = { add_core_of = QUE } # Southern Ontario
+				# USA
+				389 = { add_core_of = QUE } # North Dakota
+				391 = { add_core_of = QUE } # Minnesota
 				394 = { add_core_of = QUE } # Wisconsin
 				393 = { add_core_of = QUE } # Michigan
 				392 = { add_core_of = QUE } # Iowa
