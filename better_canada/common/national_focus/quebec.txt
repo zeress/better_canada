@@ -1090,7 +1090,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 130000
+				add_manpower = 70000
 			}
 		}
 	}
@@ -1110,7 +1110,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 450000
+				add_manpower = 90000
 			}
 		}
 	}
@@ -1138,7 +1138,7 @@ focus_tree = {
 		
 		completion_reward = {
 			468 = {
-				add_manpower = 200000
+				add_manpower = 120000
 			}
 			# Idea or Advisor?
 		}
