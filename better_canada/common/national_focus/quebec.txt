@@ -519,6 +519,11 @@ focus_tree = {
 			332 = { add_core_of = QUE }
 			464 = { add_core_of = QUE }
 			465 = { add_core_of = QUE }
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				generator = { 464 465 }
+			}
 		}
 	}
 	
@@ -529,9 +534,17 @@ focus_tree = {
 		y = 5
 		cost = 10
 		
+		available = {
+			AND = {
+				QUE = { owns_state = 464 } # Nova Scotia
+				QUE = { owns_state = 465 } # New Brunswick
+			}
+		}
+		
 		prerequisite = { focus = QUE_start_them_early }
 
 		bypass = {
+			USA = { is_in_faction_with = QUE }
 		}
 
 		ai_will_do = {
@@ -539,7 +552,28 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			# Claims on French Lousiana	http://www.frenchcreoles.com/louisiana.jpg
+			custom_effect_tooltip = que_claim_french_louisiana
+			hidden_effect = {
+				467 = { add_core_of = QUE } # Manitoba
+				389 = { add_core_of = QUE } # North Dakota
+				464 = { add_core_of = QUE } # Minnesota
+				682 = { add_core_of = QUE } # Northern Ontario
+				276 = { add_core_of = QUE } # Southern Ontario
+				394 = { add_core_of = QUE } # Wisconsin
+				393 = { add_core_of = QUE } # Michigan
+				392 = { add_core_of = QUE } # Iowa
+				395 = { add_core_of = QUE } # Illinois
+				396 = { add_core_of = QUE } # Indiana
+				261 = { add_core_of = QUE } # Ohio
+				358 = { add_core_of = QUE } # New York
+				360 = { add_core_of = QUE } # Pennsylvania
+				373 = { add_core_of = QUE } # Missouri
+				369 = { add_core_of = QUE } # Kentucky
+				372 = { add_core_of = QUE } # Arkansas
+				368 = { add_core_of = QUE } # Tennesse	
+				370 = { add_core_of = QUE } # Mississipi
+				371 = { add_core_of = QUE } # Louisiana
+			}
 		}
 	}
 	
