@@ -3,6 +3,9 @@ state={
 	id=471
 	name="YUKON_TERRITORY" # Northwestern Canada
 	manpower = 4572
+	resources={
+		tungsten=4
+	}
 
 	state_category = wasteland
 

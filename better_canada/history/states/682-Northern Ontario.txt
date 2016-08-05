@@ -7,6 +7,7 @@ state={
 	resources={
 		aluminium=22
 		steel=12
+		tungsten=12
 	}
 
 	history={
