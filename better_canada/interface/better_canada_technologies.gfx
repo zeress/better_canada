@@ -1,4 +1,26 @@
 spriteTypes = {
+	# CAN Navy
+
+	SpriteType = { # Destroyer I
+		name = "GFX_CAN_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer II
+		name = "GFX_CAN_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer III
+		name = "GFX_CAN_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer IV
+		name = "GFX_CAN_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_destroyer.dds"
+	}
+	
 	# QUE Aircraft
 	
 	SpriteType = {
