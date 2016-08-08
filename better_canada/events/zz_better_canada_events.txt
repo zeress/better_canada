@@ -1558,7 +1558,6 @@ country_event = { # Synth Rubber
 				category = industry
 			}
 		}
-		#CAN = { QUE = { copy_techs_effect = yes }}
 	}
 }
 
@@ -1670,19 +1669,5 @@ country_event = {
 		}
 		remove_ideas = canada_vivid_war_response
 		add_ideas = canada_canadian_war_response
-	}	
-}
-
-country_event = {
-	id = better_canada.55 # They Remain Unconvinced
-	title = better_canada.44.t
-	desc = better_canada.44.d
-	picture = GFX_report_event_quebec_unconvinced
-	
-	is_triggered_only = yes
-
-	option = {
-		name = better_canada.44.b	# Unfortunate
-		CAN = { QUE = { copy_all_techs_effect = yes }}
 	}	
 }

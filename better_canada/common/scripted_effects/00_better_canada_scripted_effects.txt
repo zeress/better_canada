@@ -73,7 +73,7 @@ quebec_rebel_effect = {
 				popularity = 0.3
 			}
 			add_opinion_modifier = { target = CAN modifier = que_secession }
-			#CAN = { QUE = { copy_all_techs_effect = yes }}
+			CAN = { QUE = { copy_all_techs_effect = yes }}
 		}
 		QUE = { change_tag_from = CAN }
 		declare_war_on = {
