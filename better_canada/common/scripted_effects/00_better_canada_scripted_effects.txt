@@ -73,7 +73,7 @@ quebec_rebel_effect = {
 				popularity = 0.3
 			}
 			add_opinion_modifier = { target = CAN modifier = que_secession }
-			#CAN = { QUE = { copy_techs_effect = yes }}
+			#CAN = { QUE = { copy_all_techs_effect = yes }}
 		}
 		QUE = { change_tag_from = CAN }
 		declare_war_on = {
@@ -84,12 +84,35 @@ quebec_rebel_effect = {
 	}
 }
 
-copy_techs_effect = {
-	# PREV = CAN
-	# THIS = QUE
+copy_all_techs_effect = {
+	# Copies literally all techs
+	# To use this and all other "_techs_effect"s you must make sure the
+	# relevant effect, like "copy_air_doctrine_techs_effect = yes",
+	#  is wrapped in the correct scopes in the correct order.
+	# For example: 
+	# 	CAN = { USA = { copy_air_doctrine_techs_effect = yes }
+	# Would copy CAN's air doctrines to USA aka CAN -> USA
 	
+	
+	# The following is true assuming the effect has been wrapped correctly:
+	# PREV = Source
+	# THIS = Destination
+
+	copy_air_doctrine_techs_effect = yes
+	copy_air_techs_techs_effect = yes
+	copy_armor_techs_effect = yes
+	copy_artillery_techs_effect = yes
+	copy_electronic_mechanical_engineering_techs_effect = yes
+	copy_industry_techs_effect = yes
+	copy_infantry_techs_effect = yes
+	copy_land_doctrine_techs_effect = yes
+	copy_naval_techs_effect = yes
+	copy_naval_doctrine_techs_effect = yes
+	copy_support_techs_effect = yes
+}
+
+copy_air_doctrine_techs_effect = {
 	# Air Doctrines
-	## Strategic Destruction
 	if = {
 		limit = { PREV = { has_tech = air_superiority } }
 		set_technology = { air_superiority = 1 }
@@ -150,8 +173,6 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = mass_destruction } }
 		set_technology = { mass_destruction = 1 }
 	}
-	
-	## Battlefield Support
 	if = {
 		limit = { PREV = { has_tech = formation_flying } }
 		set_technology = { formation_flying = 1 }
@@ -204,8 +225,6 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = forward_interception } }
 		set_technology = { forward_interception = 1 }
 	}
-	
-	## Operational Integrity
 	if = {
 		limit = { PREV = { has_tech = force_rotation } }
 		set_technology = { force_rotation = 1 }
@@ -254,7 +273,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = high_level_bombing } }
 		set_technology = { high_level_bombing = 1 }
 	}
-	
+}
+
+copy_air_techs_techs_effect = {
 	# Air Techs
 	if = {
 		limit = { PREV = { has_tech = early_fighter } }
@@ -400,6 +421,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = suicide_craft } }
 		set_technology = { suicide_craft = 1 }
 	}
+}
+
+copy_armor_techs_effect = {
 	# Armor
 	if = {
 		limit = { PREV = { has_tech = gwtank } }
@@ -581,7 +605,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = super_heavy_spaa } }
 		set_technology = { suicide_craft = 1 }
 	}
-	
+}
+
+copy_artillery_techs_effect = {
 	# Artillery
 	if = {
 		limit = { PREV = { has_tech = gw_artillery } }
@@ -675,6 +701,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = antitank5 } }
 		set_technology = { antitank5 = 1 }
 	}
+}
+
+copy_electronic_mechanical_engineering_techs_effect = {
 	# Electronic Mechanical Engineering
 	if = {
 		limit = { PREV = { has_tech = electronic_mechanical_engineering } }
@@ -780,7 +809,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = nukes } }
 		set_technology = { nukes = 1 }
 	}
-	
+}
+
+copy_industry_techs_effect = {
 	# Industry
 	if = {
 		limit = { PREV = { has_tech = basic_machine_tools } }
@@ -902,7 +933,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = excavation5 } }
 		set_technology = { excavation5 = 1 }
 	}
-	
+}
+
+copy_infantry_techs_effect = {
 	# Infantry
 	if = {
 		limit = { PREV = { has_tech = infantry_weapons } }
@@ -1020,6 +1053,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = mechanised_infantry3 } }
 		set_technology = { mechanised_infantry3 = 1 }
 	}
+}
+
+copy_land_doctrine_techs_effect = {
 	# Land Doctrine
 	if = {
 		limit = { PREV = { has_tech = mobile_warfare } }
@@ -1273,7 +1309,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = guerilla_warfare } }
 		set_technology = { guerilla_warfare = 1 }
 	}
-	
+}
+
+copy_naval_techs_effect = {
 	# Naval
 	if = {
 		limit = { PREV = { has_tech = early_destroyer } }
@@ -1399,7 +1437,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = advanced_submarine } }
 		set_technology = { advanced_submarine = 1 }
 	}
-	
+}
+
+copy_naval_doctrine_techs_effect = {
 	# Naval Doctrine
 	if = {
 		limit = { PREV = { has_tech = fleet_in_being } }
@@ -1581,7 +1621,9 @@ copy_techs_effect = {
 		limit = { PREV = { has_tech = integrated_convoy_defence_bs } }
 		set_technology = { integrated_convoy_defence_bs = 1 }
 	}
-	
+}
+
+copy_support_techs_effect = {
 	# Support
 	if = {
 		limit = { PREV = { has_tech = tech_support } }

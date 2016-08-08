@@ -1683,6 +1683,6 @@ country_event = {
 
 	option = {
 		name = better_canada.44.b	# Unfortunate
-		CAN = { QUE = { copy_techs_effect = yes }}
+		CAN = { QUE = { copy_all_techs_effect = yes }}
 	}	
 }
