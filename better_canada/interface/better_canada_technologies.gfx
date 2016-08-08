@@ -1,6 +1,28 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Submarines
+	
+	SpriteType = { # Submarine I
+		name = "GFX_CAN_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine II
+		name = "GFX_CAN_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine III
+		name = "GFX_CAN_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine IV
+		name = "GFX_CAN_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_submarine.dds"
+	}
+	
 	# Carriers
 	
 	SpriteType = { # Carrier I
