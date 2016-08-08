@@ -157,6 +157,164 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/CAN_advanced_destroyer.dds"
 	}
 	
+	# QUE Navy
+
+	# Submarines
+	
+	SpriteType = { # Submarine I
+		name = "GFX_QUE_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine II
+		name = "GFX_QUE_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine III
+		name = "GFX_QUE_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_submarine.dds"
+	}
+	
+	SpriteType = { # Submarine IV
+		name = "GFX_QUE_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_submarine.dds"
+	}
+	
+	# Carriers
+	
+	SpriteType = { # Carrier I
+		name = "GFX_QUE_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier II
+		name = "GFX_QUE_basic_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier III
+		name = "GFX_QUE_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier IV
+		name = "GFX_QUE_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_carrier.dds"
+	}
+	
+	# Heavy Battleships
+	
+	SpriteType = { # Heavy Battleship I
+		name = "GFX_QUE_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_battleship.dds"
+	}
+	
+	SpriteType = { # Heavy Battleship II
+		name = "GFX_QUE_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_battleship2.dds"
+	}
+	
+	# Battleships
+	
+	SpriteType = { # Battleship I
+		name = "GFX_QUE_early_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship II
+		name = "GFX_QUE_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship III
+		name = "GFX_QUE_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship IV
+		name = "GFX_QUE_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_battleship.dds"
+	}
+	
+	# Battlecruisers
+	
+	SpriteType = { # Battlecruiser I
+		name = "GFX_QUE_early_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_battlecruiser.dds"
+	}
+	
+	SpriteType = { # Battlecruiser II
+		name = "GFX_QUE_basic_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_battlecruiser.dds"
+	}
+	
+	# Heavy Cruiser
+	
+	SpriteType = { # Heavy Cruiser I
+		name = "GFX_QUE_early_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_heavy_cruiser.dds"
+	}	
+	
+	SpriteType = { # Heavy Cruiser II
+		name = "GFX_QUE_basic_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_heavy_cruiser.dds"
+	}	
+
+	SpriteType = { # Heavy Cruiser III
+		name = "GFX_QUE_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_heavy_cruiser.dds"
+	}
+	
+	SpriteType = { # Heavy Cruiser IV
+		name = "GFX_QUE_advanced_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_heavy_cruiser.dds"
+	}	
+	
+	# Light Cruisers
+	
+	SpriteType = { # Light Cruiser I
+		name = "GFX_QUE_early_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_light_cruiser.dds"
+	}
+	
+	SpriteType = { # Light Cruiser II
+		name = "GFX_QUE_basic_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_light_cruiser.dds"
+	}
+	
+	SpriteType = { # Light Cruiser III
+		name = "GFX_QUE_improved_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_light_cruiser.dds"
+	}
+	
+	SpriteType = { # Light Cruiser IV
+		name = "GFX_QUE_advanced_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_light_cruiser.dds"
+	}
+	
+	# Destroyers
+	
+	SpriteType = { # Destroyer I
+		name = "GFX_QUE_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer II
+		name = "GFX_QUE_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer III
+		name = "GFX_QUE_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_destroyer.dds"
+	}
+	
+	SpriteType = { # Destroyer IV
+		name = "GFX_QUE_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_destroyer.dds"
+	}	
+	
 	# QUE Aircraft
 	
 	SpriteType = {
