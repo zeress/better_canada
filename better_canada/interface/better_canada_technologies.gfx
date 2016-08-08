@@ -1,6 +1,18 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Heavy Battleships
+	
+	SpriteType = { # Heavy Battleship I
+		name = "GFX_CAN_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_battleship.dds"
+	}
+	
+	SpriteType = { # Heavy Battleship II
+		name = "GFX_CAN_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/CAN_heavy_battleship2.dds"
+	}
+	
 	# Battleships
 	
 	SpriteType = { # Battleship I
