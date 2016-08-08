@@ -1,14 +1,2 @@
-- Boosted Canada's base national unity back to 80% however instead the Conscription Refusal modifiers applies the scaling malus instead
-- Boosted Canada's population in 1936 to 10.95M up from 10.21M to match census records from 1936
-- Added a complete NF tree for Quebec with 59 Focuses. I'd like to thank everyone on workshop that gave their ideas and support, especially Kesler
-- Created a sub-mod that starts Quebec independent. This is merely an optional for fun mod and should be treated similarily to starting in 1939 as Canada as it may not be very balanced for it.
-- Added traits to commanders
-- Added commanders for Quebec
-- Added two new national focuses to Canada, dealing with Rocketry and Nuclear weapons
-- Guaranteed at least minor conscription support on the diplomatic side of the Quebec plebiscite
-- Adjusted the population spreads to be more accurate, including Newfoundland
-- Renamed the "Quebec" and "Saint Lawrence" states to Northern and Southern Quebec
-- Adjusted the two above's borders to be closer to historical disctrict divsionss\ in Quebec
-- Added an option to become Quebec if it rebels
-- Removed starting cores for Quebec
-- Added technology defines for Quebec instead of generic tank, plane etc. pictures courtesy of 'SirDerp'
+- Added unique naval icons for Canada and Quebec's tech trees
+- Quebec no longer starts with almost no tech when it rebels, instead copying all of Canada's tech at the moment of rebellion
