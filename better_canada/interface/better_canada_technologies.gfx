@@ -1,6 +1,28 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Battleships
+	
+	SpriteType = { # Battleship I
+		name = "GFX_CAN_early_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship II
+		name = "GFX_CAN_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship III
+		name = "GFX_CAN_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_battleship.dds"
+	}
+	
+	SpriteType = { # Battleship IV
+		name = "GFX_CAN_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_battleship.dds"
+	}
+	
 	# Battlecruisers
 	
 	SpriteType = { # Battlecruiser I
@@ -11,7 +33,7 @@ spriteTypes = {
 	SpriteType = { # Battlecruiser II
 		name = "GFX_CAN_basic_battlecruiser_medium"
 		texturefile = "gfx/interface/technologies/CAN_basic_battlecruiser.dds"
-	}	
+	}
 	
 	# Heavy Cruiser
 	
