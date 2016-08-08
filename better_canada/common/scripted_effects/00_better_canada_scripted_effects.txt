@@ -75,7 +75,6 @@ quebec_rebel_effect = {
 			add_opinion_modifier = { target = CAN modifier = que_secession }
 			CAN = { QUE = { copy_all_techs_effect = yes }}
 		}
-		QUE = { change_tag_from = CAN }
 		declare_war_on = {
 			target = QUE
 			type = annex_everything
