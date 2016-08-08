@@ -1,6 +1,28 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Carriers
+	
+	SpriteType = { # Carrier I
+		name = "GFX_CAN_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier II
+		name = "GFX_CAN_basic_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier III
+		name = "GFX_CAN_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_carrier.dds"
+	}
+	
+	SpriteType = { # Carrier IV
+		name = "GFX_CAN_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_carrier.dds"
+	}
+	
 	# Heavy Battleships
 	
 	SpriteType = { # Heavy Battleship I
