@@ -1,6 +1,18 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Battlecruisers
+	
+	SpriteType = { # Battlecruiser I
+		name = "GFX_CAN_early_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_battlecruiser.dds"
+	}
+	
+	SpriteType = { # Battlecruiser II
+		name = "GFX_CAN_basic_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_battlecruiser.dds"
+	}	
+	
 	# Heavy Cruiser
 	
 	SpriteType = { # Heavy Cruiser I
