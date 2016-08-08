@@ -1,6 +1,30 @@
 spriteTypes = {
 	# CAN Navy
 
+	# Heavy Cruiser
+	
+	SpriteType = { # Heavy Cruiser I
+		name = "GFX_CAN_early_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_early_heavy_cruiser.dds"
+	}	
+	
+	SpriteType = { # Heavy Cruiser II
+		name = "GFX_CAN_basic_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_basic_heavy_cruiser.dds"
+	}	
+
+	SpriteType = { # Heavy Cruiser III
+		name = "GFX_CAN_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_improved_heavy_cruiser.dds"
+	}
+	
+	SpriteType = { # Heavy Cruiser IV
+		name = "GFX_CAN_advanced_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/CAN_advanced_heavy_cruiser.dds"
+	}	
+	
+	# Light Cruisers
+	
 	SpriteType = { # Light Cruiser I
 		name = "GFX_CAN_early_light_cruiser_medium"
 		texturefile = "gfx/interface/technologies/CAN_early_light_cruiser.dds"
@@ -20,6 +44,8 @@ spriteTypes = {
 		name = "GFX_CAN_advanced_light_cruiser_medium"
 		texturefile = "gfx/interface/technologies/CAN_advanced_light_cruiser.dds"
 	}
+	
+	# Destroyers
 	
 	SpriteType = { # Destroyer I
 		name = "GFX_CAN_early_destroyer_medium"
