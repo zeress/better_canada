@@ -1,0 +1,15 @@
+# Peace Arch
+news_event = {
+	id = peacearch.1
+	title = peacearch.t
+	desc = peacearch.d
+	picture = GFX_news_peacearch
+	
+	major = yes
+	
+	<provinceID> = { controller = { tag = USA } }
+
+	is_triggered_only = yes
+	
+
+
