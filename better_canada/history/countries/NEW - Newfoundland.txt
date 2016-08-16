@@ -177,15 +177,15 @@ set_national_unity = 0.9
 
 		parties = {
 			democratic = { 
-				popularity = 98
+				popularity = 92
 			}
 
 			fascism = {
-				popularity = 1
+				popularity = 2
 			}
 			
 			communism = {
-				popularity = 1
+				popularity = 6
 			}
 		}
 		
@@ -197,10 +197,10 @@ set_national_unity = 0.9
 }
 
 create_field_marshal = {
-	name = "Charles Foulkes"
+	name = "Roy Hamel"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { }
-	skill = 5
+	skill = 2
 }
 
 ### Ship Variants ###
