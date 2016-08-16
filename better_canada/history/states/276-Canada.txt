@@ -11,7 +11,7 @@ state={
 	state_category = large_city
 	
 	history={
-		owner = NEW
+		owner = CAN
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2
