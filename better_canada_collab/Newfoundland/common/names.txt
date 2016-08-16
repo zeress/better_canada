@@ -1,4 +1,4 @@
-﻿QUE = {
+NEW = {
 	male = {
 		names = { 
 			Fred Albert Allan Alexander Arthur Augustus Brian Bernard Bob Cathal Christopher Con Daniel Denis Desmond Dorman Éamon
