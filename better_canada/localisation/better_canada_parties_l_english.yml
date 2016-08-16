@@ -1,9 +1,11 @@
 ﻿l_english:
+ # Canada
  CAN_fascism_party:0 "CNP"
  CAN_fascism_party_long:0 "Canadian Nationalist Party"
  CAN_national_unity_party:0 "NUP"
  CAN_national_unity_party_long:0 "Canadian National Socialist Unity Party"
 
+ # Quebec
  QUE_fascism_party:0 "PNSC"
  QUE_fascism_party_long:0 "Parti National Social Chrétien"
  QUE_communism_party:0 "PCQ"
@@ -12,3 +14,13 @@
  QUE_democratic_party_long:0 "Union Nationale"
  QUE_neutrality_party:0 "PLQ"
  QUE_neutrality_party_long:0 "Parti Libéral du Québec"
+ 
+ # Newfoundland
+ NEW_fascism_party:0 "UNP"
+ NEW_fascism_party_long:0 "United Newfoundland Party"
+ NEW_communism_party:0 "FPU"
+ NEW_communism_party_long:0 "Fisherman's Protective Union"
+ NEW_democratic_party:0 "CG"
+ NEW_democratic_party_long:0 "Comission of Government"
+ NEW_neutrality_party:0 "NPP"
+ NEW_neutrality_party_long:0 "Newfoundland People's Party"
