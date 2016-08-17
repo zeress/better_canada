@@ -6,13 +6,13 @@ state={
 	manpower=4576
 
 	history={
-		owner = ENG
+		owner = NEW
 		buildings = {
 			infrastructure = 1
 
 		}
 		add_core_of = CAN
-
+		add_core_of = NEW
 	}
 
 	provinces={
