@@ -256,9 +256,12 @@ focus_tree = {
 			add_ideas = internationalism
 			if = {
 				limit = { is_in_faction_with = ENG }
-				ENG = { 
-					remove_from_faction = CAN
-					add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
+				custom_effect_tooltip = canada_leaves_allies_tooltip
+				hidden_effect = {
+					ENG = { 
+						remove_from_faction = CAN
+						add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
+					}
 				}
 			}
 			SOV = {
@@ -395,9 +398,12 @@ focus_tree = {
 			add_ideas = nationalism
 			if = {
 				limit = { is_in_faction_with = ENG }
-				ENG = { 
-					remove_from_faction = CAN
-					add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
+				custom_effect_tooltip = canada_leaves_allies_tooltip
+				hidden_effect = {
+					ENG = { 
+						remove_from_faction = CAN
+						add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
+					}
 				}
 			}
 			GER = {
