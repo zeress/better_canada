@@ -243,9 +243,12 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = internationalism
-			ENG = { 
-				remove_from_faction = CAN
-				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
+			if = {
+				limit = { is_in_faction_with = ENG }
+				ENG = { 
+					remove_from_faction = CAN
+					add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_con }
+				}
 			}
 			SOV = {
 				add_opinion_modifier = { target = CAN modifier = can_communist_tendencies_pro }
@@ -375,9 +378,12 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = nationalism
-			ENG = { 
-				remove_from_faction = CAN
-				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
+			if = {
+				limit = { is_in_faction_with = ENG }
+				ENG = { 
+					remove_from_faction = CAN
+					add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_con }
+				}
 			}
 			GER = {
 				add_opinion_modifier = { target = CAN modifier = can_fascist_tendencies_pro }

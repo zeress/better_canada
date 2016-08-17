@@ -1,2 +1,1 @@
-- Added unique naval icons for Canada and Quebec's tech trees
-- Quebec no longer starts with almost no tech when it rebels, instead copying all of Canada's tech at the moment of rebellion
+- Fixed an issue in regards to two NFs and being removed from a faction
