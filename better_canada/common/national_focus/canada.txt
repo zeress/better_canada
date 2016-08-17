@@ -873,8 +873,9 @@ focus_tree = {
 		completion_reward = {
 			if =  {
 				limit = {
-					ENG = { owns_state = 331 }
-					ENG = { owns_state = 332 }
+					NEW = { owns_state = 331 }
+					NEW = { owns_state = 332 }
+					NEW = { is_puppet = yes }
 				}
 				country_event = { id = better_canada.21 }
 			}			
