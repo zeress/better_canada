@@ -1,2 +1,3 @@
 - Newfoundland starts as a puppet to the UK now
+- Fixed availability of some political NFs
 - Fixed an issue in regards to two NFs and being removed from a faction

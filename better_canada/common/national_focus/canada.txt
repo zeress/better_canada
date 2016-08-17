@@ -21,7 +21,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		cost = 10
-
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -41,6 +41,13 @@ focus_tree = {
 		prerequisite = { focus = CAN_statute_of_westminster }
 		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_swastika_clubs }
 
+		available = {
+			NOT = { 
+				has_government = fascism
+				has_government = communism
+			}
+		}
+		
 		ai_will_do = {
 			factor = 15
 		}
@@ -214,6 +221,10 @@ focus_tree = {
 		prerequisite = { focus = CAN_statute_of_westminster }
 		mutually_exclusive = { focus = CAN_commonwealth_unity focus = CAN_swastika_clubs }
 
+		available = {
+			NOT = { has_government = fascism }
+		}
+		
 		ai_will_do = {
 			factor = 10
 		}
@@ -349,6 +360,10 @@ focus_tree = {
 		prerequisite = { focus = CAN_statute_of_westminster }
 		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_commonwealth_unity}
 
+		available = {
+			NOT = { has_government = communism }
+		}
+		
 		ai_will_do = {
 			factor = 5
 		}
