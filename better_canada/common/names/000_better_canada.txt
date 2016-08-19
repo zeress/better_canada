@@ -32,7 +32,7 @@
 			Cloutier Dube Poirier Poulin Thibault Martel Beaulieu Bedard Leclerc Nadeau
 			Grenier Lapointe Landry Hebert Demers Richard Desjardins
 	}
-	callsigns = { Buzz Duke Screwball Cowboy Butch Foss Hilly Beryl Cocky Bud Stocky Chunky Mac Goose Elmer Sammy Hap Rocky Skeets Hiram Red Smudger Timber Woody }
+	callsigns = { Buzz Duke Screwball Cowboy Butch Foss Hilly Beryl Cocky Bud Stocky Chunky Mac Goose Elmer Sammy Hap Rocky Skeets Hiram Red Smudger Timber Woody Chief Canuck }
 }
 
 QUE = {
