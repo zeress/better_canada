@@ -69,7 +69,7 @@ NEW = {
 			Aiken Ashe Abbott Breen Bartlett Bennett Blackwood Bond Collins Cosgrave Craig Doyle Dalton Dunn Donnelly Fitzgerald French Green Griffith Grosse House Fillier 
 			Kelly Larkin Lynch Locke Mallin Martin McCartan McCullough McGarry McGuinness McGrath McCarthy McCoubrey Moore Bishop Murphy Nangle Noel Sinnott Sloan Slaney
 			Mulcahy O'Brien O'Higgins O'Leary O'Toole O'Keefe Osmond Parsons Pye Pearse Pearcey Pike Power Plunket Renouf Rose Rumbolt Roberts Robinson Sheppard Snow Starkes Tricco Tucker Vaughan 
-			Walsh Whelan Wells White Williams Wicks Ivany Jackman Fitzpatrick Byrne Brennan Vavasour Poole
+			Walsh Whelan Wells White Williams Wicks Ivany Jackman Fitzpatrick Byrne Brennan Vavasour Poole Ogilvie
 	}
-	callsigns = { }
+	callsigns = { Goodeye Ace Victor Skook Rocket Arrow Gull Lucky Newfie Bullseye Fisher }
 }
