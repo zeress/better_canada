@@ -71,5 +71,5 @@ NEW = {
 			Mulcahy O'Brien O'Higgins O'Leary O'Toole O'Keefe Osmond Parsons Pye Pearse Pearcey Pike Power Plunket Renouf Rose Rumbolt Roberts Robinson Sheppard Snow Starkes Tricco Tucker Vaughan 
 			Walsh Whelan Wells White Williams Wicks Ivany Jackman Fitzpatrick Byrne Brennan Vavasour Poole Ogilvie
 	}
-	callsigns = { Goodeye Ace Victor Skook Rocket Arrow Gull Lucky Newfie Bullseye Fisher }
+	callsigns = { Goodeye Ace Victor Joe Rocket Arrow Gull Lucky Newfie Bullseye Fisher Skook }
 }
