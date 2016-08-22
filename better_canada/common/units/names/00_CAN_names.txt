@@ -31,22 +31,22 @@ CAN = {
 			"Kitchener" "La Malbaie" "Lachute" "Oshawa" "Lethbridge" "Arleux" "Revelstoke" "Castlegar" "Osoyoos" "Levis" "Lindsay" "Long Branch" "Louisburg" "Lunenburg"
 			"Matapedia" "Mayflower" "Merrittonia" "Midland" "Mimico" "Morden" "Nanaimo" "Napanee" "New Westminister" "Norsyd" "North Bay" "Kalamalka" "Tsawwassen" 
 			"Derby Reach" "Oakville" "Orillia" "Owen Sound" "Parry Sound" "Howe Sound" "Salish" "Peterborough" "Pictou" "Port Arthur" "Prescott" "Regina" "Shediac"
-			"Rimouski" "Rivière du Loup" "Rosthern" "Surrey" "St. Lambert" "Sackville" "Armentières" "Saskatoon" "Shawinigan" "Shediac" "Klondike" "Yukon" "Sherbrooke" 
+			"Rimouski" "RiviÃ¨re du Loup" "Rosthern" "Surrey" "St. Lambert" "Sackville" "ArmentiÃ¨res" "Saskatoon" "Shawinigan" "Shediac" "Klondike" "Yukon" "Sherbrooke" 
 			"Snowberry" "Sorel" "Spikenard" "Stellarton" "Whiskeyjack" "Strahroy" "Sudbury" "Summerside" "Summerland" "The Pas" "Thorlock" "Timmins" "Trail" "Fireweed"
-			"Trentonian" "Trillium" "Vancouver" "Ville de Québec" "Wetaskiwin" "Loos" "Weyburn" "Arras" "West York" "Gimli" "Whitby" "Windflower" "Woodstock" "Arnprior" 
+			"Trentonian" "Trillium" "Vancouver" "Ville de QuÃ©bec" "Wetaskiwin" "Loos" "Weyburn" "Arras" "West York" "Gimli" "Whitby" "Windflower" "Woodstock" "Arnprior" 
 			"Bowmanville" "Copper Cliff" "Hespeler" "Humberstone" "Huntsville" "Kincardine" "Leaside" "Orangeville" "Petrolia" "St. Thomas" "Tillsonburg" "Pasqueflower"
 			"Fort Frances" "Middlesex" "New Liskeard" "Portage" "Rockcliffe" "St. Boniface" "Wallaceburg" "Winnipeg" "Bellechasse" "Brockville" "Bayfield" "Blairmore"
 			"Burlington" "Canso" "Caraquet" "Cedabucto" "Chignecto" "Clayoquot" "Courtenay" "Cowichan" "Digby" "Drummonville" "Esquimalt" "Fort William" "Gananoque" "Resolution"
-			"Georgian" "Goderich" "Granby" "Grandmère" "Guysborough" "Ingonish" "Kenora" "Glenora" "Kentville" "Lachine" "Lockport" "Mahone" "Malpeque" "Melville" "Baychimo"
+			"Georgian" "Goderich" "Granby" "GrandmÃ¨re" "Guysborough" "Ingonish" "Kenora" "Glenora" "Kentville" "Lachine" "Lockport" "Mahone" "Malpeque" "Melville" "Baychimo"
 			"Milltown" "Minas" "Miramichi" "Mulgrave" "Nipigon" "Noranda" "Outarde" "Port Hope" "Quatsino" "Quinte" "Red Deer" "Sarnia" "Stratford" "Swift Current"
-			"Thunder" "Transcona" "Trois-Rivières" "Truro" "Rossland" "Ungava" "Vegrevilla" "Wasaga" "Westmount" "Comox" "Fundy" "Gaspe" "Nanoose" "Alder Lake" "Ash Lake"
+			"Thunder" "Transcona" "Trois-RiviÃ¨res" "Truro" "Rossland" "Ungava" "Vegrevilla" "Wasaga" "Westmount" "Comox" "Fundy" "Gaspe" "Nanoose" "Alder Lake" "Ash Lake"
 			"Beech Lake" "Birch Lake" "Cedar Lake" "Cherry Lake" "Fir Lake" "Hickory Lake" "Larch Lake" "Maple Lake" "Oak Lake" "Pine Lake" "Poplar Lake" "Spruce Lake"
 			"Willow Lake" "Coquitlam" "Cranbrook" "Daerwood" "Lavallee" "Llewellyn" "Lloyd George" "St. Joseph" "Avalon" "Fleur de Lis" "Laurier" "Hochelaga" "Red Lily"
 			"Baffin" "Cailiff" "Ironbound" "Liscomb" "Magdalen" "Manitoulin" "Miscou" "Ambler" "Beaver" "Caribou" "Cougar" "Elk" "Grizzly" "Husky" "Lynx" "Moose" "Otter"
 			"Raccoon" "Reindeer" "Renard" "Sans Peur" "Vison" "Wolf" "Patriot" "Patrician" "Earl Grey" "Minto" "Stanley" "Curlew" "Constance" "Tulip" "Wild Rose" "Seaquam" 
 			"Messines" "St. Eloi" "St. Julien" "Thiepval" "Vimy" "Ypres" "Buntzen" "Grand Forks" "Pillar Lake" "Pickle" "Marathon" "Port Nelson" "Mississauga" "Fort McMurray"
-			"Memphrémagog" "Preserver" "Protecteur" "Cormorant" "Badger" "Loon" "Blue Heron" "Mallard" "Blue Flag Iris" "Lady's Slipper" "White Trillium" "Mountain Avens"
-			"Bras d'Or" "Cabot" "Champlain" "Cartier" "Stadacona" "Laurentian" "Nicomekl" "Skagit" "Thompson"
+			"MemphrÃ©magog" "Preserver" "Protecteur" "Cormorant" "Badger" "Loon" "Blue Heron" "Mallard" "Blue Flag Iris" "Lady's Slipper" "White Trillium" "Mountain Avens"
+			"Bras d'Or" "Cabot" "Champlain" "Cartier" "Stadacona" "Laurentian" "Nicomekl" "Skagit" "Thompson" "Valcartier"
 			
 		} 
 	}
@@ -54,8 +54,8 @@ CAN = {
 		prefix = "HMCS"
 		generic = { "Light Cruiser" }
 		unique = {
-			"Ontario" "Québec" "Niobe" "Aurora" "Prince Rupert" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
-			"Toronto" "Montréal" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de Québec" "Winnipeg" "Hamilton" "London" "Kitchener" "St. Catharines" "Halifax" 
+			"Ontario" "QuÃ©bec" "Niobe" "Aurora" "Prince Rupert" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
+			"Toronto" "MontrÃ©al" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de QuÃ©bec" "Winnipeg" "Hamilton" "London" "Kitchener" "St. Catharines" "Halifax" 
 			"Victoria" "Windsor" "Oshawa" "Saskatoon" "Regina" "Sherbrooke" "Barrie" "Kelowna" "Abbotsford" "Kingston" "Trois-Rivieres" 
 			"Saint John" "Moncton" "Rainbow" "Hudson Bay"
 
@@ -65,10 +65,10 @@ CAN = {
 		prefix = "HMCS"
 		generic = { "Heavy Cruiser" }
 		unique = {
-			"Kingston" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" "Niobe" 
-			"Rainbow" "Toronto" "Montréal" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de Québec" "Winnipeg" "Hamilton" "London" 
+			"Kingston" "Ontario" "QuÃ©bec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" "Niobe" 
+			"Rainbow" "Toronto" "MontrÃ©al" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de QuÃ©bec" "Winnipeg" "Hamilton" "London" 
 			"Kitchener" "St. Catharines" "Halifax" "Victoria" "Windsor" "Oshawa" "Saskatoon" "Regina" "Sherbrooke" "Barrie" "Kelowna" 
-			"Abbotsford" "Kingson" "Trois-Rivières" "Saint John" "Moncton" "Vancouver Island" 
+			"Abbotsford" "Kingson" "Trois-RiviÃ¨res" "Saint John" "Moncton" "Vancouver Island" 
 			
 			#Ironclad names
 			
@@ -81,7 +81,7 @@ CAN = {
 		prefix = "HMCS"
 		generic = { "Battlecruiser" }
 		unique = {
-			"Canada" "Dominion" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
+			"Canada" "Dominion" "Ontario" "QuÃ©bec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
 			
 		}
 	}
@@ -89,7 +89,7 @@ CAN = {
 		prefix = "HMCS"
 		generic = { "Battleship" }
 		unique = {
-			"Canada" "Dominion" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
+			"Canada" "Dominion" "Ontario" "QuÃ©bec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" 
 			
 		}
 	}
@@ -101,7 +101,7 @@ CAN = {
 			
 			#Monitor names
 			
-			"Guy Carleton" "Robert Prescott" "Robert Milnes" "Thomas Dunn" "James H. Craig" "George Prévost" "Gordon Drummond" "John C. Sherbrooke" "Charles Lennox" 
+			"Guy Carleton" "Robert Prescott" "Robert Milnes" "Thomas Dunn" "James H. Craig" "George PrÃ©vost" "Gordon Drummond" "John C. Sherbrooke" "Charles Lennox" 
 			"Goerge Ramsay" "James Kempt" "Matthew Whitworth-Aylmer" "Archibald Acheson" "John Colborne" "John Labton" "Charles P. Thomson" "Charles Bagot" 
 			"Charles Metcalfe" "Charles Cathcart" "James Bruce" "Edmund Walker Head" 
 			
