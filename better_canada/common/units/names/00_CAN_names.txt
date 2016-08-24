@@ -68,7 +68,7 @@ CAN = {
 			"Kingston" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island" "Niobe" 
 			"Rainbow" "Toronto" "Montréal" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de Québec" "Winnipeg" "Hamilton" "London" 
 			"Kitchener" "St. Catharines" "Halifax" "Victoria" "Windsor" "Oshawa" "Saskatoon" "Regina" "Sherbrooke" "Barrie" "Kelowna" 
-			"Abbotsford" "Kingson" "Trois-Rivières" "Saint John" "Moncton" "Vancouver Island" 
+			"Abbotsford" "Kingson" "Trois-Rivières" "Saint John" "Moncton" "Vancouver Island" "Prince Rupert"
 			
 			#Ironclad names
 			
@@ -97,7 +97,8 @@ CAN = {
 		prefix = "HMCS"
 		generic = { "Carrier" }
 		unique = {
-			"Warrior" "Magnificent" "Bonaventure" "Nabob" "Puncher" "Anticosti" "Confederation" "Prince David" "Sable Island"
+			"Warrior" "Magnificent" "Bonaventure" "Nabob" "Puncher" "Anticosti" "Confederation" "Prince Rupert" 
+			"Prince David" "Sable Island" 
 			
 			#Monitor names
 			
