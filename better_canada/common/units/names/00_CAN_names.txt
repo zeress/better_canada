@@ -14,7 +14,7 @@ CAN = {
 		generic = { "Destroyer" }
 		unique = {
 			"Saguenay" "Skeena" "Vendetta" "Voyager" "Waterhen" "Fraser" "St. Laurent" "Ottawa" "Restigouche" "Assiniboine" "Margaree" "Kootenay" "Gatineau" 
-			"Saskatchewan" "Qu'Appelle" "Ottawa" "Chaudiere" "Arcadia" "Haida" "Huron" "Iroquois" "Athabaskan" "Cayuga" "Micmac" "Nootka" "Algonquin" 
+			"Saskatchewan" "Qu'Appelle" "Ottawa" "Chaudiere" "Arcadia" "Haida" "Huron" "Iroquois" "Athabaskan" "Cayuga" "Micmac" "Nootka" "Algonquin" "Aroostook"
 			"Sioux" "Crescent" "Crusader" "Chaudiere" "Cape Breton" "Dunver" "Grou" "Matane" "Montreal" "New Glasgow" "New Waterford" "Outremont" "Port Colborne" 
 			"Prince Rupert" "St. Catherine's" "St. John" "Stormont" "Swansea" "Valleyfield" "Waskesiu" "Wentworth" "Ettrick" "Meon" "Teme" "Annan" "Nene" "Monnow" 
 			"Ribble" "Blackfoot" "Slave" "Mohawk" "Hinterland" "Moose Jaw" "Medicine Hat" "Whitehorse" "Yellowknife" "Columbia" "Dawson" "Annapolis" "St. Clair"
