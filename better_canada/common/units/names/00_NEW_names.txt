@@ -20,7 +20,7 @@ NEW = {
 			"Adnavik" "Ailik" "Burgeo" "La Poile" "Isle aux Morts" "Margaree" "Rose Blanche" "Fortune" "Grand Bank" "Marystown" "Red Harbour" "Swift Current" "Salvage" "Glovertown"
 			"Argentia" "Carbonear" "Spread Eagle" "Plaisance" "Micmac" "Catalina" "Port Union" "Whitbourne" "Markland" "Rocky Harbour" "Dunville" "St. Bride's" "Fort Royal"
 			"Point Lance" "Branch" "Colinet" "Bay Roberts" "Colliers" "Callan" "Torbay" "Paradise" "Lewisporte" "Aquaforte" "Trepassey" "Portugal Cove" "Clarenville" "Deer Lake"
-			"Pasadena" "Bishop's Falls" "Spaniard's Bay" "Harbour Grace" "Wabana" "Wabush" "Triton" "Placentia" 
+			"Pasadena" "Bishop's Falls" "Spaniard's Bay" "Harbour Grace" "Wabana" "Wabush" "Triton" "Placentia" "Penzance" 
 		 
 		} 
 	}
