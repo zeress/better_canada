@@ -1,0 +1,4 @@
+	spriteType = {
+		name = "GFX_idea_NFLD"
+		texturefile = "gfx/interface/ideas/idea_NFLD.dds"
+	}
