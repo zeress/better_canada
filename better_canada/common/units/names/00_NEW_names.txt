@@ -25,7 +25,7 @@ NEW = {
 		} 
 	}
 	light_cruiser = {
-		prefix = "HMCS"
+		prefix = "HMNS"
 		generic = { "Light Cruiser" }
 		unique = {
 			"St. John's" "Mount Pearl" "Conception Bay" "Belle Isle" "Discovery" "Placentia" "Beaumont-Hamel" "Bonavista" 
