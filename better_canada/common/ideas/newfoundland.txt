@@ -15,7 +15,7 @@ ideas = {
 
 		NEW_lewis_edward_emerson = {
 
-			picture = r_b_bennett
+			picture = idea_generic_political_advisor_europe_1
 				
 			allowed = {
 				original_tag = NEW
@@ -26,7 +26,7 @@ ideas = {
 
 		NEW_william_ewen_stavart = {
 
-			picture = newton_wesley_rowell
+			picture = idea_generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = NEW
@@ -48,7 +48,7 @@ ideas = {
 		
 		NEW_james_winter = {
 
-			picture = james_winter
+			picture = idea_generic_political_advisor_europe_3
 				
 			allowed = {
 				original_tag = NEW
@@ -91,7 +91,7 @@ ideas = {
 
 		NEW_francis_roche = {
 					
-			picture = francis_roche
+			picture = idea_generic_political_advisor_europe_2
 					
 			allowed = {
 				original_tag = NEW
@@ -108,7 +108,7 @@ ideas = {
 	army_chief = {
 		
 		NEW_basil_hallingham = {
-			picture = basil_hallingham
+			picture = idea_generic_political_advisor_europe_1
 			
 			allowed = {
 				OR = {
@@ -127,7 +127,7 @@ ideas = {
 		}
 
 		NEW_robert_forsynth = {
-			picture = robert_forsynth
+			picture = idea_generic_political_advisor_europe_3
 			
 			allowed = {
 				OR = {
@@ -146,7 +146,7 @@ ideas = {
 		}
 
 		NEW_alfred_howell = {
-			picture = alfred_howell
+			picture = idea_generic_political_advisor_europe_1
 			
 			allowed = {
 				OR = {
@@ -168,7 +168,7 @@ ideas = {
 	air_chief = {
 		
 		NEW_james_thomas = {
-			picture = james_thomas
+			picture = idea_generic_political_advisor_europe_2
 			
 			allowed = {
 				OR = {
@@ -187,7 +187,7 @@ ideas = {
 		}
 
 		NEW_maxwell_coles = {
-			picture = maxwell_coles
+			picture = idea_generic_political_advisor_europe_1
 			
 			allowed = {
 				OR = {
@@ -228,7 +228,7 @@ ideas = {
 		}
 
 		NEW_vincent_wakeham = {
-			picture = vincent_wakeham
+			picture = idea_generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = NEW
@@ -247,7 +247,7 @@ ideas = {
 	
 		NEW_david_coffey = {
 			
-			picture = david_coffey
+			picture = idea_generic_political_advisor_europe_3
 
 			allowed = {
 				OR = {
@@ -265,7 +265,7 @@ ideas = {
 
 		NEW_cyril_roswell = {
 			
-			picture = cyril_roswell
+			picture = idea_generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = NEW
@@ -280,7 +280,7 @@ ideas = {
 
 		NEW_harold_lake = {
 			
-			picture = harold_lake
+			picture = idea_generic_political_advisor_europe_2
 
 			allowed = {
 				OR = {
