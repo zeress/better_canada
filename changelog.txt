@@ -1,5 +1,1 @@
-- Compatched to 1.3.0. The new BC NFs are now only active if you do not own the "Together for Victory" DLC. Other additions done by the mod remain unchanged
-- Canada starts independent, instead of being being ahistorically still a dominion of the UK
-- Newfoundland starts as a dominion to the UK now
-- Fixed availability of some political NFs
-- Fixed an issue in regards to two NFs and being removed from a faction
+- Continous Focus panel shifted down to prevent overlaping
