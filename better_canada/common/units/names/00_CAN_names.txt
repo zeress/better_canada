@@ -1,4 +1,4 @@
-CAN = {
+﻿CAN = {
 	submarine = {
 		prefix = "HMCS"
 		generic = { "Submarine" }
