@@ -163,20 +163,6 @@ ideas = {
 			}
 		}
 		
-		can_winter_bonus = {
-			allowed = {
-				tag = CAN
-			}
-			
-			picture = generic_infantry_bonus
-			
-			removal_cost = -1
-		
-			modifier = {
-				winter_attrition_factor = -0.10
-			}
-		}
-		
 		que_socialist_science = {
 			allowed = {
 				tag = QUE
