@@ -35,7 +35,7 @@ set_technology = {
 	early_battleship = 1
 	early_battlecruiser = 1
 	early_carrier = 1
-			trench_warfare = 1
+	trench_warfare = 1
 
 	transport = 1
 	fleet_in_being = 1
@@ -51,6 +51,53 @@ add_ideas = {
 }
 
 set_convoys = 800
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = NEW
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = MAL
+		puppet = RAJ
+	}
+}
+
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
 
 1939.1.1 = {
 
@@ -71,6 +118,18 @@ set_convoys = 800
 
 		ENG_george_vi
 	}
+
+	
+create_country_leader = {
+	name = "Neville Chamberlain"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
 	remove_ideas = george_v #Dead
 
 	complete_national_focus = limited_rearmament_focus
@@ -190,13 +249,11 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
-puppet = RAJ
-puppet = NEW
-give_military_access = RAJ
-add_to_faction = RAJ		# Must be after puppet
-give_military_access = NEW
 add_to_faction = NEW
 
+give_military_access = RAJ
+add_to_faction = RAJ		# Must be after puppet
+add_to_faction = MAL
 
 #give_guarantee = CZE
 
@@ -213,16 +270,28 @@ create_country_leader = {
 	}
 }
 
+
 create_country_leader = {
-	name = "Neville Chamberlain"
-	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-	expire = "1965.1.1"
+	name = "Stanley Baldwin"
+	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+	expire = "1938.1.1"
 	ideology = liberalism
 	traits = {
 		
 	}
 }
+
+#create_country_leader = {
+#	name = "Neville Chamberlain"
+#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+#	expire = "1965.1.1"
+#	ideology = liberalism
+#	traits = {
+#		
+#	}
+#}
 
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -685,6 +754,16 @@ create_equipment_variant = {
 		ship_engine_upgrade = 2
 		ship_armor_upgrade = 3
 		ship_gun_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Queen Elizabeth Class"
+	type = battleship_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 1
 	}
 }
 
