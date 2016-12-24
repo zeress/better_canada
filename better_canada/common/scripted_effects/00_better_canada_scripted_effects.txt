@@ -25,14 +25,9 @@ quebec_rebel_effect = {
 	add_national_unity = -0.10
 	
 	QUE = {
-		set_capital = 468
 		transfer_state = 466
 		transfer_state = 468
-	}
-	create_wargoal = {
-		type = take_state_focus
-		target = QUE
-		generator = { 466 468 }
+		set_capital = 468
 	}
 	
 	add_opinion_modifier = { target = QUE modifier = que_secession }
@@ -74,10 +69,6 @@ quebec_rebel_effect = {
 			}
 			add_opinion_modifier = { target = CAN modifier = que_secession }
 			CAN = { QUE = { copy_all_techs_effect = yes }}
-		}
-		declare_war_on = {
-			target = QUE
-			type = annex_everything
 		}
 		news_event = { hours = 6 id = better_canada.48 }
 	}

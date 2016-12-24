@@ -500,11 +500,6 @@ focus_tree = {
 			332 = { add_core_of = QUE }
 			464 = { add_core_of = QUE }
 			465 = { add_core_of = QUE }
-			create_wargoal = {
-				type = take_state_focus
-				target = CAN
-				generator = { 464 465 }
-			}
 			news_event = { hours = 6 id = better_canada.13 }
 		}
 	}
@@ -535,11 +530,6 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = que_claim_french_louisiana
-			create_wargoal = {
-				type = take_state_focus
-				target = USA
-				generator = { 389 391 394 393 392 395 396 261 358 360 373 369 372 368 370 371 }
-			}
 			news_event = { hours = 6 id = better_canada.14 }
 			hidden_effect = {
 				467 = { add_core_of = QUE } # Manitoba
