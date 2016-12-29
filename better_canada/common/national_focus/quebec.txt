@@ -25,6 +25,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_political_power = 120
@@ -43,6 +59,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 15
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -66,6 +98,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 15
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_national_unity = 0.1
@@ -86,6 +134,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = foreign_expeditions_focus
@@ -105,6 +169,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_manpower = 20000
@@ -122,6 +202,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -147,6 +243,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_manpower = 30000
@@ -164,6 +276,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -188,6 +316,22 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -223,6 +367,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			QUE = { add_to_faction = FRA }
@@ -242,6 +402,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 11
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = collectivist_ethos_focus
@@ -260,6 +436,22 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -292,6 +484,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = political_commissars_focus
@@ -318,6 +526,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = que_socialist_science
@@ -342,6 +566,22 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -371,6 +611,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			create_wargoal = {
@@ -392,6 +648,22 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 12
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -416,6 +688,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = nationalism
@@ -437,6 +725,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -462,6 +766,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -493,6 +813,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -526,6 +862,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -574,6 +926,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -598,6 +966,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -630,6 +1014,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_resource = {
@@ -654,6 +1054,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -680,6 +1096,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_resource = {
@@ -704,6 +1136,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -733,6 +1181,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = que_french_knowledge_idea
@@ -760,6 +1224,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			468 = {
@@ -785,6 +1265,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -817,6 +1313,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -851,6 +1363,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			468 = {
@@ -882,6 +1410,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			remove_ideas = que_french_knowledge_idea
@@ -909,6 +1453,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_research_slot = 1
@@ -926,6 +1486,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -959,6 +1535,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			468 = {
@@ -990,6 +1582,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = que_sorel_tracy_ideas
@@ -1016,6 +1624,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1050,6 +1674,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1074,6 +1714,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_political_power = 120
@@ -1091,6 +1747,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1114,6 +1786,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			468 = {
@@ -1133,6 +1821,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1162,6 +1866,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			468 = {
@@ -1182,6 +1902,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1207,6 +1943,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1230,6 +1982,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1255,6 +2023,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1278,6 +2062,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1308,6 +2108,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1337,6 +2153,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_ideas = can_winter_bonus
@@ -1361,6 +2193,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1383,6 +2231,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1407,6 +2271,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1437,6 +2317,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1465,6 +2361,22 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
@@ -1495,6 +2407,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -1519,6 +2447,22 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
 		}
 		
 		completion_reward = {
