@@ -2,7 +2,7 @@
 ai_historical_focus_list_CAN = {
 	ai_national_focuses = {
 		CAN_industrial_build_up
-		CAN_rowell_sirois_commission
+		CAN_better_canada_rowell_sirois_commission
 		CAN_industrial_bits_and_pieces
 		CAN_crown_companies
 		CAN_military_focus

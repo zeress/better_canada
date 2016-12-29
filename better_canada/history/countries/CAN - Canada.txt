@@ -62,13 +62,13 @@ if = {
 		complete_national_focus = CAN_rcaf_station_borden
 		complete_national_focus = CAN_halifax_shipyards
 		complete_national_focus = CAN_destroyer_effort
-		complete_national_focus = CAN_rowell_sirois_commission
+		complete_national_focus = CAN_better_canada_rowell_sirois_commission
 		complete_national_focus = CAN_crown_corporations
 		complete_national_focus = CAN_national_housing_act
 		
 		else = {
 			complete_national_focus = CAN_industrial_build_up
-			complete_national_focus = CAN_rowell_sirois_commission
+			complete_national_focus = CAN_better_canada_rowell_sirois_commission
 			complete_national_focus = CAN_industrial_bits_and_pieces
 			complete_national_focus = CAN_crown_companies
 			complete_national_focus = CAN_military_focus

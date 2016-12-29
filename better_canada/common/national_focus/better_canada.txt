@@ -40,7 +40,7 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = { focus = CAN_statute_of_westminster }
-		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_swastika_clubs }
+		mutually_exclusive = { focus = CAN_soviet_heart focus = CAN_better_canada_swastika_clubs }
 
 		available = {
 			NOT = { 
@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_camp_x
+		id = CAN_better_canada_camp_x
 		icon = GFX_goal_generic_radar
 		x = 0
 		y = 5
@@ -165,7 +165,7 @@ focus_tree = {
 		y = 8
 		cost = 15
 		
-		prerequisite = { focus = CAN_camp_x }
+		prerequisite = { focus = CAN_better_canada_camp_x }
 		mutually_exclusive = { focus = CAN_nuclear_arms }
 
 		ai_will_do = {
@@ -220,7 +220,7 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = { focus = CAN_statute_of_westminster }
-		mutually_exclusive = { focus = CAN_commonwealth_unity focus = CAN_swastika_clubs }
+		mutually_exclusive = { focus = CAN_commonwealth_unity focus = CAN_better_canada_swastika_clubs }
 
 		available = {
 			NOT = { has_government = fascism }
@@ -355,7 +355,7 @@ focus_tree = {
 	}		
 	
 	focus = {
-		id = CAN_swastika_clubs # Swastika Clubs
+		id = CAN_better_canada_swastika_clubs # Swastika Clubs
 		icon = GFX_goal_support_fascism
 		x = 4
 		y = 1
@@ -389,7 +389,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		
-		prerequisite = { focus = CAN_swastika_clubs }
+		prerequisite = { focus = CAN_better_canada_swastika_clubs }
 
 		ai_will_do = {
 			factor = 10
@@ -950,7 +950,7 @@ focus_tree = {
 		available = {
 			is_in_faction = no
 		}		
-		prerequisite = { focus = CAN_camp_x focus = CAN_communist_volunteers focus = CAN_lay_west_claims focus = CAN_lay_east_claims }
+		prerequisite = { focus = CAN_better_canada_camp_x focus = CAN_communist_volunteers focus = CAN_lay_west_claims focus = CAN_lay_east_claims }
 		mutually_exclusive = { focus = CAN_canada_strengthen_bonds }
 		
 		ai_will_do = {
@@ -986,7 +986,7 @@ focus_tree = {
 		available = {
 			is_in_faction = yes
 		}		
-		prerequisite = { focus = CAN_camp_x focus = CAN_communist_volunteers focus = CAN_lay_west_claims focus = CAN_lay_east_claims }
+		prerequisite = { focus = CAN_better_canada_camp_x focus = CAN_communist_volunteers focus = CAN_lay_west_claims focus = CAN_lay_east_claims }
 		mutually_exclusive = { focus = CAN_canada_first }
 		
 		ai_will_do = {
@@ -1343,7 +1343,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CAN_rowell_sirois_commission # Rowell-Sirois Commission
+		id = CAN_better_canada_rowell_sirois_commission # Rowell-Sirois Commission
 		icon = GFX_goal_generic_improve_relations
 		
 		prerequisite = { focus = CAN_industrial_build_up }
@@ -1374,7 +1374,7 @@ focus_tree = {
 		id = CAN_central_investment # Central Investment
 		icon = GFX_goal_generic_construct_civilian
 		
-		prerequisite = { focus = CAN_rowell_sirois_commission }
+		prerequisite = { focus = CAN_better_canada_rowell_sirois_commission }
 
 		x = 11
 		y = 2
