@@ -2215,7 +2215,7 @@ focus_tree = {
 
 	focus = { 
 		id = CAN_reason_with_quebec # The Quebec Referendum
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_tfv_can_compromise_with_quebec
 		
 		prerequisite = { focus = CAN_question_of_quebec }
 		mutually_exclusive = { focus = CAN_force_quebec }
@@ -2282,7 +2282,7 @@ focus_tree = {
 	
 	focus = { 
 		id = CAN_force_quebec # Place Quebec under Curfew
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
 		
 		prerequisite = { focus = CAN_question_of_quebec }
 		mutually_exclusive = { focus = CAN_reason_with_quebec }
