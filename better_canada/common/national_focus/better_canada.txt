@@ -1300,8 +1300,6 @@ focus_tree = {
 				amount = 11
 				state = 466
 			}
-			
-			set_country_flag = crown_companies_started	
 		}
 	}
 
