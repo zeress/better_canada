@@ -1,5 +1,5 @@
 focus_tree = {
-	id = can_focus
+	id = better_can_focus
 	
 	country = {
 		factor = 0
