@@ -25,7 +25,14 @@ country_event = {
 		name = better_canada.20.b	#no way 
 		ai_chance = { factor = 90 }
 		add_political_power = -50
-		CAN = { add_state_claim = 463 }
+		
+		CAN = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				generator = { 463 }
+			}
+		}
 		hidden_effect = {
 			news_event = { id = better_canada.31 hours = 6 }
 		}
@@ -126,8 +133,11 @@ country_event = {
 		}
 		
 		ENG = {
-			add_state_claim = 331
-			add_state_claim = 332
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				generator = { 331 332 }
+			}
 		}
 		
 		hidden_effect = {
@@ -171,8 +181,11 @@ news_event = { # Newfoundland and Labrador Join Canada
 			}
 			
 			ENG = {
-				add_state_claim = 331
-				add_state_claim = 332
+				create_wargoal = {
+					type = take_state_focus
+					target = CAN
+					generator = { 331 332 }
+				}
 			}
 		}
 	}
@@ -538,8 +551,11 @@ country_event = {
 		add_political_power = -50
 
 		CAN = {
-			add_state_claim = 331
-			add_state_claim = 332
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 331 332 }
+			}
 		}
 		hidden_effect = {
 			news_event = { id = better_canada.41 hours = 6 }
@@ -702,8 +718,11 @@ country_event = { # The UK considers
 		ai_chance = { factor = 30 }
 
 		CAN = {
-			add_state_claim = 331
-			add_state_claim = 332
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 331 332 }
+			}
 		}		
 		
 		CAN = { # New Brunswick
@@ -932,7 +951,11 @@ country_event = {
 		add_political_power = -50
 		
 		CAN = {
-			add_state_claim = 730
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				generator = { 730 }
+			}
 		}
 		hidden_effect = {
 			news_event = { id = better_canada.33 hours = 6 }
